@@ -53,6 +53,15 @@
   .note b{color:var(--ink)}
   .src{margin-top:20px;padding-top:12px;border-top:1px solid var(--line);
        font-size:11px;color:var(--ink-3);line-height:1.6}
+  .alert{background:#fdf3ec;border:1px solid #e0b894;border-left:4px solid var(--amber);
+         border-radius:0 4px 4px 0;padding:10px 12px;margin:0 0 14px;font-size:12.5px;
+         color:var(--ink-2)}
+  .alert>b{color:#7d4f08;display:block;margin-bottom:6px;font-size:12px;
+           text-transform:uppercase;letter-spacing:.5px}
+  .alert-item{margin-bottom:8px;line-height:1.45}
+  .alert-item b{color:var(--ink);text-transform:none;letter-spacing:0;font-size:12.5px}
+  .alert a{color:#7d4f08;font-weight:600}
+  .doclink{display:inline-block;margin-top:8px;font-size:12px;font-weight:600}
 
   /* ---------------------------------------------------------- markers */
   .pk{border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.45)}
@@ -119,8 +128,31 @@ function linzLayer(tileset) {
 }
 const topo = linzLayer("topo-raster").addTo(map);
 const aerial = linzLayer("aerial");
-L.control.layers({ "LINZ topo": topo, "Aerial photo": aerial }, null,
-                 { position: "topright" }).addTo(map);
+const layerControl = L.control.layers(
+  { "LINZ topo": topo, "Aerial photo": aerial }, null,
+  { position: "topright" }).addTo(map);
+
+// On this machine only, prefer your own LINZ Data Service key. It serves the
+// same Topo50 map and does not expire, so the local copy keeps working even
+// if the shared key in this file lapses.
+//
+// This is deliberately NOT used on the published page. A key sitting in a
+// public web page can be lifted and spent by anyone, and an LDS key is tied
+// to your account. The published page stays on the shared key until LINZ
+// issue a developer key restricted to that one address.
+fetch("data/linz-key.local.json", { cache: "no-cache" })
+  .then(r => r.ok ? r.json() : null)
+  .catch(() => null)
+  .then(k => {
+    if (!k || !k.lds_key) return;
+    const mine = L.tileLayer(
+      `https://tiles-a.data-cdn.linz.govt.nz/services;key=${k.lds_key}`
+      + `/tiles/v4/layer=50767/EPSG:3857/{z}/{x}/{y}.png`,
+      { maxZoom: 16, minZoom: 5, attribution: LINZ_CREDIT });
+    map.removeLayer(topo);
+    mine.addTo(map);
+    layerControl.addBaseLayer(mine, "LINZ Topo50 (your key)");
+  });
 
 // Leaflet caches the map's pixel size. If the window is resized, the phone is
 // rotated, or the tab is hidden and comes back, that cached size goes stale and
@@ -413,6 +445,21 @@ function show(p) {
   h += a ? `<span class="badge ${a[1]}">${a[0]}</span>`
          : `<span class="badge unknown">Access could not be checked</span>`;
 
+  // ---- a live DOC alert outranks everything else on the page
+  const doc = p.doc;
+  if (doc && doc.alerts && doc.alerts.length) {
+    h += `<div class="alert"><b>DOC alert on ${esc(doc.name)}</b>`;
+    for (const a of doc.alerts.slice(0, 3)) {
+      h += `<div class="alert-item"><b>${esc(a.heading || "Notice")}</b>`
+         + (a.date ? ` <span class="muted">${esc(a.date)}</span>` : "")
+         + (a.detail ? `<br>${esc(a.detail).slice(0, 320)}` : "") + `</div>`;
+    }
+    if (doc.link) {
+      h += `<a href="${esc(doc.link)}" target="_blank" rel="noopener">Check DOC before you go</a>`;
+    }
+    h += `</div>`;
+  }
+
   // ---- getting there
   h += `<div class="sec"><h3>Getting there</h3><dl>`;
   if (dr) {
@@ -460,6 +507,34 @@ function show(p) {
   }
   h += `</dl></div>`;
 
+  // ---- what DOC says, which outranks anything measured off OpenStreetMap
+  if (doc) {
+    h += `<div class="sec"><h3>What DOC says</h3><dl>`;
+    h += row("Track", esc(doc.name), doc.location ? esc(doc.location) : null);
+    if (doc.walk_duration) {
+      h += row("DOC walking time", esc(doc.walk_duration),
+               "their figure, not my estimate");
+    }
+    if (doc.distance) h += row("DOC distance", esc(doc.distance));
+    if (doc.walk_category) {
+      h += row("DOC grade", esc(doc.walk_category), "official grading");
+    }
+    h += `</dl>`;
+    if (doc.introduction) {
+      h += `<div class="note">${esc(doc.introduction)}</div>`;
+    }
+    if (doc.others && doc.others.length) {
+      h += `<div class="note">DOC lists other tracks past this summit too:
+            ${doc.others.map(esc).join(", ")}. I picked the one that looks like
+            the route up rather than a longer trip that happens to cross it.</div>`;
+    }
+    if (doc.link) {
+      h += `<a class="doclink" href="${esc(doc.link)}" target="_blank"
+              rel="noopener">Open the DOC page for this track</a>`;
+    }
+    h += `</div>`;
+  }
+
   // ---- climb, measured along the actual route
   const rt = p.route;
   const noWalk = rt && rt.length_m === 0;
@@ -506,7 +581,11 @@ function show(p) {
     const hours = est.total / 3600;
     const dayTrip = hours <= 10;
     h += `<div class="sec"><h3>How long</h3><dl>`;
-    h += row("Return, moving", hoursMins(est.total), "Naismith's rule, no stops");
+    h += row(doc && doc.walk_duration ? "My estimate" : "Return, moving",
+             hoursMins(est.total), "Naismith's rule, return trip, no stops");
+    if (doc && doc.walk_duration) {
+      h += row("DOC says", esc(doc.walk_duration), "trust this one");
+    }
     h += `</dl>`;
     if (dayTrip) {
       h += `<div class="note">An <b>estimate</b>, not a measurement. Naismith
@@ -545,6 +624,7 @@ function show(p) {
       <b>Drive time:</b> OSRM routing over OpenStreetMap roads.<br>
       <b>Climb:</b> LINZ NZ 8 m height model, via OpenTopoData.<br>
       <b>Forecast:</b> ECMWF IFS and Open-Meteo.<br>
+      <b>Official track and alerts:</b> Department of Conservation.<br>
       <b>Map:</b> LINZ Topo50, CC BY 4.0.<br><br>
       ${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}
       &middot; <a href="https://www.topomap.co.nz/NZTopoMap?v=2&ll=${p.lat},${p.lon}&z=15"

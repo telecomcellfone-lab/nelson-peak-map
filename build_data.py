@@ -118,6 +118,44 @@ def overpass(query, cache_name, refresh=False):
     raise SystemExit("Overpass failed three times. Try again later.")
 
 
+def overpass_tiled(query_template, cache_name, refresh=False, rows=4, cols=4):
+    """
+    Fetch a whole-region query in tiles and join the results.
+
+    Overpass times out on a single region-wide request for the track network,
+    which is why an earlier version only pulled tracks within 4 km of each
+    peak. That quietly truncated long approach tracks: Mount Fishtail's network
+    stopped dead 4.2 km from the summit, exactly at the edge of the pull, so no
+    road connection could ever be found. Tiling gets the whole network.
+    """
+    path = os.path.join(DATA, cache_name)
+    if os.path.exists(path) and not refresh and os.path.getsize(path) > 10000:
+        log("  using cached", cache_name)
+        return json.load(io.open(path, encoding="utf-8"))["elements"]
+
+    south, west, north, east = BBOX
+    dy = (north - south) / rows
+    dx = (east - west) / cols
+    seen, elements = set(), []
+    for r in range(rows):
+        for c in range(cols):
+            box = "%f,%f,%f,%f" % (south + r * dy, west + c * dx,
+                                   south + (r + 1) * dy, west + (c + 1) * dx)
+            log("  tile %d/%d" % (r * cols + c + 1, rows * cols))
+            part = overpass(query_template % box,
+                            "%s.tile%02d.json" % (cache_name, r * cols + c),
+                            refresh)
+            for e in part:
+                if e["id"] not in seen:
+                    seen.add(e["id"])
+                    elements.append(e)
+
+    io.open(path, "w", encoding="utf-8").write(
+        json.dumps({"elements": elements}, ensure_ascii=False))
+    log("  joined %d unique ways into %s" % (len(elements), cache_name))
+    return elements
+
+
 def parse_ele(tags):
     """OSM elevation tags are free text. Return metres, or None."""
     v = tags.get("ele")
@@ -341,12 +379,11 @@ def main():
     log("   %d named peaks with a recorded height" % len(peaks_raw))
 
     log("")
-    log("2. Walking tracks near those peaks")
-    tracks_raw = overpass(
+    log("2. Every walking track in the region")
+    tracks_raw = overpass_tiled(
         '[out:json][timeout:280];'
-        'node["natural"="peak"]["name"]["ele"](%s)->.p;'
-        'way["highway"~"^(path|footway|track|steps|bridleway)$"](around.p:4000);'
-        'out geom;' % box, "tracks_wide.json", refresh)
+        'way["highway"~"^(path|footway|track|steps|bridleway)$"](%s);'
+        'out geom;', "tracks_all.json", refresh)
     log("   %d track ways" % len(tracks_raw))
 
     log("")

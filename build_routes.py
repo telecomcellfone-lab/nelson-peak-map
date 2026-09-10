@@ -182,7 +182,7 @@ def main():
     base = json.load(io.open(peaks_file, encoding="utf-8"))
 
     log("Rebuilding the track network from the cached download")
-    tracks = json.load(io.open(os.path.join(DATA, "tracks_wide.json"),
+    tracks = json.load(io.open(os.path.join(DATA, "tracks_all.json"),
                                encoding="utf-8"))["elements"]
     graph = TrackGraph(tracks)
     log("   %d track nodes" % len(graph.pos))

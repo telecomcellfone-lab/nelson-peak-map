@@ -53,9 +53,53 @@ The walking time is **Naismith's rule**, not a measurement: an hour per 5 km
 plus an hour per 600 m of climb, for the round trip. It assumes a fit walker
 and no stops. The app says so on screen.
 
+## What stage 3 adds so far
+
+* **Official DOC track information** for the 68 peaks a DOC track reaches.
+  Their walking time, their distance, their grading, and a link to the DOC
+  page. Where DOC gives a time it is shown as the one to trust and mine is
+  demoted to a second opinion. For Mount Arthur DOC says 3 hr 30 min to
+  4 hr 30 min one way. Naismith put the whole return trip at 4 hr 46 min,
+  which is badly optimistic for New Zealand alpine ground.
+* **Live DOC alerts**, shown above everything else on the panel. 32 peaks
+  currently carry one, including "Limited access to Flora car park up Graham
+  Valley Road", which is the road you drive to climb Mount Arthur.
+* Where several DOC tracks pass a summit, the app names the alternatives and
+  says which one it picked and why.
+
+Matching a DOC track to a summit is not just "nearest line". Mount Arthur has
+both the Summit Route and the two day Ellis Basin Route passing close by. The
+build ranks candidates by whether the track name mentions the peak, then by
+how short the walk is, so a multi-day traverse that happens to cross the top
+does not get presented as the way up.
+
+DOC publishes track geometry on the New Zealand map grid rather than in
+degrees, so `build_doc.py` carries the conversion. It is checked against a
+known point: the Mount Arthur Summit Route ends 60 m from the recorded summit
+and starts at the Flora car park.
+
 ## What it deliberately does not do yet
 
-**Trip reports, track closures and the full filter bar.** Stage 3.
+**Trip reports and the full filter bar.** Still to come.
+
+## Keys
+
+Three, all free, none of them in the repository.
+
+| File | What for | How to get it |
+|---|---|---|
+| `doc-api-key.local.json` | DOC tracks and alerts | Register at api.doc.govt.nz, then subscribe the key to v1-tracks and v2-alerts |
+| `linz-api-key.local.json` | LINZ Data Service | data.linz.govt.nz, your name, API Keys, Create |
+| in `index.html` | LINZ Basemaps tiles | The shared key from LINZ's docs, until a developer key arrives |
+
+A DOC key that exists but is not subscribed returns a bare "Forbidden" with no
+explanation. That is the usual cause.
+
+The LINZ Data Service key also serves Topo50 tiles, and those do not expire.
+The local copy uses it through `data/linz-key.local.json`. The **published**
+copy deliberately does not: a key sitting in a public web page can be lifted
+and spent by anyone, and that key is tied to your account. The published page
+stays on the shared key until LINZ issue a site-restricted developer key.
 
 ## Two data files, and why
 
