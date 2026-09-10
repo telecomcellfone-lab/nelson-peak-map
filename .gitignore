@@ -16,3 +16,4 @@ build.log
 __pycache__/
 build-public.log
 *.log
+data/elevation_cache.json

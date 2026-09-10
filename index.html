@@ -253,6 +253,156 @@ function row(term, value, sub) {
          (sub ? `<small>${sub}</small>` : "") + `</dd></div>`;
 }
 
+// ------------------------------------------------------- the route on the map
+const routeLayer = L.layerGroup().addTo(map);
+
+function drawRoute(p) {
+  routeLayer.clearLayers();
+  const rt = p.route;
+  if (!rt || !rt.line || rt.line.length < 2) return;
+  // A pale casing under a bright line, so it reads over a busy topo map.
+  L.polyline(rt.line, { color: "#fff", weight: 6, opacity: .85 }).addTo(routeLayer);
+  L.polyline(rt.line, { color: "#c8341c", weight: 3, opacity: .95 }).addTo(routeLayer);
+  if (p.trailhead) {
+    L.circleMarker([p.trailhead.lat, p.trailhead.lon], {
+      radius: 6, color: "#fff", weight: 2, fillColor: "#1b64c4", fillOpacity: 1
+    }).addTo(routeLayer).bindTooltip("Road end", { direction: "top" });
+  }
+  map.fitBounds(L.polyline(rt.line).getBounds(), { padding: [30, 30], maxZoom: 14 });
+}
+
+// ------------------------------------------------------------ height profile
+function profileChart(rt) {
+  const pr = rt.profile;
+  if (!pr || pr.length < 3) return "";
+  const W = 336, H = 96, L_ = 34, B = 16, T = 8;
+  const xs = pr.map(d => d[0]), ys = pr.map(d => d[1]);
+  const xMax = Math.max(...xs) || 1;
+  const yMin = Math.min(...ys), yMax = Math.max(...ys);
+  const pad = Math.max(20, (yMax - yMin) * 0.08);
+  const lo = Math.max(0, Math.floor((yMin - pad) / 50) * 50);
+  const hi = Math.ceil((yMax + pad) / 50) * 50;
+  const px = v => L_ + (v / xMax) * (W - L_ - 6);
+  const py = v => T + (1 - (v - lo) / ((hi - lo) || 1)) * (H - T - B);
+  const d = pr.map((q, i) => `${i ? "L" : "M"}${px(q[0]).toFixed(1)},${py(q[1]).toFixed(1)}`).join("");
+  const area = `${d}L${px(xMax).toFixed(1)},${py(lo).toFixed(1)}L${px(0).toFixed(1)},${py(lo).toFixed(1)}Z`;
+  const kmMax = xMax / 1000;
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img"
+       aria-label="Height along the route, ${lo} to ${hi} metres over ${kmMax.toFixed(1)} kilometres"
+       style="display:block;margin-top:10px">
+    <path d="${area}" fill="#6b2d3c" opacity=".14"></path>
+    <path d="${d}" fill="none" stroke="#6b2d3c" stroke-width="1.8"
+          stroke-linejoin="round" stroke-linecap="round"></path>
+    <line x1="${L_}" y1="${py(lo)}" x2="${W - 6}" y2="${py(lo)}" stroke="#c9c4b8"></line>
+    <text x="${L_ - 5}" y="${py(hi) + 4}" text-anchor="end" font-size="9" fill="#7b8a82">${hi}</text>
+    <text x="${L_ - 5}" y="${py(lo) + 4}" text-anchor="end" font-size="9" fill="#7b8a82">${lo}</text>
+    <text x="${L_}" y="${H - 4}" font-size="9" fill="#7b8a82">0 km</text>
+    <text x="${W - 6}" y="${H - 4}" text-anchor="end" font-size="9" fill="#7b8a82">${kmMax.toFixed(1)} km</text>
+  </svg>`;
+}
+
+// ------------------------------------------------------------- time estimate
+function naismith(metres, ascent) {
+  // Classic rule: an hour per 5 km, plus an hour per 600 m of climb.
+  // Applied to the round trip, with the climb counted once.
+  const flat = (metres * 2) / 5000 * 3600;
+  const up = ascent / 600 * 3600;
+  return { total: flat + up };
+}
+function hoursMins(sec) {
+  const h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60);
+  return m ? `${h} h ${m} min` : `${h} h`;
+}
+const clock = iso => iso.slice(11, 16);
+
+// ----------------------------------------------------------------- weather
+// WMO weather codes, in plain words.
+const WX = {
+  0: "Clear", 1: "Mostly clear", 2: "Part cloud", 3: "Overcast",
+  45: "Fog", 48: "Freezing fog", 51: "Light drizzle", 53: "Drizzle",
+  55: "Heavy drizzle", 56: "Freezing drizzle", 57: "Freezing drizzle",
+  61: "Light rain", 63: "Rain", 65: "Heavy rain",
+  66: "Freezing rain", 67: "Freezing rain",
+  71: "Light snow", 73: "Snow", 75: "Heavy snow", 77: "Snow grains",
+  80: "Showers", 81: "Showers", 82: "Heavy showers",
+  85: "Snow showers", 86: "Heavy snow showers",
+  95: "Thunderstorm", 96: "Thunderstorm, hail", 99: "Thunderstorm, hail"
+};
+
+function loadWeather(p) {
+  const box = document.getElementById("wx");
+  if (!box) return;
+  const base = `https://api.open-meteo.com/v1/forecast?latitude=${p.lat}`
+    + `&longitude=${p.lon}&elevation=${p.elevation_m}`
+    + `&timezone=Pacific%2FAuckland&forecast_days=3`;
+  Promise.all([
+    // ECMWF IFS for the numbers. It does not carry freezing level.
+    fetch(base + "&models=ecmwf_ifs025&daily=weather_code,temperature_2m_max,"
+        + "temperature_2m_min,precipitation_sum,wind_speed_10m_max,"
+        + "wind_gusts_10m_max,wind_direction_10m_dominant,sunrise,sunset")
+      .then(r => r.json()),
+    // The multi-model blend, used only for freezing level.
+    fetch(base + "&hourly=freezing_level_height").then(r => r.json())
+  ]).then(([w, f]) => renderWeather(box, p, w, f))
+    .catch(() => {
+      box.innerHTML = `<span class="muted">Could not reach the forecast service.
+        You are probably offline.</span>`;
+    });
+}
+
+function renderWeather(box, p, w, f) {
+  const d = w.daily;
+  if (!d || !d.time) { box.textContent = "No forecast available."; return; }
+
+  const frzFor = day => {
+    if (!f.hourly || !f.hourly.time) return null;
+    const v = f.hourly.time
+      .map((t, i) => t.startsWith(day) ? f.hourly.freezing_level_height[i] : null)
+      .filter(x => x != null);
+    return v.length ? [Math.min(...v), Math.max(...v)] : null;
+  };
+
+  let h = `<dl>`;
+  for (let i = 0; i < d.time.length; i++) {
+    const day = new Date(d.time[i] + "T12:00:00")
+      .toLocaleDateString("en-NZ", { weekday: "short", day: "numeric", month: "short" });
+    const frz = frzFor(d.time[i]);
+    const bits = [
+      `${Math.round(d.temperature_2m_min[i])} to ${Math.round(d.temperature_2m_max[i])}&deg;C`,
+      `${d.precipitation_sum[i].toFixed(1)} mm`,
+      `wind ${Math.round(d.wind_speed_10m_max[i])}, gusts ${Math.round(d.wind_gusts_10m_max[i])} km/h`
+    ];
+    if (frz) {
+      bits.push(`freezing level ${Math.round(frz[0])} to ${Math.round(frz[1])} m`
+        + ` &middot; summit ${p.elevation_m} m`);
+    }
+    h += row(day, esc(WX[d.weather_code[i]] || "?"), bits.join("<br>"));
+  }
+  h += `</dl>`;
+  h += `<div class="note">Forecast for ${p.elevation_m} m, not for the nearest
+        town. Temperature, rain and wind from <b>ECMWF IFS</b>. Freezing level
+        from Open-Meteo's multi-model blend, because ECMWF does not publish it
+        here. A forecast is not a promise.
+        <a href="https://www.yr.no/en/forecast/daily-table/${p.lat},${p.lon}"
+           target="_blank" rel="noopener">Open this spot on yr.no</a>.</div>`;
+  box.innerHTML = h;
+
+  // Daylight, now that we know sunrise and sunset for this exact spot.
+  const dl = document.getElementById("daylight");
+  if (dl && d.sunrise && d.sunset && p.route && p.route.ascent_m != null) {
+    const t = naismith(p.route.length_m, p.route.ascent_m);
+    const set = new Date(d.sunset[0]);
+    const latest = new Date(set.getTime() - t.total * 1000);
+    const rise = clock(d.sunrise[0]);
+    dl.innerHTML = `<dl>`
+      + row("Light today", `${rise} to ${clock(d.sunset[0])}`,
+            "sunrise and sunset at this summit")
+      + row("Latest start", latest.toTimeString().slice(0, 5),
+            "to be back at the car by dark, moving without stops")
+      + `</dl>`;
+  }
+}
+
 function show(p) {
   const t = p.track, th = p.trailhead, dr = p.drive, ac = p.access;
   let h = `<h2 class="peak">${esc(p.name)}</h2>
@@ -310,12 +460,74 @@ function show(p) {
   }
   h += `</dl></div>`;
 
-  // ---- climb, honestly deferred
-  h += `<div class="sec"><h3>Climb</h3>
-        <div class="note">Not calculated yet. Summit height minus car park height
-        is <b>not</b> the climb, because real routes rise and fall on the way.
-        Doing it properly means measuring the ground along the actual route,
-        which is the next stage.</div></div>`;
+  // ---- climb, measured along the actual route
+  const rt = p.route;
+  const noWalk = rt && rt.length_m === 0;
+
+  if (noWalk) {
+    // The nearest track point to the summit is itself the road access point.
+    // Either the road goes to the top, or nothing walkable heads that way.
+    const gap = t.metres_from_summit;
+    h += `<div class="sec"><h3>The climb</h3><div class="note">` + (gap <= 100
+      ? `<b>A road reaches this summit.</b> There is no walk in, so there is no
+         climb to report.`
+      : `<b>No walking track leads to this summit.</b> The nearest mapped track
+         is a roadside one about ${gap} m away, so getting to the top means
+         crossing untracked ground. No climb figure is given, because there is
+         no route to measure along.`)
+      + `</div></div>`;
+  } else {
+    h += `<div class="sec"><h3>Climb</h3><dl>`;
+    if (rt && rt.ascent_m != null) {
+      h += row("Total climb", `${rt.ascent_m} m`,
+               rt.descent_m > 30 ? `and ${rt.descent_m} m of descent on the way up`
+                                 : "one way");
+      if (rt.trailhead_elevation_m != null) {
+        const naive = p.elevation_m - rt.trailhead_elevation_m;
+        h += row("Road end height", `${rt.trailhead_elevation_m} m`,
+                 `the summit is ${naive} m higher, but the route actually `
+                 + `climbs ${rt.ascent_m} m`);
+      }
+      h += `</dl>${profileChart(rt)}`;
+      h += `<div class="note">Measured by walking the mapped track and reading
+            the ground height every ${rt.sample_spacing_m} m from the LINZ 8 m
+            height model. Rises under ${rt.climb_threshold_m} m are ignored so
+            that noise in the model does not inflate the total.</div>`;
+    } else {
+      h += row("Total climb", '<span class="muted">not established</span>',
+               "no continuous track found to measure along") + `</dl>`;
+    }
+    h += `</div>`;
+  }
+
+  // ---- how long it might take
+  if (!noWalk && rt && rt.ascent_m != null && rt.length_m) {
+    const est = naismith(rt.length_m, rt.ascent_m);
+    const hours = est.total / 3600;
+    const dayTrip = hours <= 10;
+    h += `<div class="sec"><h3>How long</h3><dl>`;
+    h += row("Return, moving", hoursMins(est.total), "Naismith's rule, no stops");
+    h += `</dl>`;
+    if (dayTrip) {
+      h += `<div class="note">An <b>estimate</b>, not a measurement. Naismith
+            allows an hour per 5 km plus an hour per 600 m of climb. It assumes
+            a fit walker, good conditions and no breaks. Add your own time for
+            lunch, photos, and anything technical near the top.</div>
+            <div id="daylight"></div>`;
+    } else {
+      h += `<div class="note"><b>This is not a day walk.</b> At roughly
+            ${Math.round(hours)} hours of moving time over
+            ${(rt.length_m * 2 / 1000).toFixed(0)} km return, it is a trip of
+            several days with nights in huts or a tent. No start time is
+            suggested, because getting back before dark is not the question.
+            Plan it properly and file trip intentions at adventuresmart.nz.</div>`;
+    }
+    h += `</div>`;
+  }
+
+  // ---- weather, filled in once it arrives
+  h += `<div class="sec"><h3>Weather at the summit</h3>
+        <div id="wx" class="muted" style="font-size:12.5px">loading…</div></div>`;
 
   // ---- where the facts came from
   let accessLine = "Not checked.";
@@ -331,6 +543,8 @@ function show(p) {
       <b>Position and height:</b> OpenStreetMap.<br>
       <b>Track and road:</b> OpenStreetMap.<br>
       <b>Drive time:</b> OSRM routing over OpenStreetMap roads.<br>
+      <b>Climb:</b> LINZ NZ 8 m height model, via OpenTopoData.<br>
+      <b>Forecast:</b> ECMWF IFS and Open-Meteo.<br>
       <b>Map:</b> LINZ Topo50, CC BY 4.0.<br><br>
       ${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}
       &middot; <a href="https://www.topomap.co.nz/NZTopoMap?v=2&ll=${p.lat},${p.lon}&z=15"
@@ -339,6 +553,8 @@ function show(p) {
 
   document.getElementById("body").innerHTML = h;
   document.getElementById("body").scrollTop = 0;
+  drawRoute(p);
+  loadWeather(p);
 }
 
 // ------------------------------------------------------------- controls
@@ -351,7 +567,11 @@ range.oninput = () => {
 };
 
 // ---------------------------------------------------------------- load
-fetch("data/home.local.json")
+// `no-cache` means "ask the server if this changed" rather than "never cache".
+// Without it a rebuilt data file can sit unseen behind a stale browser copy.
+const FRESH = { cache: "no-cache" };
+
+fetch("data/home.local.json", FRESH)
   .then(r => r.ok ? r.json() : null)
   .catch(() => null)
   .then(h => {
@@ -365,8 +585,8 @@ fetch("data/home.local.json")
   // Your own build first. On the published copy that file is absent, so the
   // page falls back to the public one, whose drive times start from Nelson
   // city centre rather than your door.
-  .then(() => fetch("data/peaks.json"))
-  .then(r => r.ok ? r : fetch("data/peaks.public.json"))
+  .then(() => fetch("data/peaks.json", FRESH))
+  .then(r => r.ok ? r : fetch("data/peaks.public.json", FRESH))
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(d => {
     DATA = d;

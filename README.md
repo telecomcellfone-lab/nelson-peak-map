@@ -27,13 +27,33 @@ page from reading a local data file. The little server above gets around that.
 * Public access status from Herenga a Nuku, the official access map.
 * A slider to hide anything further than a given drive.
 
+## What stage 2 adds
+
+* **The route drawn on the map**, following the actual mapped track from the
+  road end to the summit.
+* **A real climb figure.** The build script walks that route, reads the ground
+  height every 50 m from the LINZ 8 m height model, and adds up every rise.
+  Mount Arthur comes out at 892 m of climb from a road end at 958 m, which
+  matches the guidebooks. Summit height minus car park height would have said
+  822 m and missed the dips.
+* **A height profile** for each route, drawn in the panel.
+* **Summit weather**, forecast for the summit's own height rather than the
+  nearest town. Temperature, rain and wind come from ECMWF IFS. Freezing level
+  comes from Open-Meteo's multi-model blend, because ECMWF does not publish it
+  through this service. Both are labelled.
+* **Daylight**, with sunrise and sunset for that exact summit, and the latest
+  start that still gets you back to the car before dark.
+* A link straight to the yr.no page for the summit coordinates.
+
+The climb threshold matters. Height models are noisy, and adding up every tiny
+wobble inflates the total badly. A rise only counts once it exceeds 5 m, which
+is the same trick a GPS watch uses. The threshold is recorded in the data.
+
+The walking time is **Naismith's rule**, not a measurement: an hour per 5 km
+plus an hour per 600 m of climb, for the round trip. It assumes a fit walker
+and no stops. The app says so on screen.
+
 ## What it deliberately does not do yet
-
-**Climb.** There is no elevation gain figure. Summit height minus car park
-height is not the climb, because real routes rise and fall on the way. Doing it
-honestly means measuring the ground along the route. That is stage 2.
-
-**Weather and daylight.** Stage 2.
 
 **Trip reports, track closures and the full filter bar.** Stage 3.
 
@@ -60,7 +80,12 @@ are git-ignored and neither is ever written into a peaks file.
 python build_data.py             # private copy, from your address
 python build_data.py --public    # published copy, from Waimea College
 python build_data.py --refresh   # re-download everything from OpenStreetMap
+python build_routes.py           # routes, climb figures and height profiles
 ```
+
+`build_routes.py` writes into both data files, because they share the same
+geometry and differ only in where the drive times start. Ground heights are
+cached in `data/elevation_cache.json`, so a second run costs nothing.
 
 Raw downloads are cached in `data/`, so a rerun is quick.
 
@@ -89,6 +114,8 @@ arrives, replace the single marked line near the top of the `<script>` block.
 | Tracks and roads | OpenStreetMap | ODbL |
 | Public access | Herenga a Nuku Aotearoa, Public Access Areas | CC BY 3.0 NZ |
 | Drive time | OSRM routing over OpenStreetMap roads | ODbL |
+| Ground height | LINZ NZ 8m DEM, via OpenTopoData | CC BY 4.0 |
+| Forecast | ECMWF IFS and Open-Meteo | CC BY 4.0 |
 
 Rules the build script follows:
 

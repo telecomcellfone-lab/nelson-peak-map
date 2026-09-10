@@ -1,0 +1,31 @@
+To: basemaps@linz.govt.nz
+Subject: Re: Request for a developer API key for LINZ Basemaps - site address
+
+Kia ora,
+
+Following up on my request for a developer API key, with the site address I
+said I would send.
+
+The map is now hosted here:
+
+  https://telecomcellfone-lab.github.io/nelson-peak-map/
+
+Please restrict the key to that address.
+
+Everything else in my first email still stands. It is a personal,
+non-commercial hiking planner for my own trip planning in the Nelson and Tasman
+region. It is not a product and there is nothing for sale on it. The page is
+reachable by anyone who has the link, but it is built for one user and I expect
+usage to stay very low.
+
+In the meantime the page is running on the standard access key published in
+your documentation. I am happy to take the site down until a developer key
+arrives if you would prefer that.
+
+The required attribution is displayed in the corner of the map:
+  (c) LINZ CC BY 4.0
+alongside credits for OpenStreetMap and Herenga a Nuku.
+
+Nga mihi,
+[your name]
+[your email]

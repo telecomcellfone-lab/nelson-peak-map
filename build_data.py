@@ -512,7 +512,12 @@ def main():
             {"lat": home["lat"], "lon": home["lon"],
              "name": home.get("name", "home")}, indent=1))
         log("Wrote %s  (private, git-ignored)" % home_out)
+    elif "--public" in sys.argv:
+        # A public build uses a stand-in on purpose. It must not disturb the
+        # private home file, which belongs to the local copy of the map.
+        pass
     elif os.path.exists(home_out):
+        # No home.local.json any more, so clear the stale pointer.
         os.remove(home_out)
 
 
