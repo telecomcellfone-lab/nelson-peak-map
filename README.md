@@ -1,0 +1,117 @@
+# Nelson Peak Map
+
+An interactive LINZ topo map of the peaks you can reach from home, with the
+drive, the track in, and whether the summit is on public land.
+
+## How to open it
+
+From this folder:
+
+```
+python -m http.server 8000
+```
+
+Then go to <http://127.0.0.1:8000> in your browser.
+
+Opening `index.html` by double-clicking will not work. Browsers block a local
+page from reading a local data file. The little server above gets around that.
+
+## What stage 1 does
+
+* LINZ Topo50 raster basemap, with an aerial photo toggle.
+* 209 peaks that have a walking track within 1 km of the summit, out of 683
+  named peaks in the region.
+* Drive time and distance to the road end for each one.
+* Track distance from the road end to the summit, measured along the actual
+  track, not as the crow flies.
+* Public access status from Herenga a Nuku, the official access map.
+* A slider to hide anything further than a given drive.
+
+## What it deliberately does not do yet
+
+**Climb.** There is no elevation gain figure. Summit height minus car park
+height is not the climb, because real routes rise and fall on the way. Doing it
+honestly means measuring the ground along the route. That is stage 2.
+
+**Weather and daylight.** Stage 2.
+
+**Trip reports, track closures and the full filter bar.** Stage 3.
+
+## Two data files, and why
+
+| File | Measured from | Published? |
+|---|---|---|
+| `data/peaks.json` | your own front door | no, git-ignored |
+| `data/peaks.public.json` | Waimea College, Richmond | yes |
+
+The page loads the private one when it is there and falls back to the public
+one. The same `index.html` therefore works both on this machine and on the web.
+
+Waimea College is 610 m from the house, so the published drive times differ from
+the real ones by 42 seconds at the median and 77 seconds at worst. Close enough
+to plan a day around, and it points at a public school rather than a home.
+
+`home.local.json` and `data/home.local.json` hold the actual coordinates. Both
+are git-ignored and neither is ever written into a peaks file.
+
+## Rebuilding the data
+
+```
+python build_data.py             # private copy, from your address
+python build_data.py --public    # published copy, from Waimea College
+python build_data.py --refresh   # re-download everything from OpenStreetMap
+```
+
+Raw downloads are cached in `data/`, so a rerun is quick.
+
+To change your home address, edit `home.local.json`:
+
+```json
+{ "name": "home", "lat": -41.3XXXXX, "lon": 173.2XXXXX }
+```
+
+Then run `python build_data.py` again.
+
+## The LINZ API key
+
+`index.html` currently uses the public key from LINZ's own documentation. LINZ
+documents that standard keys need renewing every 90 days and allow a million
+tile requests a month. Developer keys do not expire and have no cap.
+`LINZ-key-request-email.txt` is a ready email asking LINZ for one. When it
+arrives, replace the single marked line near the top of the `<script>` block.
+
+## Where every number comes from
+
+| Thing | Source | Licence |
+|---|---|---|
+| Basemap | LINZ Topo50 and aerial | CC BY 4.0 |
+| Peak name, position, height | OpenStreetMap | ODbL |
+| Tracks and roads | OpenStreetMap | ODbL |
+| Public access | Herenga a Nuku Aotearoa, Public Access Areas | CC BY 3.0 NZ |
+| Drive time | OSRM routing over OpenStreetMap roads | ODbL |
+
+Rules the build script follows:
+
+* No geographic fact is invented. Anything that cannot be established is
+  written as null, and the app says "not established" rather than guessing.
+* A mapped track is not the same as public access. The access badge comes from
+  the official access map, and "not shown as public land" is reported as
+  exactly that, not as "private".
+* Where the mapped track stops more than 100 m short of the summit, the app
+  says so, because the last part is a route rather than a path.
+
+## How the trailhead is worked out
+
+There is no tidy list of NZ trailheads, so the build script derives them:
+
+1. Build a graph of every walking track in the region from OpenStreetMap.
+2. Find which connected track network reaches within 1 km of the summit.
+3. Within that network, find every point lying within 250 m of a drivable
+   public road.
+4. Of those, take the one closest to the mountain. That is the trailhead.
+5. Route to it and record the time.
+
+Forestry tracks are treated as walking, not driving, so the trailhead is where
+a normal car would actually stop. If no point in the network comes within 250 m
+of a road, no trailhead is recorded and the drive time is left blank. That
+happens for 13 of the 209 peaks.

@@ -1,0 +1,29 @@
+To: basemaps@linz.govt.nz
+Subject: Request for a developer API key for LINZ Basemaps
+
+Kia ora,
+
+I would like to request a developer level API key for LINZ Basemaps.
+
+It is for a personal, non-commercial project. I am building a hiking planning
+map for the Nelson and Tasman region that shows local peaks on the Topo50
+raster basemap, along with route, drive time and weather information. It is for
+my own use, not a commercial product.
+
+Expected usage is very low. A single user, a few hundred tile requests on a
+typical day.
+
+I am asking for developer level access rather than standard access because I
+understand standard keys expire after 90 days, and I would rather the map keep
+working without needing a new key every few months.
+
+The map currently runs locally on my own computer. If the key needs to be
+restricted to a site, please let me know and I will supply the address once it
+is hosted.
+
+I will display the required attribution on the map:
+  (c) LINZ CC BY 4.0
+
+Nga mihi,
+[your name]
+[your email]

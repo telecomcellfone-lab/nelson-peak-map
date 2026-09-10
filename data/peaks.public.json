@@ -1,0 +1,6462 @@
+{
+ "built": "2026-09-10 12:56",
+ "home_is_placeholder": true,
+ "home_label": "Waimea College, Richmond",
+ "region": {
+  "south": -42.35,
+  "west": 171.85,
+  "north": -40.4,
+  "east": 174.35
+ },
+ "counts": {
+  "named_peaks_in_region": 683,
+  "peaks_with_a_track": 209
+ },
+ "sources": {
+  "peaks_tracks_roads": "OpenStreetMap contributors, ODbL, via Overpass",
+  "public_access": "Herenga a Nuku Aotearoa, Public Access Areas, CC BY 3.0 NZ",
+  "drive_time": "OSRM public routing over OpenStreetMap roads",
+  "basemap": "LINZ Topo50 raster basemap, CC BY 4.0"
+ },
+ "peaks": [
+  {
+   "id": 4255559578,
+   "name": "Tapuae-o-Uenuku",
+   "lat": -41.995817,
+   "lon": 173.662808,
+   "elevation_m": 2885,
+   "track": {
+    "name": "Hodder Huts to Tapuae-o-Uenuku",
+    "grade": "alpine_hiking",
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 18872
+   },
+   "trailhead": {
+    "lat": -41.887689,
+    "lon": 173.640475,
+    "road": "Awatere Valley Road",
+    "metres_from_road": 203
+   },
+   "drive": {
+    "seconds": 32723,
+    "metres": 195493,
+    "snap_m": 204,
+    "snapped_to": "Awatere Valley Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 1574046337,
+   "name": "Mount Hopeless",
+   "lat": -41.94763,
+   "lon": 172.739297,
+   "elevation_m": 2278,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 484,
+    "distance_from_trailhead_m": 20099
+   },
+   "trailhead": {
+    "lat": -41.823344,
+    "lon": 172.806522,
+    "road": "Mount Robert Road",
+    "metres_from_road": 232
+   },
+   "drive": {
+    "seconds": 4851,
+    "metres": 82836,
+    "snap_m": 232,
+    "snapped_to": "Mount Robert Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 1574046315,
+   "name": "Maniniaro / Angelus Peak",
+   "lat": -41.907465,
+   "lon": 172.744127,
+   "elevation_m": 2075,
+   "track": {
+    "name": null,
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 14330
+   },
+   "trailhead": {
+    "lat": -41.823344,
+    "lon": 172.806522,
+    "road": "Mount Robert Road",
+    "metres_from_road": 232
+   },
+   "drive": {
+    "seconds": 4851,
+    "metres": 82836,
+    "snap_m": 232,
+    "snapped_to": "Mount Robert Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2580434624,
+   "name": "Mount Owen",
+   "lat": -41.552003,
+   "lon": 172.541195,
+   "elevation_m": 1875,
+   "track": {
+    "name": "Mount Owen Route",
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 2,
+    "distance_from_trailhead_m": 11688
+   },
+   "trailhead": {
+    "lat": -41.469963,
+    "lon": 172.56589,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 7004,
+    "metres": 81265,
+    "snap_m": 231,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5935729235,
+   "name": "Mount Bell",
+   "lat": -41.54225,
+   "lon": 172.556629,
+   "elevation_m": 1857,
+   "track": {
+    "name": "Mount Owen Route",
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 635,
+    "distance_from_trailhead_m": 9486
+   },
+   "trailhead": {
+    "lat": -41.469963,
+    "lon": 172.56589,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 7004,
+    "metres": 81265,
+    "snap_m": 231,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5935729227,
+   "name": "Replica Hill",
+   "lat": -41.545174,
+   "lon": 172.533729,
+   "elevation_m": 1822,
+   "track": {
+    "name": "Mount Owen Route",
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 575,
+    "distance_from_trailhead_m": 10955
+   },
+   "trailhead": {
+    "lat": -41.469963,
+    "lon": 172.56589,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 7004,
+    "metres": 81265,
+    "snap_m": 231,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3218345813,
+   "name": "Julius Peak",
+   "lat": -41.863899,
+   "lon": 172.775362,
+   "elevation_m": 1794,
+   "track": {
+    "name": "Robert Ridge Route",
+    "grade": "alpine_hiking",
+    "metres_from_summit": 73,
+    "distance_from_trailhead_m": 8029
+   },
+   "trailhead": {
+    "lat": -41.823344,
+    "lon": 172.806522,
+    "road": "Mount Robert Road",
+    "metres_from_road": 232
+   },
+   "drive": {
+    "seconds": 4851,
+    "metres": 82836,
+    "snap_m": 232,
+    "snapped_to": "Mount Robert Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6564285689,
+   "name": "Kākāpō Peak",
+   "lat": -41.020253,
+   "lon": 172.558154,
+   "elevation_m": 1783,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 362,
+    "distance_from_trailhead_m": 24551
+   },
+   "trailhead": {
+    "lat": -41.111949,
+    "lon": 172.678013,
+    "road": "Cobb Dam Road",
+    "metres_from_road": 172
+   },
+   "drive": {
+    "seconds": 8667,
+    "metres": 99831,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 582502574,
+   "name": "Mount Arthur",
+   "lat": -41.218263,
+   "lon": 172.681511,
+   "elevation_m": 1780,
+   "track": {
+    "name": "Mount Arthur (Poled Route only)",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 34,
+    "distance_from_trailhead_m": 8213
+   },
+   "trailhead": {
+    "lat": -41.189903,
+    "lon": 172.744645,
+    "road": "Graham Valley South Branch Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 4792,
+    "metres": 62054,
+    "snap_m": 230,
+    "snapped_to": "Graham Valley South Branch Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5700908759,
+   "name": "Mount Richmond",
+   "lat": -41.474089,
+   "lon": 173.39599,
+   "elevation_m": 1760,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 13768
+   },
+   "trailhead": {
+    "lat": -41.525738,
+    "lon": 173.457234,
+    "road": "Timms Road",
+    "metres_from_road": 236
+   },
+   "drive": {
+    "seconds": 10629,
+    "metres": 143572,
+    "snap_m": 236,
+    "snapped_to": "Timms Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3324010792,
+   "name": "Winter Peak",
+   "lat": -41.220216,
+   "lon": 172.686369,
+   "elevation_m": 1750,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 7937
+   },
+   "trailhead": {
+    "lat": -41.189903,
+    "lon": 172.744645,
+    "road": "Graham Valley South Branch Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 4792,
+    "metres": 62054,
+    "snap_m": 230,
+    "snapped_to": "Graham Valley South Branch Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5935729232,
+   "name": "Pisa",
+   "lat": -41.554874,
+   "lon": 172.547376,
+   "elevation_m": 1750,
+   "track": {
+    "name": "Mount Owen Route",
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 604,
+    "distance_from_trailhead_m": 11688
+   },
+   "trailhead": {
+    "lat": -41.469963,
+    "lon": 172.56589,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 7004,
+    "metres": 81265,
+    "snap_m": 231,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2196626818,
+   "name": "Mount Rintoul",
+   "lat": -41.522348,
+   "lon": 173.236418,
+   "elevation_m": 1730,
+   "track": {
+    "name": "Mt Rintoul Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 6,
+    "distance_from_trailhead_m": 28698
+   },
+   "trailhead": {
+    "lat": -41.58073,
+    "lon": 173.26779,
+    "road": "unnamed road",
+    "metres_from_road": 153
+   },
+   "drive": {
+    "seconds": 14485,
+    "metres": 170816,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2196634092,
+   "name": "Mount Rintoul",
+   "lat": -41.522354,
+   "lon": 173.23645,
+   "elevation_m": 1730,
+   "track": {
+    "name": "Mt Rintoul Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 8,
+    "distance_from_trailhead_m": 28698
+   },
+   "trailhead": {
+    "lat": -41.58073,
+    "lon": 173.26779,
+    "road": "unnamed road",
+    "metres_from_road": 153
+   },
+   "drive": {
+    "seconds": 14485,
+    "metres": 170816,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3218345823,
+   "name": "Mount Patriarch",
+   "lat": -41.421625,
+   "lon": 172.507307,
+   "elevation_m": 1701,
+   "track": {
+    "name": null,
+    "grade": "alpine_hiking",
+    "metres_from_summit": 11,
+    "distance_from_trailhead_m": 19341
+   },
+   "trailhead": {
+    "lat": -41.4433,
+    "lon": 172.578864,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 219
+   },
+   "drive": {
+    "seconds": 6482,
+    "metres": 77636,
+    "snap_m": 219,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680157968,
+   "name": "Flagtop",
+   "lat": -41.852246,
+   "lon": 172.785914,
+   "elevation_m": 1690,
+   "track": {
+    "name": "Robert Ridge Route",
+    "grade": "alpine_hiking",
+    "metres_from_summit": 6,
+    "distance_from_trailhead_m": 6243
+   },
+   "trailhead": {
+    "lat": -41.823344,
+    "lon": 172.806522,
+    "road": "Mount Robert Road",
+    "metres_from_road": 232
+   },
+   "drive": {
+    "seconds": 4851,
+    "metres": 82836,
+    "snap_m": 232,
+    "snapped_to": "Mount Robert Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6432104932,
+   "name": "Dragons Teeth",
+   "lat": -40.95543,
+   "lon": 172.535789,
+   "elevation_m": 1663,
+   "track": {
+    "name": "Dragon's Teeth High Traverse Route",
+    "grade": "demanding_alpine_hiking",
+    "metres_from_summit": 360,
+    "distance_from_trailhead_m": 26773
+   },
+   "trailhead": {
+    "lat": -40.896926,
+    "lon": 172.736723,
+    "road": "unnamed road",
+    "metres_from_road": 193
+   },
+   "drive": {
+    "seconds": 6095,
+    "metres": 99320,
+    "snap_m": 194,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6432104931,
+   "name": "Anatoki Peak",
+   "lat": -40.959269,
+   "lon": 172.540203,
+   "elevation_m": 1662,
+   "track": {
+    "name": "Dragon's Teeth High Traverse Route",
+    "grade": "demanding_alpine_hiking",
+    "metres_from_summit": 305,
+    "distance_from_trailhead_m": 28943
+   },
+   "trailhead": {
+    "lat": -40.896926,
+    "lon": 172.736723,
+    "road": "unnamed road",
+    "metres_from_road": 193
+   },
+   "drive": {
+    "seconds": 6095,
+    "metres": 99320,
+    "snap_m": 194,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6990576107,
+   "name": "Mount Patriarch",
+   "lat": -41.609999,
+   "lon": 173.221309,
+   "elevation_m": 1655,
+   "track": {
+    "name": "Mt Patriarch Route",
+    "grade": null,
+    "metres_from_summit": 4,
+    "distance_from_trailhead_m": 1576
+   },
+   "trailhead": {
+    "lat": -41.604485,
+    "lon": 173.237593,
+    "road": "unnamed road",
+    "metres_from_road": 234
+   },
+   "drive": {
+    "seconds": 15091,
+    "metres": 175020,
+    "snap_m": 235,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5935729234,
+   "name": "Billies Knob",
+   "lat": -41.515038,
+   "lon": 172.571008,
+   "elevation_m": 1648,
+   "track": {
+    "name": "Mount Owen Track",
+    "grade": "hiking",
+    "metres_from_summit": 678,
+    "distance_from_trailhead_m": 5288
+   },
+   "trailhead": {
+    "lat": -41.470022,
+    "lon": 172.568872,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 242
+   },
+   "drive": {
+    "seconds": 7004,
+    "metres": 81265,
+    "snap_m": 242,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5700908757,
+   "name": "Johnston Peak",
+   "lat": -41.47694,
+   "lon": 173.41027,
+   "elevation_m": 1647,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 581,
+    "distance_from_trailhead_m": 12653
+   },
+   "trailhead": {
+    "lat": -41.525738,
+    "lon": 173.457234,
+    "road": "Timms Road",
+    "metres_from_road": 236
+   },
+   "drive": {
+    "seconds": 10629,
+    "metres": 143572,
+    "snap_m": 236,
+    "snapped_to": "Timms Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3218345820,
+   "name": "Mount Gibbs",
+   "lat": -41.047167,
+   "lon": 172.49812,
+   "elevation_m": 1645,
+   "track": {
+    "name": null,
+    "grade": "alpine_hiking",
+    "metres_from_summit": 28,
+    "distance_from_trailhead_m": 21591
+   },
+   "trailhead": {
+    "lat": -41.113101,
+    "lon": 172.676861,
+    "road": "Cobb Dam Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 8787,
+    "metres": 99997,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310761009,
+   "name": "Mount Fishtail",
+   "lat": -41.445916,
+   "lon": 173.495129,
+   "elevation_m": 1641,
+   "track": {
+    "name": "Mount Fishtail Route",
+    "grade": null,
+    "metres_from_summit": 403,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3361573172,
+   "name": "Clark Peak",
+   "lat": -40.901174,
+   "lon": 172.551872,
+   "elevation_m": 1622,
+   "track": {
+    "name": null,
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 599,
+    "distance_from_trailhead_m": 21126
+   },
+   "trailhead": {
+    "lat": -40.780897,
+    "lon": 172.560137,
+    "road": "James Road Right Branch",
+    "metres_from_road": 234
+   },
+   "drive": {
+    "seconds": 7248,
+    "metres": 132819,
+    "snap_m": 234,
+    "snapped_to": "James Road Right Branch"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028523,
+   "name": "Lead Hills",
+   "lat": -40.893092,
+   "lon": 172.548938,
+   "elevation_m": 1622,
+   "track": {
+    "name": null,
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 746,
+    "distance_from_trailhead_m": 21232
+   },
+   "trailhead": {
+    "lat": -40.780897,
+    "lon": 172.560137,
+    "road": "James Road Right Branch",
+    "metres_from_road": 234
+   },
+   "drive": {
+    "seconds": 7248,
+    "metres": 132819,
+    "snap_m": 234,
+    "snapped_to": "James Road Right Branch"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867583,
+   "name": "Ben Nevis",
+   "lat": -41.550126,
+   "lon": 173.075087,
+   "elevation_m": 1619,
+   "track": {
+    "name": "Ben Nevis Track",
+    "grade": null,
+    "metres_from_summit": 18,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8590194673,
+   "name": "Mount Ellis",
+   "lat": -41.58667,
+   "lon": 173.056162,
+   "elevation_m": 1615,
+   "track": {
+    "name": "Wairoa Valley Track",
+    "grade": "hiking",
+    "metres_from_summit": 237,
+    "distance_from_trailhead_m": 20292
+   },
+   "trailhead": {
+    "lat": -41.546305,
+    "lon": 172.926669,
+    "road": "Stock Road",
+    "metres_from_road": 232
+   },
+   "drive": {
+    "seconds": 2681,
+    "metres": 37048,
+    "snap_m": 0,
+    "snapped_to": "Wai-iti Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6564285688,
+   "name": "Waingaro Peak",
+   "lat": -41.041598,
+   "lon": 172.537678,
+   "elevation_m": 1604,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 184,
+    "distance_from_trailhead_m": 20917
+   },
+   "trailhead": {
+    "lat": -41.113101,
+    "lon": 172.676861,
+    "road": "Cobb Dam Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 8787,
+    "metres": 99997,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3232378200,
+   "name": "Mount Fyffe",
+   "lat": -42.310445,
+   "lon": 173.612434,
+   "elevation_m": 1602,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 13646
+   },
+   "trailhead": {
+    "lat": -42.300629,
+    "lon": 173.689868,
+    "road": "unnamed road",
+    "metres_from_road": 214
+   },
+   "drive": {
+    "seconds": 13368,
+    "metres": 250345,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310759262,
+   "name": "Mount Fell",
+   "lat": -41.447682,
+   "lon": 173.409478,
+   "elevation_m": 1602,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 12525
+   },
+   "trailhead": {
+    "lat": -41.525577,
+    "lon": 173.457684,
+    "road": "Timms Road",
+    "metres_from_road": 241
+   },
+   "drive": {
+    "seconds": 10629,
+    "metres": 143572,
+    "snap_m": 241,
+    "snapped_to": "Timms Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931675307,
+   "name": "Mount Misery",
+   "lat": -41.93368,
+   "lon": 172.667927,
+   "elevation_m": 1601,
+   "track": {
+    "name": "Mt Misery Route",
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 211,
+    "distance_from_trailhead_m": 23235
+   },
+   "trailhead": {
+    "lat": -41.968509,
+    "lon": 172.517446,
+    "road": "Tutaki Road South",
+    "metres_from_road": 162
+   },
+   "drive": {
+    "seconds": 9879,
+    "metres": 127554,
+    "snap_m": 162,
+    "snapped_to": "Tutaki Road South"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5935729230,
+   "name": "Sentinel Hill",
+   "lat": -41.536791,
+   "lon": 172.548949,
+   "elevation_m": 1600,
+   "track": {
+    "name": "Mount Owen Route",
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 226,
+    "distance_from_trailhead_m": 9223
+   },
+   "trailhead": {
+    "lat": -41.469963,
+    "lon": 172.56589,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 7004,
+    "metres": 81265,
+    "snap_m": 231,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4930601211,
+   "name": "Gables End",
+   "lat": -42.287182,
+   "lon": 173.62357,
+   "elevation_m": 1592,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 9,
+    "distance_from_trailhead_m": 10524
+   },
+   "trailhead": {
+    "lat": -42.300629,
+    "lon": 173.689868,
+    "road": "unnamed road",
+    "metres_from_road": 214
+   },
+   "drive": {
+    "seconds": 13368,
+    "metres": 250345,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8591228222,
+   "name": "Gordons Knob",
+   "lat": -41.604003,
+   "lon": 172.937186,
+   "elevation_m": 1592,
+   "track": {
+    "name": null,
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 652,
+    "distance_from_trailhead_m": 24441
+   },
+   "trailhead": {
+    "lat": -41.591365,
+    "lon": 172.88998,
+    "road": "Kerr Hill Road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 2820,
+    "metres": 47484,
+    "snap_m": 0,
+    "snapped_to": "Blue Glen Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4946765732,
+   "name": "Mount Haast",
+   "lat": -42.313337,
+   "lon": 172.080277,
+   "elevation_m": 1587,
+   "track": {
+    "name": "Mt Haast Route",
+    "grade": null,
+    "metres_from_summit": 13,
+    "distance_from_trailhead_m": 2067
+   },
+   "trailhead": {
+    "lat": -42.30448,
+    "lon": 172.100241,
+    "road": "State Highway 7",
+    "metres_from_road": 228
+   },
+   "drive": {
+    "seconds": 9976,
+    "metres": 205907,
+    "snap_m": 213,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8644356424,
+   "name": "Loveridge Peak",
+   "lat": -41.256485,
+   "lon": 172.630362,
+   "elevation_m": 1586,
+   "track": {
+    "name": "Loveridge Spur Route",
+    "grade": null,
+    "metres_from_summit": 883,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3218345812,
+   "name": "Gable",
+   "lat": -42.294723,
+   "lon": 173.62419,
+   "elevation_m": 1585,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 65,
+    "distance_from_trailhead_m": 11555
+   },
+   "trailhead": {
+    "lat": -42.300629,
+    "lon": 173.689868,
+    "road": "unnamed road",
+    "metres_from_road": 214
+   },
+   "drive": {
+    "seconds": 13368,
+    "metres": 250345,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5935729228,
+   "name": "Sunrise Peak",
+   "lat": -41.56592,
+   "lon": 172.53463,
+   "elevation_m": 1583,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 526,
+    "distance_from_trailhead_m": 5620
+   },
+   "trailhead": {
+    "lat": -41.611605,
+    "lon": 172.534329,
+    "road": "Owen Valley East Road",
+    "metres_from_road": 118
+   },
+   "drive": {
+    "seconds": 6629,
+    "metres": 107449,
+    "snap_m": 118,
+    "snapped_to": "Owen Valley East Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6432104936,
+   "name": "The Needle",
+   "lat": -40.942023,
+   "lon": 172.549412,
+   "elevation_m": 1563,
+   "track": {
+    "name": "Anatoki Pack Track",
+    "grade": null,
+    "metres_from_summit": 216,
+    "distance_from_trailhead_m": 23332
+   },
+   "trailhead": {
+    "lat": -40.896926,
+    "lon": 172.736723,
+    "road": "unnamed road",
+    "metres_from_road": 193
+   },
+   "drive": {
+    "seconds": 6095,
+    "metres": 99320,
+    "snap_m": 194,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6432104939,
+   "name": "Yuletide Peak",
+   "lat": -40.944425,
+   "lon": 172.562462,
+   "elevation_m": 1562,
+   "track": {
+    "name": "Anatoki Pack Track",
+    "grade": null,
+    "metres_from_summit": 11,
+    "distance_from_trailhead_m": 22088
+   },
+   "trailhead": {
+    "lat": -40.896926,
+    "lon": 172.736723,
+    "road": "unnamed road",
+    "metres_from_road": 193
+   },
+   "drive": {
+    "seconds": 6095,
+    "metres": 99320,
+    "snap_m": 194,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6432104933,
+   "name": "Drunken Sailors",
+   "lat": -40.976177,
+   "lon": 172.558393,
+   "elevation_m": 1546,
+   "track": {
+    "name": "Dragon's Teeth High Traverse Route",
+    "grade": "demanding_alpine_hiking",
+    "metres_from_summit": 207,
+    "distance_from_trailhead_m": 31832
+   },
+   "trailhead": {
+    "lat": -40.896926,
+    "lon": 172.736723,
+    "road": "unnamed road",
+    "metres_from_road": 193
+   },
+   "drive": {
+    "seconds": 6095,
+    "metres": 99320,
+    "snap_m": 194,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8580599729,
+   "name": "Slaty Peak",
+   "lat": -41.488834,
+   "lon": 173.274404,
+   "elevation_m": 1544,
+   "track": {
+    "name": "Mt Rintoul Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 130,
+    "distance_from_trailhead_m": 39417
+   },
+   "trailhead": {
+    "lat": -41.58073,
+    "lon": 173.26779,
+    "road": "unnamed road",
+    "metres_from_road": 153
+   },
+   "drive": {
+    "seconds": 14485,
+    "metres": 170816,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2196666288,
+   "name": "Purple Top",
+   "lat": -41.526245,
+   "lon": 173.197064,
+   "elevation_m": 1532,
+   "track": {
+    "name": "Mt Richmond Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 69,
+    "distance_from_trailhead_m": 24401
+   },
+   "trailhead": {
+    "lat": -41.58073,
+    "lon": 173.26779,
+    "road": "unnamed road",
+    "metres_from_road": 153
+   },
+   "drive": {
+    "seconds": 14485,
+    "metres": 170816,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931675308,
+   "name": "Mount Cedric",
+   "lat": -41.895516,
+   "lon": 172.710585,
+   "elevation_m": 1532,
+   "track": {
+    "name": "Mt Cedric Route;Mt Cedric Track",
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 85,
+    "distance_from_trailhead_m": 15976
+   },
+   "trailhead": {
+    "lat": -41.823344,
+    "lon": 172.806522,
+    "road": "Mount Robert Road",
+    "metres_from_road": 232
+   },
+   "drive": {
+    "seconds": 4851,
+    "metres": 82836,
+    "snap_m": 232,
+    "snapped_to": "Mount Robert Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4941782639,
+   "name": "The Haystack",
+   "lat": -41.560524,
+   "lon": 172.326778,
+   "elevation_m": 1526,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 893,
+    "distance_from_trailhead_m": 12586
+   },
+   "trailhead": {
+    "lat": -41.660801,
+    "lon": 172.328931,
+    "road": "Matriri Hydro Service Road",
+    "metres_from_road": 223
+   },
+   "drive": {
+    "seconds": 8784,
+    "metres": 129244,
+    "snap_m": 223,
+    "snapped_to": "Matriri Hydro Service Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3218345828,
+   "name": "Xenicus Peak",
+   "lat": -41.050261,
+   "lon": 172.509518,
+   "elevation_m": 1525,
+   "track": {
+    "name": null,
+    "grade": "alpine_hiking",
+    "metres_from_summit": 9,
+    "distance_from_trailhead_m": 20470
+   },
+   "trailhead": {
+    "lat": -41.113101,
+    "lon": 172.676861,
+    "road": "Cobb Dam Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 8787,
+    "metres": 99997,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4497672038,
+   "name": "Mount Chisholm",
+   "lat": -42.078835,
+   "lon": 173.227948,
+   "elevation_m": 1518,
+   "track": {
+    "name": "Mt Chisholm Track",
+    "grade": null,
+    "metres_from_summit": 5,
+    "distance_from_trailhead_m": 3103
+   },
+   "trailhead": {
+    "lat": -42.091671,
+    "lon": 173.200131,
+    "road": "unnamed road",
+    "metres_from_road": 221
+   },
+   "drive": {
+    "seconds": 28802,
+    "metres": 159587,
+    "snap_m": 222,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2196616369,
+   "name": "Old Man",
+   "lat": -41.516117,
+   "lon": 173.298049,
+   "elevation_m": 1515,
+   "track": {
+    "name": "Mt Rintoul Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 16,
+    "distance_from_trailhead_m": 34657
+   },
+   "trailhead": {
+    "lat": -41.58073,
+    "lon": 173.26779,
+    "road": "unnamed road",
+    "metres_from_road": 153
+   },
+   "drive": {
+    "seconds": 14485,
+    "metres": 170816,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2196626466,
+   "name": "Old Man",
+   "lat": -41.51639,
+   "lon": 173.296945,
+   "elevation_m": 1514,
+   "track": {
+    "name": "Mt Rintoul Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 34551
+   },
+   "trailhead": {
+    "lat": -41.58073,
+    "lon": 173.26779,
+    "road": "unnamed road",
+    "metres_from_road": 153
+   },
+   "drive": {
+    "seconds": 14485,
+    "metres": 170816,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8578910726,
+   "name": "Mount Starveall",
+   "lat": -41.466768,
+   "lon": 173.251245,
+   "elevation_m": 1511,
+   "track": {
+    "name": "Mt Rintoul Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 143,
+    "distance_from_trailhead_m": 15376
+   },
+   "trailhead": {
+    "lat": -41.395108,
+    "lon": 173.206682,
+    "road": "Aniseed Valley Road",
+    "metres_from_road": 246
+   },
+   "drive": {
+    "seconds": 1654,
+    "metres": 15008,
+    "snap_m": 0,
+    "snapped_to": "Serpentine River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 517341644,
+   "name": "Nugget Knob",
+   "lat": -41.437602,
+   "lon": 172.424238,
+   "elevation_m": 1502,
+   "track": {
+    "name": "(route only - unmarked)",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 8,
+    "distance_from_trailhead_m": 23982
+   },
+   "trailhead": {
+    "lat": -41.4433,
+    "lon": 172.578864,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 219
+   },
+   "drive": {
+    "seconds": 6482,
+    "metres": 77636,
+    "snap_m": 219,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6432104930,
+   "name": "Trident",
+   "lat": -40.942987,
+   "lon": 172.536812,
+   "elevation_m": 1490,
+   "track": {
+    "name": "Dragon's Teeth High Traverse Route",
+    "grade": "demanding_alpine_hiking",
+    "metres_from_summit": 361,
+    "distance_from_trailhead_m": 25123
+   },
+   "trailhead": {
+    "lat": -40.896926,
+    "lon": 172.736723,
+    "road": "unnamed road",
+    "metres_from_road": 193
+   },
+   "drive": {
+    "seconds": 6095,
+    "metres": 99320,
+    "snap_m": 194,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 512025610,
+   "name": "Gordons Pyramid",
+   "lat": -41.191241,
+   "lon": 172.67949,
+   "elevation_m": 1489,
+   "track": {
+    "name": "Gordons Pyramid (Poled Route only)",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 3,
+    "distance_from_trailhead_m": 9559
+   },
+   "trailhead": {
+    "lat": -41.189903,
+    "lon": 172.744645,
+    "road": "Graham Valley South Branch Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 4792,
+    "metres": 62054,
+    "snap_m": 230,
+    "snapped_to": "Graham Valley South Branch Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6432104929,
+   "name": "Mount Douglas",
+   "lat": -40.944721,
+   "lon": 172.538685,
+   "elevation_m": 1483,
+   "track": {
+    "name": "Dragon's Teeth High Traverse Route",
+    "grade": "demanding_alpine_hiking",
+    "metres_from_summit": 122,
+    "distance_from_trailhead_m": 25109
+   },
+   "trailhead": {
+    "lat": -40.896926,
+    "lon": 172.736723,
+    "road": "unnamed road",
+    "metres_from_road": 193
+   },
+   "drive": {
+    "seconds": 6095,
+    "metres": 99320,
+    "snap_m": 194,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8143998226,
+   "name": "Mount Murchison",
+   "lat": -41.729295,
+   "lon": 172.499675,
+   "elevation_m": 1469,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 40,
+    "distance_from_trailhead_m": 5751
+   },
+   "trailhead": {
+    "lat": -41.713552,
+    "lon": 172.45769,
+    "road": "Mount Murchison Road",
+    "metres_from_road": 196
+   },
+   "drive": {
+    "seconds": 5271,
+    "metres": 95871,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4941782646,
+   "name": "Rocky Tor",
+   "lat": -41.717198,
+   "lon": 172.139714,
+   "elevation_m": 1456,
+   "track": {
+    "name": "Old Ghost Road",
+    "grade": null,
+    "metres_from_summit": 298,
+    "distance_from_trailhead_m": 23203
+   },
+   "trailhead": {
+    "lat": -41.795107,
+    "lon": 172.052529,
+    "road": "unnamed road",
+    "metres_from_road": 239
+   },
+   "drive": {
+    "seconds": 7336,
+    "metres": 147652,
+    "snap_m": 240,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2966756532,
+   "name": "Brown Cow",
+   "lat": -40.881885,
+   "lon": 172.587581,
+   "elevation_m": 1452,
+   "track": {
+    "name": "Boulder Lake Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 430,
+    "distance_from_trailhead_m": 15335
+   },
+   "trailhead": {
+    "lat": -40.780897,
+    "lon": 172.560137,
+    "road": "James Road Right Branch",
+    "metres_from_road": 234
+   },
+   "drive": {
+    "seconds": 7248,
+    "metres": 132819,
+    "snap_m": 234,
+    "snapped_to": "James Road Right Branch"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 582525506,
+   "name": "Lodestone",
+   "lat": -41.170275,
+   "lon": 172.746341,
+   "elevation_m": 1450,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 17,
+    "distance_from_trailhead_m": 2383
+   },
+   "trailhead": {
+    "lat": -41.188807,
+    "lon": 172.745487,
+    "road": "Graham Valley South Branch Road",
+    "metres_from_road": 228
+   },
+   "drive": {
+    "seconds": 4792,
+    "metres": 62054,
+    "snap_m": 228,
+    "snapped_to": "Graham Valley South Branch Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028524,
+   "name": "Gladiator Peak",
+   "lat": -40.917,
+   "lon": 172.566722,
+   "elevation_m": 1450,
+   "track": {
+    "name": null,
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 928,
+    "distance_from_trailhead_m": 27937
+   },
+   "trailhead": {
+    "lat": -40.896926,
+    "lon": 172.736723,
+    "road": "unnamed road",
+    "metres_from_road": 193
+   },
+   "drive": {
+    "seconds": 6095,
+    "metres": 99320,
+    "snap_m": 194,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6833870714,
+   "name": "Mount Meyrick",
+   "lat": -41.403865,
+   "lon": 172.288472,
+   "elevation_m": 1445,
+   "track": {
+    "name": "Wangapeka Track",
+    "grade": "hiking",
+    "metres_from_summit": 894,
+    "distance_from_trailhead_m": 19434
+   },
+   "trailhead": {
+    "lat": -41.353439,
+    "lon": 172.144216,
+    "road": "Wangapeka Road",
+    "metres_from_road": 240
+   },
+   "drive": {
+    "seconds": 15978,
+    "metres": 293424,
+    "snap_m": 241,
+    "snapped_to": "Wangapeka Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8463157395,
+   "name": "Beebys Knob",
+   "lat": -41.732905,
+   "lon": 172.931536,
+   "elevation_m": 1442,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 145,
+    "distance_from_trailhead_m": 5713
+   },
+   "trailhead": {
+    "lat": -41.730415,
+    "lon": 172.895686,
+    "road": "Korere-Tophouse Road",
+    "metres_from_road": 234
+   },
+   "drive": {
+    "seconds": 3465,
+    "metres": 65033,
+    "snap_m": 164,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003268,
+   "name": "Bishops Cap",
+   "lat": -41.523848,
+   "lon": 173.172484,
+   "elevation_m": 1425,
+   "track": {
+    "name": "Mt Rintoul Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 270,
+    "distance_from_trailhead_m": 22328
+   },
+   "trailhead": {
+    "lat": -41.58073,
+    "lon": 173.26779,
+    "road": "unnamed road",
+    "metres_from_road": 153
+   },
+   "drive": {
+    "seconds": 14485,
+    "metres": 170816,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 1572998716,
+   "name": "Pourangahau / Mount Robert",
+   "lat": -41.832351,
+   "lon": 172.811078,
+   "elevation_m": 1421,
+   "track": {
+    "name": "Pinchgut Track",
+    "grade": "hiking",
+    "metres_from_summit": 58,
+    "distance_from_trailhead_m": 2050
+   },
+   "trailhead": {
+    "lat": -41.824575,
+    "lon": 172.810627,
+    "road": "Mount Robert Road",
+    "metres_from_road": 236
+   },
+   "drive": {
+    "seconds": 4837,
+    "metres": 82743,
+    "snap_m": 235,
+    "snapped_to": "Mount Robert Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2196670051,
+   "name": "Ada Flat",
+   "lat": -41.506795,
+   "lon": 173.304892,
+   "elevation_m": 1420,
+   "track": {
+    "name": "Mt Rintoul Alpine Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 102,
+    "distance_from_trailhead_m": 36048
+   },
+   "trailhead": {
+    "lat": -41.58073,
+    "lon": 173.26779,
+    "road": "unnamed road",
+    "metres_from_road": 153
+   },
+   "drive": {
+    "seconds": 14485,
+    "metres": 170816,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 7983721958,
+   "name": "Rabbit Hill",
+   "lat": -42.308078,
+   "lon": 172.707762,
+   "elevation_m": 1420,
+   "track": {
+    "name": "Fowler Pass Track",
+    "grade": null,
+    "metres_from_summit": 580,
+    "distance_from_trailhead_m": 5500
+   },
+   "trailhead": {
+    "lat": -42.313211,
+    "lon": 172.763005,
+    "road": "Tophouse Road",
+    "metres_from_road": 246
+   },
+   "drive": {
+    "seconds": 13462,
+    "metres": 151868,
+    "snap_m": 246,
+    "snapped_to": "Tophouse Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4941782643,
+   "name": "Bald Hill",
+   "lat": -41.729562,
+   "lon": 172.117218,
+   "elevation_m": 1385,
+   "track": {
+    "name": "Old Ghost Road",
+    "grade": null,
+    "metres_from_summit": 482,
+    "distance_from_trailhead_m": 20294
+   },
+   "trailhead": {
+    "lat": -41.795107,
+    "lon": 172.052529,
+    "road": "unnamed road",
+    "metres_from_road": 239
+   },
+   "drive": {
+    "seconds": 7336,
+    "metres": 147652,
+    "snap_m": 240,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4941795554,
+   "name": "Biggs Tops",
+   "lat": -41.413094,
+   "lon": 172.399129,
+   "elevation_m": 1384,
+   "track": {
+    "name": "Biggs Tops Route",
+    "grade": null,
+    "metres_from_summit": 310,
+    "distance_from_trailhead_m": 24726
+   },
+   "trailhead": {
+    "lat": -41.4433,
+    "lon": 172.578864,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 219
+   },
+   "drive": {
+    "seconds": 6482,
+    "metres": 77636,
+    "snap_m": 219,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8577938022,
+   "name": "Mount Royal",
+   "lat": -41.444184,
+   "lon": 173.550706,
+   "elevation_m": 1365,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 10606
+   },
+   "trailhead": {
+    "lat": -41.378277,
+    "lon": 173.596164,
+    "road": "Wakamarina Road",
+    "metres_from_road": 175
+   },
+   "drive": {
+    "seconds": 6686,
+    "metres": 90690,
+    "snap_m": 175,
+    "snapped_to": "Wakamarina Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4941782640,
+   "name": "Mount Montgomery",
+   "lat": -41.714827,
+   "lon": 172.128719,
+   "elevation_m": 1332,
+   "track": {
+    "name": "Old Ghost Road",
+    "grade": null,
+    "metres_from_summit": 74,
+    "distance_from_trailhead_m": 22261
+   },
+   "trailhead": {
+    "lat": -41.795107,
+    "lon": 172.052529,
+    "road": "unnamed road",
+    "metres_from_road": 239
+   },
+   "drive": {
+    "seconds": 7336,
+    "metres": 147652,
+    "snap_m": 240,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 582829424,
+   "name": "Balloon Hill",
+   "lat": -41.171312,
+   "lon": 172.620256,
+   "elevation_m": 1318,
+   "track": {
+    "name": "Balloon Hut Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 56,
+    "distance_from_trailhead_m": 13229
+   },
+   "trailhead": {
+    "lat": -41.113101,
+    "lon": 172.676861,
+    "road": "Cobb Dam Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 8787,
+    "metres": 99997,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8578833052,
+   "name": "Mount Baldy",
+   "lat": -41.438472,
+   "lon": 173.613832,
+   "elevation_m": 1315,
+   "track": {
+    "name": "Wakamarina Track",
+    "grade": null,
+    "metres_from_summit": 628,
+    "distance_from_trailhead_m": 7527
+   },
+   "trailhead": {
+    "lat": -41.473788,
+    "lon": 173.644555,
+    "road": "Kiwi Road",
+    "metres_from_road": 245
+   },
+   "drive": {
+    "seconds": 7787,
+    "metres": 128896,
+    "snap_m": 246,
+    "snapped_to": "Kiwi Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680017154,
+   "name": "Mount Riley",
+   "lat": -41.410333,
+   "lon": 173.695503,
+   "elevation_m": 1311,
+   "track": {
+    "name": "Sunday-Riley Loop Track",
+    "grade": null,
+    "metres_from_summit": 23,
+    "distance_from_trailhead_m": 5125
+   },
+   "trailhead": {
+    "lat": -41.438302,
+    "lon": 173.709732,
+    "road": "Davies Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 7432,
+    "metres": 126218,
+    "snap_m": 229,
+    "snapped_to": "Davies Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680017153,
+   "name": "Mount Sunday",
+   "lat": -41.409694,
+   "lon": 173.677533,
+   "elevation_m": 1310,
+   "track": {
+    "name": "Sunday-Riley Loop Track",
+    "grade": null,
+    "metres_from_summit": 12,
+    "distance_from_trailhead_m": 5170
+   },
+   "trailhead": {
+    "lat": -41.438302,
+    "lon": 173.709732,
+    "road": "Davies Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 7432,
+    "metres": 126218,
+    "snap_m": 229,
+    "snapped_to": "Davies Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 7965686369,
+   "name": "Pudding Hill",
+   "lat": -42.211065,
+   "lon": 173.070194,
+   "elevation_m": 1284,
+   "track": {
+    "name": "Pudding Hill Track",
+    "grade": null,
+    "metres_from_summit": 19,
+    "distance_from_trailhead_m": 4555
+   },
+   "trailhead": {
+    "lat": -42.198452,
+    "lon": 173.071372,
+    "road": "unnamed road",
+    "metres_from_road": 239
+   },
+   "drive": {
+    "seconds": 23571,
+    "metres": 153216,
+    "snap_m": 0,
+    "snapped_to": "Pudding Hill Track"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 582829421,
+   "name": "Tableland",
+   "lat": -41.184872,
+   "lon": 172.625877,
+   "elevation_m": 1280,
+   "track": {
+    "name": "Balloon Hut Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 44,
+    "distance_from_trailhead_m": 14891
+   },
+   "trailhead": {
+    "lat": -41.113101,
+    "lon": 172.676861,
+    "road": "Cobb Dam Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 8787,
+    "metres": 99997,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8591218454,
+   "name": "Bushy Top",
+   "lat": -41.581063,
+   "lon": 173.153715,
+   "elevation_m": 1257,
+   "track": {
+    "name": "Goulter Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 14,
+    "distance_from_trailhead_m": 13665
+   },
+   "trailhead": {
+    "lat": -41.639325,
+    "lon": 173.226266,
+    "road": "Tiphead Stream Road",
+    "metres_from_road": 217
+   },
+   "drive": {
+    "seconds": 10396,
+    "metres": 106455,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5413313482,
+   "name": "Parapara Peak",
+   "lat": -40.836128,
+   "lon": 172.674227,
+   "elevation_m": 1249,
+   "track": {
+    "name": "Parapara Peak Track (DoC)",
+    "grade": "demanding_mountain_hiking",
+    "metres_from_summit": 4,
+    "distance_from_trailhead_m": 8275
+   },
+   "trailhead": {
+    "lat": -40.809593,
+    "lon": 172.717075,
+    "road": "Ward Holmes Road",
+    "metres_from_road": 155
+   },
+   "drive": {
+    "seconds": 5764,
+    "metres": 104469,
+    "snap_m": 155,
+    "snapped_to": "Ward Holmes Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028534,
+   "name": "The Pulpit",
+   "lat": -40.873361,
+   "lon": 172.578722,
+   "elevation_m": 1247,
+   "track": {
+    "name": "Boulder Lake Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 188,
+    "distance_from_trailhead_m": 14250
+   },
+   "trailhead": {
+    "lat": -40.780897,
+    "lon": 172.560137,
+    "road": "James Road Right Branch",
+    "metres_from_road": 234
+   },
+   "drive": {
+    "seconds": 7248,
+    "metres": 132819,
+    "snap_m": 234,
+    "snapped_to": "James Road Right Branch"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4963383364,
+   "name": "Mount Perry",
+   "lat": -40.891457,
+   "lon": 172.396815,
+   "elevation_m": 1238,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 11,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 7965686365,
+   "name": "Mount Augarde",
+   "lat": -42.120359,
+   "lon": 173.069443,
+   "elevation_m": 1237,
+   "track": {
+    "name": "Mt Augarde Track",
+    "grade": null,
+    "metres_from_summit": 23,
+    "distance_from_trailhead_m": 1320
+   },
+   "trailhead": {
+    "lat": -42.126775,
+    "lon": 173.078959,
+    "road": "unnamed road",
+    "metres_from_road": 228
+   },
+   "drive": {
+    "seconds": 19716,
+    "metres": 146975,
+    "snap_m": 228,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310759263,
+   "name": "Conical Knob",
+   "lat": -41.417001,
+   "lon": 173.3965,
+   "elevation_m": 1216,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 29107
+   },
+   "trailhead": {
+    "lat": -41.319092,
+    "lon": 173.459149,
+    "road": "Mount Richmond Road",
+    "metres_from_road": 158
+   },
+   "drive": {
+    "seconds": 6318,
+    "metres": 80704,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3308749996,
+   "name": "Saddle Hill",
+   "lat": -41.275846,
+   "lon": 173.431997,
+   "elevation_m": 1215,
+   "track": {
+    "name": "Saddle Hill Route",
+    "grade": null,
+    "metres_from_summit": 3,
+    "distance_from_trailhead_m": 1805
+   },
+   "trailhead": {
+    "lat": -41.266501,
+    "lon": 173.416829,
+    "road": "Top Road",
+    "metres_from_road": 174
+   },
+   "drive": {
+    "seconds": 4317,
+    "metres": 43414,
+    "snap_m": 174,
+    "snapped_to": "Top Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028548,
+   "name": "Mount Stevens",
+   "lat": -40.793889,
+   "lon": 172.451333,
+   "elevation_m": 1213,
+   "track": {
+    "name": "Mt Stevens Track",
+    "grade": null,
+    "metres_from_summit": 731,
+    "distance_from_trailhead_m": 5224
+   },
+   "trailhead": {
+    "lat": -40.814165,
+    "lon": 172.5043,
+    "road": "Aorere Valley Road",
+    "metres_from_road": 238
+   },
+   "drive": {
+    "seconds": 7286,
+    "metres": 138024,
+    "snap_m": 238,
+    "snapped_to": "Aorere Valley Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4327605465,
+   "name": "Parororangi / Mount Stokes",
+   "lat": -41.09038,
+   "lon": 174.10198,
+   "elevation_m": 1203,
+   "track": {
+    "name": "Mt Stokes Track",
+    "grade": null,
+    "metres_from_summit": 10,
+    "distance_from_trailhead_m": 2531
+   },
+   "trailhead": {
+    "lat": -41.08723,
+    "lon": 174.128928,
+    "road": "Anakoha Road",
+    "metres_from_road": 250
+   },
+   "drive": {
+    "seconds": 13742,
+    "metres": 152052,
+    "snap_m": 250,
+    "snapped_to": "Anakoha Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5935729233,
+   "name": "Conical Hill",
+   "lat": -41.558245,
+   "lon": 172.636383,
+   "elevation_m": 1202,
+   "track": {
+    "name": "Lookout Range Route",
+    "grade": null,
+    "metres_from_summit": 4,
+    "distance_from_trailhead_m": 16856
+   },
+   "trailhead": {
+    "lat": -41.470022,
+    "lon": 172.568872,
+    "road": "Wangapeka River Road",
+    "metres_from_road": 242
+   },
+   "drive": {
+    "seconds": 7004,
+    "metres": 81265,
+    "snap_m": 242,
+    "snapped_to": "Wangapeka River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8703656871,
+   "name": "Mount Alexander",
+   "lat": -42.195888,
+   "lon": 173.783828,
+   "elevation_m": 1197,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 845,
+    "distance_from_trailhead_m": 5870
+   },
+   "trailhead": {
+    "lat": -42.222308,
+    "lon": 173.789736,
+    "road": "Blue Duck Valley Road",
+    "metres_from_road": 243
+   },
+   "drive": {
+    "seconds": 13845,
+    "metres": 245790,
+    "snap_m": 243,
+    "snapped_to": "Blue Duck Valley Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4930607522,
+   "name": "Big Hau",
+   "lat": -42.307688,
+   "lon": 173.600975,
+   "elevation_m": 1184,
+   "track": {
+    "name": "Mt Fyffe Track",
+    "grade": null,
+    "metres_from_summit": 800,
+    "distance_from_trailhead_m": 14684
+   },
+   "trailhead": {
+    "lat": -42.300629,
+    "lon": 173.689868,
+    "road": "unnamed road",
+    "metres_from_road": 214
+   },
+   "drive": {
+    "seconds": 13368,
+    "metres": 250345,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4930601208,
+   "name": "Little Hau",
+   "lat": -42.309971,
+   "lon": 173.599001,
+   "elevation_m": 1161,
+   "track": {
+    "name": "Mt Fyffe Track",
+    "grade": null,
+    "metres_from_summit": 617,
+    "distance_from_trailhead_m": 14684
+   },
+   "trailhead": {
+    "lat": -42.300629,
+    "lon": 173.689868,
+    "road": "unnamed road",
+    "metres_from_road": 214
+   },
+   "drive": {
+    "seconds": 13368,
+    "metres": 250345,
+    "snap_m": 153,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3218345814,
+   "name": "Little Twin",
+   "lat": -41.336081,
+   "lon": 173.3936,
+   "elevation_m": 1143,
+   "track": {
+    "name": "Saddle Hill Route",
+    "grade": null,
+    "metres_from_summit": 47,
+    "distance_from_trailhead_m": 7393
+   },
+   "trailhead": {
+    "lat": -41.295603,
+    "lon": 173.369051,
+    "road": "unnamed road",
+    "metres_from_road": 235
+   },
+   "drive": {
+    "seconds": 2335,
+    "metres": 25002,
+    "snap_m": 0,
+    "snapped_to": "Rush Pool Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867573,
+   "name": "Mount Duppa",
+   "lat": -41.218355,
+   "lon": 173.497448,
+   "elevation_m": 1143,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 10,
+    "distance_from_trailhead_m": 1560
+   },
+   "trailhead": {
+    "lat": -41.210655,
+    "lon": 173.486896,
+    "road": "Mount Duppa Road",
+    "metres_from_road": 230
+   },
+   "drive": {
+    "seconds": 3459,
+    "metres": 46302,
+    "snap_m": 230,
+    "snapped_to": "Mount Duppa Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2597917442,
+   "name": "Dun Mountain",
+   "lat": -41.342581,
+   "lon": 173.37591,
+   "elevation_m": 1129,
+   "track": {
+    "name": "Saddle Hill Route",
+    "grade": null,
+    "metres_from_summit": 14,
+    "distance_from_trailhead_m": 9249
+   },
+   "trailhead": {
+    "lat": -41.295603,
+    "lon": 173.369051,
+    "road": "unnamed road",
+    "metres_from_road": 235
+   },
+   "drive": {
+    "seconds": 2335,
+    "metres": 25002,
+    "snap_m": 0,
+    "snapped_to": "Rush Pool Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310759261,
+   "name": "Wooded Peak",
+   "lat": -41.335579,
+   "lon": 173.348466,
+   "elevation_m": 1111,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 10,
+    "distance_from_trailhead_m": 4121
+   },
+   "trailhead": {
+    "lat": -41.311424,
+    "lon": 173.317573,
+    "road": "Fringed Hill Road",
+    "metres_from_road": 218
+   },
+   "drive": {
+    "seconds": 1744,
+    "metres": 15687,
+    "snap_m": 1845,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4963383362,
+   "name": "Brown Hill",
+   "lat": -40.894022,
+   "lon": 172.4278,
+   "elevation_m": 1104,
+   "track": {
+    "name": "Heaphy Track",
+    "grade": "hiking",
+    "metres_from_summit": 662,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003241,
+   "name": "Pisgah Hill",
+   "lat": -40.925832,
+   "lon": 172.900201,
+   "elevation_m": 1096,
+   "track": {
+    "name": "Rameka Track",
+    "grade": null,
+    "metres_from_summit": 884,
+    "distance_from_trailhead_m": 1546
+   },
+   "trailhead": {
+    "lat": -40.94146,
+    "lon": 172.893453,
+    "road": "Canaan Road",
+    "metres_from_road": 228
+   },
+   "drive": {
+    "seconds": 5446,
+    "metres": 67247,
+    "snap_m": 228,
+    "snapped_to": "Canaan Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Road Parcels",
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4947838525,
+   "name": "Mount Lyell",
+   "lat": -41.760751,
+   "lon": 172.06718,
+   "elevation_m": 1092,
+   "track": {
+    "name": "Old Ghost Road",
+    "grade": null,
+    "metres_from_summit": 712,
+    "distance_from_trailhead_m": 8136
+   },
+   "trailhead": {
+    "lat": -41.795107,
+    "lon": 172.052529,
+    "road": "unnamed road",
+    "metres_from_road": 239
+   },
+   "drive": {
+    "seconds": 7336,
+    "metres": 147652,
+    "snap_m": 240,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931688221,
+   "name": "Mead Hill",
+   "lat": -41.939443,
+   "lon": 173.826074,
+   "elevation_m": 1068,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 916,
+    "distance_from_trailhead_m": 21253
+   },
+   "trailhead": {
+    "lat": -41.972977,
+    "lon": 173.985682,
+    "road": "Kekerengu Valley Road",
+    "metres_from_road": 227
+   },
+   "drive": {
+    "seconds": 11516,
+    "metres": 200899,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680146279,
+   "name": "Lookout Hill",
+   "lat": -42.32432,
+   "lon": 172.65864,
+   "elevation_m": 1068,
+   "track": {
+    "name": "Saint James Stanley River Route",
+    "grade": "hiking",
+    "metres_from_summit": 342,
+    "distance_from_trailhead_m": 12775
+   },
+   "trailhead": {
+    "lat": -42.313211,
+    "lon": 172.763005,
+    "road": "Tophouse Road",
+    "metres_from_road": 246
+   },
+   "drive": {
+    "seconds": 13462,
+    "metres": 151868,
+    "snap_m": 246,
+    "snapped_to": "Tophouse Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 6564345063,
+   "name": "Pikikirunga",
+   "lat": -40.999137,
+   "lon": 172.86117,
+   "elevation_m": 1065,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 625,
+    "distance_from_trailhead_m": 131
+   },
+   "trailhead": {
+    "lat": -40.995538,
+    "lon": 172.867885,
+    "road": "unnamed road",
+    "metres_from_road": 247
+   },
+   "drive": {
+    "seconds": 4021,
+    "metres": 61790,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003243,
+   "name": "Mount Richards",
+   "lat": -40.981995,
+   "lon": 172.900924,
+   "elevation_m": 1047,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 859,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -40.984805,
+    "lon": 172.891386,
+    "road": "Canaan Road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 4052,
+    "metres": 61437,
+    "snap_m": 0,
+    "snapped_to": "Canaan Road / Canaan Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4930646537,
+   "name": "Little Benledi",
+   "lat": -42.181339,
+   "lon": 173.366149,
+   "elevation_m": 1042,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 661,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4939461356,
+   "name": "Tokomaru / Mount Robertson",
+   "lat": -41.347778,
+   "lon": 174.022199,
+   "elevation_m": 1036,
+   "track": {
+    "name": "Mt Robertson Track",
+    "grade": null,
+    "metres_from_summit": 13,
+    "distance_from_trailhead_m": 4197
+   },
+   "trailhead": {
+    "lat": -41.370808,
+    "lon": 174.051646,
+    "road": "unnamed road",
+    "metres_from_road": 233
+   },
+   "drive": {
+    "seconds": 8469,
+    "metres": 145219,
+    "snap_m": 233,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680112224,
+   "name": "Glenlee",
+   "lat": -41.875249,
+   "lon": 173.5965,
+   "elevation_m": 1035,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 559,
+    "distance_from_trailhead_m": 6409
+   },
+   "trailhead": {
+    "lat": -41.894186,
+    "lon": 173.58641,
+    "road": "Awatere Valley Road",
+    "metres_from_road": 229
+   },
+   "drive": {
+    "seconds": 36802,
+    "metres": 201396,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3308744141,
+   "name": "Maungatapu",
+   "lat": -41.322959,
+   "lon": 173.414976,
+   "elevation_m": 1014,
+   "track": {
+    "name": "Saddle Hill Route",
+    "grade": null,
+    "metres_from_summit": 40,
+    "distance_from_trailhead_m": 11174
+   },
+   "trailhead": {
+    "lat": -41.319066,
+    "lon": 173.459109,
+    "road": "Mount Richmond Road",
+    "metres_from_road": 162
+   },
+   "drive": {
+    "seconds": 6317,
+    "metres": 80699,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931703679,
+   "name": "Balance Rock",
+   "lat": -42.212911,
+   "lon": 173.824786,
+   "elevation_m": 992,
+   "track": {
+    "name": "Okiwi Bay Half Moon Track",
+    "grade": null,
+    "metres_from_summit": 867,
+    "distance_from_trailhead_m": 3673
+   },
+   "trailhead": {
+    "lat": -42.21658,
+    "lon": 173.859021,
+    "road": "unnamed road",
+    "metres_from_road": 55
+   },
+   "drive": {
+    "seconds": 11768,
+    "metres": 224550,
+    "snap_m": 55,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680157925,
+   "name": "Palmer",
+   "lat": -42.263778,
+   "lon": 173.310917,
+   "elevation_m": 989,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 427,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931693662,
+   "name": "Doctors Knob",
+   "lat": -41.72946,
+   "lon": 173.652276,
+   "elevation_m": 960,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 781,
+    "distance_from_trailhead_m": 6003
+   },
+   "trailhead": {
+    "lat": -41.70747,
+    "lon": 173.608605,
+    "road": "Avon Valley Road",
+    "metres_from_road": 222
+   },
+   "drive": {
+    "seconds": 9560,
+    "metres": 145109,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867567,
+   "name": "Mount Malita",
+   "lat": -41.3785,
+   "lon": 173.273147,
+   "elevation_m": 959,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 3446
+   },
+   "trailhead": {
+    "lat": -41.360637,
+    "lon": 173.265361,
+    "road": "unnamed road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 2780,
+    "metres": 24140,
+    "snap_m": 231,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 1573895816,
+   "name": "Tākaka Hill",
+   "lat": -41.037641,
+   "lon": 172.856182,
+   "elevation_m": 950,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 15,
+    "distance_from_trailhead_m": 97
+   },
+   "trailhead": {
+    "lat": -41.036946,
+    "lon": 172.856007,
+    "road": "Tākaka Hill Highway",
+    "metres_from_road": 241
+   },
+   "drive": {
+    "seconds": 3378,
+    "metres": 61062,
+    "snap_m": 240,
+    "snapped_to": "Tākaka Hill Highway"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4939469528,
+   "name": "Dukeshead",
+   "lat": -41.353135,
+   "lon": 173.864477,
+   "elevation_m": 948,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 406,
+    "distance_from_trailhead_m": 6858
+   },
+   "trailhead": {
+    "lat": -41.385509,
+    "lon": 173.852189,
+    "road": "Waikakaho Road",
+    "metres_from_road": 242
+   },
+   "drive": {
+    "seconds": 8678,
+    "metres": 128591,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057043,
+   "name": "Serpentine",
+   "lat": -41.441012,
+   "lon": 173.203737,
+   "elevation_m": 942,
+   "track": {
+    "name": "Starveall Road",
+    "grade": null,
+    "metres_from_summit": 239,
+    "distance_from_trailhead_m": 8883
+   },
+   "trailhead": {
+    "lat": -41.427481,
+    "lon": 173.157299,
+    "road": "Lee Valley Road",
+    "metres_from_road": 218
+   },
+   "drive": {
+    "seconds": 2465,
+    "metres": 19268,
+    "snap_m": 0,
+    "snapped_to": "Lucy Creek Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867563,
+   "name": "The Rocks",
+   "lat": -41.372299,
+   "lon": 173.34556,
+   "elevation_m": 939,
+   "track": {
+    "name": "TA06d",
+    "grade": null,
+    "metres_from_summit": 221,
+    "distance_from_trailhead_m": 11693
+   },
+   "trailhead": {
+    "lat": -41.311424,
+    "lon": 173.317573,
+    "road": "Fringed Hill Road",
+    "metres_from_road": 218
+   },
+   "drive": {
+    "seconds": 1744,
+    "metres": 15687,
+    "snap_m": 1845,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057057,
+   "name": "The Ned",
+   "lat": -41.643951,
+   "lon": 173.921228,
+   "elevation_m": 909,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 191,
+    "distance_from_trailhead_m": 5279
+   },
+   "trailhead": {
+    "lat": -41.619539,
+    "lon": 173.9604,
+    "road": "Taylor Pass Road",
+    "metres_from_road": 226
+   },
+   "drive": {
+    "seconds": 8231,
+    "metres": 142329,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028551,
+   "name": "Three Pointer",
+   "lat": -40.877667,
+   "lon": 172.313,
+   "elevation_m": 909,
+   "track": {
+    "name": "Heaphy Track",
+    "grade": "hiking",
+    "metres_from_summit": 846,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4963383363,
+   "name": "Mount Teddy",
+   "lat": -40.87263,
+   "lon": 172.280523,
+   "elevation_m": 870,
+   "track": {
+    "name": "Heaphy Track",
+    "grade": "hiking",
+    "metres_from_summit": 269,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4941692744,
+   "name": "Nestor",
+   "lat": -41.698552,
+   "lon": 172.762158,
+   "elevation_m": 853,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 657,
+    "distance_from_trailhead_m": 7394
+   },
+   "trailhead": {
+    "lat": -41.725802,
+    "lon": 172.745875,
+    "road": "unnamed road",
+    "metres_from_road": 203
+   },
+   "drive": {
+    "seconds": 6340,
+    "metres": 91888,
+    "snap_m": 203,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931693670,
+   "name": "Little Ned",
+   "lat": -41.650858,
+   "lon": 173.878648,
+   "elevation_m": 836,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 223,
+    "distance_from_trailhead_m": 14088
+   },
+   "trailhead": {
+    "lat": -41.595828,
+    "lon": 173.921586,
+    "road": "unnamed road",
+    "metres_from_road": 248
+   },
+   "drive": {
+    "seconds": 7958,
+    "metres": 135542,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867566,
+   "name": "Mount Meares",
+   "lat": -41.384854,
+   "lon": 173.288781,
+   "elevation_m": 808,
+   "track": {
+    "name": "Champion Mine Track",
+    "grade": "hiking",
+    "metres_from_summit": 970,
+    "distance_from_trailhead_m": 1875
+   },
+   "trailhead": {
+    "lat": -41.367992,
+    "lon": 173.30231,
+    "road": "unnamed road",
+    "metres_from_road": 208
+   },
+   "drive": {
+    "seconds": 3929,
+    "metres": 28929,
+    "snap_m": 208,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867582,
+   "name": "Lucy Creek Knob",
+   "lat": -41.45288,
+   "lon": 173.185925,
+   "elevation_m": 807,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 25,
+    "distance_from_trailhead_m": 9807
+   },
+   "trailhead": {
+    "lat": -41.427481,
+    "lon": 173.157299,
+    "road": "Lee Valley Road",
+    "metres_from_road": 218
+   },
+   "drive": {
+    "seconds": 2465,
+    "metres": 19268,
+    "snap_m": 0,
+    "snapped_to": "Lucy Creek Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4963383361,
+   "name": "Otepo",
+   "lat": -40.883182,
+   "lon": 172.21636,
+   "elevation_m": 801,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 268,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3308744130,
+   "name": "Fringed Hill",
+   "lat": -41.31062,
+   "lon": 173.316732,
+   "elevation_m": 793,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 4,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.310621,
+    "lon": 173.316776,
+    "road": "Fringed Hill Road",
+    "metres_from_road": 107
+   },
+   "drive": {
+    "seconds": 1744,
+    "metres": 15687,
+    "snap_m": 1769,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 953595128,
+   "name": "Jenkins Hill",
+   "lat": -41.331675,
+   "lon": 173.28095,
+   "elevation_m": 776,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 8,
+    "distance_from_trailhead_m": 3734
+   },
+   "trailhead": {
+    "lat": -41.329614,
+    "lon": 173.269453,
+    "road": "unnamed road",
+    "metres_from_road": 248
+   },
+   "drive": {
+    "seconds": 785,
+    "metres": 8084,
+    "snap_m": 248,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3334855093,
+   "name": "Mount Shewell",
+   "lat": -41.002845,
+   "lon": 173.853106,
+   "elevation_m": 775,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 787,
+    "distance_from_trailhead_m": 2635
+   },
+   "trailhead": {
+    "lat": -40.995771,
+    "lon": 173.834969,
+    "road": "Te Towaka Road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 8689,
+    "metres": 112944,
+    "snap_m": 0,
+    "snapped_to": "Te Towaka Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4948087421,
+   "name": "Black Hill",
+   "lat": -41.797467,
+   "lon": 172.835077,
+   "elevation_m": 746,
+   "track": {
+    "name": "Black Hill Walk",
+    "grade": null,
+    "metres_from_summit": 2,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.797469,
+    "lon": 172.835055,
+    "road": "Saint Arnaud-Kawatiri Highway",
+    "metres_from_road": 219
+   },
+   "drive": {
+    "seconds": 4087,
+    "metres": 77260,
+    "snap_m": 219,
+    "snapped_to": "Saint Arnaud-Kawatiri Highway"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5697804351,
+   "name": "Puzzle Peak",
+   "lat": -41.016697,
+   "lon": 174.166908,
+   "elevation_m": 735,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 295,
+    "distance_from_trailhead_m": 1982
+   },
+   "trailhead": {
+    "lat": -41.01964,
+    "lon": 174.162315,
+    "road": "Titirangi Road",
+    "metres_from_road": 206
+   },
+   "drive": {
+    "seconds": 15268,
+    "metres": 162343,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680157978,
+   "name": "Kerr Hill",
+   "lat": -41.655098,
+   "lon": 172.88377,
+   "elevation_m": 725,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 64,
+    "distance_from_trailhead_m": 480
+   },
+   "trailhead": {
+    "lat": -41.65262,
+    "lon": 172.878533,
+    "road": "Kerr Hill Road",
+    "metres_from_road": 247
+   },
+   "drive": {
+    "seconds": 3371,
+    "metres": 55196,
+    "snap_m": 0,
+    "snapped_to": "Kings Ridge Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 8128879896,
+   "name": "Takorika",
+   "lat": -41.295656,
+   "lon": 173.749311,
+   "elevation_m": 721,
+   "track": {
+    "name": "Takorika Road",
+    "grade": null,
+    "metres_from_summit": 9,
+    "distance_from_trailhead_m": 2473
+   },
+   "trailhead": {
+    "lat": -41.282178,
+    "lon": 173.760656,
+    "road": "Takorika Street",
+    "metres_from_road": 228
+   },
+   "drive": {
+    "seconds": 5208,
+    "metres": 85953,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4946804672,
+   "name": "Inglewood",
+   "lat": -42.112518,
+   "lon": 171.912946,
+   "elevation_m": 713,
+   "track": {
+    "name": "Painkiller Track",
+    "grade": null,
+    "metres_from_summit": 169,
+    "distance_from_trailhead_m": 5210
+   },
+   "trailhead": {
+    "lat": -42.118347,
+    "lon": 171.930682,
+    "road": "Waiau River Road",
+    "metres_from_road": 198
+   },
+   "drive": {
+    "seconds": 10991,
+    "metres": 205646,
+    "snap_m": 198,
+    "snapped_to": "Waiau River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 8578910734,
+   "name": "Pyramid Rock",
+   "lat": -41.436785,
+   "lon": 173.245723,
+   "elevation_m": 686,
+   "track": {
+    "name": "Starveall Track",
+    "grade": "hiking",
+    "metres_from_summit": 62,
+    "distance_from_trailhead_m": 13885
+   },
+   "trailhead": {
+    "lat": -41.395108,
+    "lon": 173.206682,
+    "road": "Aniseed Valley Road",
+    "metres_from_road": 246
+   },
+   "drive": {
+    "seconds": 1654,
+    "metres": 15008,
+    "snap_m": 0,
+    "snapped_to": "Serpentine River Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003265,
+   "name": "Korere",
+   "lat": -41.525316,
+   "lon": 172.827674,
+   "elevation_m": 664,
+   "track": {
+    "name": "Western Boundary Road",
+    "grade": null,
+    "metres_from_summit": 39,
+    "distance_from_trailhead_m": 10750
+   },
+   "trailhead": {
+    "lat": -41.519015,
+    "lon": 172.857411,
+    "road": "Gibbs Road",
+    "metres_from_road": 237
+   },
+   "drive": {
+    "seconds": 3601,
+    "metres": 44445,
+    "snap_m": 0,
+    "snapped_to": "Nesbitts Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931703690,
+   "name": "Jacobs Ladder",
+   "lat": -42.22467,
+   "lon": 173.833627,
+   "elevation_m": 662,
+   "track": {
+    "name": "Okiwi Bay Half Moon Track",
+    "grade": null,
+    "metres_from_summit": 279,
+    "distance_from_trailhead_m": 4699
+   },
+   "trailhead": {
+    "lat": -42.21658,
+    "lon": 173.859021,
+    "road": "unnamed road",
+    "metres_from_road": 55
+   },
+   "drive": {
+    "seconds": 11768,
+    "metres": 224550,
+    "snap_m": 55,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 7959440962,
+   "name": "Tennyson",
+   "lat": -41.085099,
+   "lon": 173.74926,
+   "elevation_m": 658,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 825,
+    "distance_from_trailhead_m": 75
+   },
+   "trailhead": {
+    "lat": -41.086314,
+    "lon": 173.759412,
+    "road": "Worlds End Road",
+    "metres_from_road": 239
+   },
+   "drive": {
+    "seconds": 6810,
+    "metres": 89600,
+    "snap_m": 239,
+    "snapped_to": "Worlds End Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867575,
+   "name": "Horoirangi / Drumduan",
+   "lat": -41.184172,
+   "lon": 173.397933,
+   "elevation_m": 657,
+   "track": {
+    "name": "Cable Bay Walkway",
+    "grade": null,
+    "metres_from_summit": 930,
+    "distance_from_trailhead_m": 3003
+   },
+   "trailhead": {
+    "lat": -41.184781,
+    "lon": 173.371256,
+    "road": "Airlie Street",
+    "metres_from_road": 233
+   },
+   "drive": {
+    "seconds": 1750,
+    "metres": 25940,
+    "snap_m": 233,
+    "snapped_to": "Airlie Street"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4941692745,
+   "name": "Clark Knob",
+   "lat": -41.629462,
+   "lon": 172.747953,
+   "elevation_m": 655,
+   "track": {
+    "name": "Hills Road",
+    "grade": null,
+    "metres_from_summit": 301,
+    "distance_from_trailhead_m": 376
+   },
+   "trailhead": {
+    "lat": -41.623948,
+    "lon": 172.749054,
+    "road": "Kohatu-Kawatiri Highway",
+    "metres_from_road": 242
+   },
+   "drive": {
+    "seconds": 4044,
+    "metres": 63288,
+    "snap_m": 0,
+    "snapped_to": "Hills Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 7747573426,
+   "name": "Pinchback",
+   "lat": -41.543016,
+   "lon": 172.766896,
+   "elevation_m": 648,
+   "track": {
+    "name": "Cains Road",
+    "grade": null,
+    "metres_from_summit": 74,
+    "distance_from_trailhead_m": 2921
+   },
+   "trailhead": {
+    "lat": -41.532532,
+    "lon": 172.754195,
+    "road": "Tadmor - Glenhope Road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 4503,
+    "metres": 68150,
+    "snap_m": 228,
+    "snapped_to": "Tadmor - Glenhope Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057077,
+   "name": "Dumgree",
+   "lat": -41.615831,
+   "lon": 173.997752,
+   "elevation_m": 645,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 272,
+    "distance_from_trailhead_m": 4927
+   },
+   "trailhead": {
+    "lat": -41.636799,
+    "lon": 174.019468,
+    "road": "Dumgree Road",
+    "metres_from_road": 163
+   },
+   "drive": {
+    "seconds": 9865,
+    "metres": 152836,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4283657928,
+   "name": "Kahikatea",
+   "lat": -41.261993,
+   "lon": 174.113144,
+   "elevation_m": 639,
+   "track": {
+    "name": "Kahikitea Track",
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 2456
+   },
+   "trailhead": {
+    "lat": -41.249378,
+    "lon": 174.112594,
+    "road": "unnamed road",
+    "metres_from_road": 94
+   },
+   "drive": {
+    "seconds": 10224,
+    "metres": 137265,
+    "snap_m": 1878,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 5700890827,
+   "name": "Mount Robinson",
+   "lat": -41.089705,
+   "lon": 174.132869,
+   "elevation_m": 636,
+   "track": {
+    "name": "Mt Stokes Track",
+    "grade": null,
+    "metres_from_summit": 257,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.087399,
+    "lon": 174.132953,
+    "road": "Anakoha Road",
+    "metres_from_road": 109
+   },
+   "drive": {
+    "seconds": 13716,
+    "metres": 151873,
+    "snap_m": 109,
+    "snapped_to": "Anakoha Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4939461357,
+   "name": "Te Tara-o-Te-Marama / Mount Freeth",
+   "lat": -41.296946,
+   "lon": 173.975051,
+   "elevation_m": 625,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 24,
+    "distance_from_trailhead_m": 3119
+   },
+   "trailhead": {
+    "lat": -41.292051,
+    "lon": 173.987937,
+    "road": "unnamed road",
+    "metres_from_road": 224
+   },
+   "drive": {
+    "seconds": 8077,
+    "metres": 121026,
+    "snap_m": 224,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057061,
+   "name": "Ragged Robin",
+   "lat": -41.967841,
+   "lon": 173.958166,
+   "elevation_m": 624,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 166,
+    "distance_from_trailhead_m": 4103
+   },
+   "trailhead": {
+    "lat": -41.972977,
+    "lon": 173.985682,
+    "road": "Kekerengu Valley Road",
+    "metres_from_road": 227
+   },
+   "drive": {
+    "seconds": 11516,
+    "metres": 200899,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4956421255,
+   "name": "Strachan Peak",
+   "lat": -41.391429,
+   "lon": 173.970563,
+   "elevation_m": 611,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 329,
+    "distance_from_trailhead_m": 4962
+   },
+   "trailhead": {
+    "lat": -41.41462,
+    "lon": 173.969101,
+    "road": "State Highway 1",
+    "metres_from_road": 40
+   },
+   "drive": {
+    "seconds": 7114,
+    "metres": 129467,
+    "snap_m": 39,
+    "snapped_to": "State Highway 1"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 5693978164,
+   "name": "Rahotia",
+   "lat": -41.273839,
+   "lon": 174.166016,
+   "elevation_m": 611,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 47,
+    "distance_from_trailhead_m": 2393
+   },
+   "trailhead": {
+    "lat": -41.280499,
+    "lon": 174.155241,
+    "road": "Tumbledown Bay Road",
+    "metres_from_road": 220
+   },
+   "drive": {
+    "seconds": 10350,
+    "metres": 146139,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4975089006,
+   "name": "Bobs Peak",
+   "lat": -41.01718,
+   "lon": 173.752681,
+   "elevation_m": 608,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 846,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.017719,
+    "lon": 173.762739,
+    "road": "unnamed road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 7626,
+    "metres": 102017,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "road_or_easement",
+    "layers": [
+     "Road Parcels"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2966757365,
+   "name": "Black Cow",
+   "lat": -40.841552,
+   "lon": 172.559159,
+   "elevation_m": 606,
+   "track": {
+    "name": "Boulder Lake Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 95,
+    "distance_from_trailhead_m": 9754
+   },
+   "trailhead": {
+    "lat": -40.780897,
+    "lon": 172.560137,
+    "road": "James Road Right Branch",
+    "metres_from_road": 234
+   },
+   "drive": {
+    "seconds": 7248,
+    "metres": 132819,
+    "snap_m": 234,
+    "snapped_to": "James Road Right Branch"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 7488203327,
+   "name": "Barnicoat",
+   "lat": -41.343141,
+   "lon": 173.253476,
+   "elevation_m": 604,
+   "track": {
+    "name": "Barnicoat Range Walkway",
+    "grade": null,
+    "metres_from_summit": 36,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.343457,
+    "lon": 173.253569,
+    "road": "Glider Road",
+    "metres_from_road": 7
+   },
+   "drive": {
+    "seconds": 5808,
+    "metres": 26380,
+    "snap_m": 0,
+    "snapped_to": "Barnicoat Range Walkway"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680104373,
+   "name": "Halfpenny Hill",
+   "lat": -41.948654,
+   "lon": 173.923906,
+   "elevation_m": 600,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 666,
+    "distance_from_trailhead_m": 9120
+   },
+   "trailhead": {
+    "lat": -41.972977,
+    "lon": 173.985682,
+    "road": "Kekerengu Valley Road",
+    "metres_from_road": 227
+   },
+   "drive": {
+    "seconds": 11516,
+    "metres": 200899,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 6564285510,
+   "name": "Rātā Hill",
+   "lat": -40.969634,
+   "lon": 173.005439,
+   "elevation_m": 582,
+   "track": {
+    "name": "Abel Tasman Inland Track",
+    "grade": "hiking",
+    "metres_from_summit": 392,
+    "distance_from_trailhead_m": 6933
+   },
+   "trailhead": {
+    "lat": -40.993641,
+    "lon": 173.006532,
+    "road": "unnamed road",
+    "metres_from_road": 240
+   },
+   "drive": {
+    "seconds": 3478,
+    "metres": 54471,
+    "snap_m": 0,
+    "snapped_to": "Abel Tasman Coast Track"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867579,
+   "name": "Clover Knob",
+   "lat": -41.413475,
+   "lon": 173.231805,
+   "elevation_m": 578,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 299,
+    "distance_from_trailhead_m": 7954
+   },
+   "trailhead": {
+    "lat": -41.389965,
+    "lon": 173.216059,
+    "road": "Aniseed Valley Road",
+    "metres_from_road": 246
+   },
+   "drive": {
+    "seconds": 2020,
+    "metres": 16798,
+    "snap_m": 0,
+    "snapped_to": "Hackett Track"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 5183241082,
+   "name": "Taraukawa",
+   "lat": -41.262987,
+   "lon": 174.229429,
+   "elevation_m": 575,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 255,
+    "distance_from_trailhead_m": 9194
+   },
+   "trailhead": {
+    "lat": -41.285869,
+    "lon": 174.186212,
+    "road": "Tumbledown Bay Road",
+    "metres_from_road": 247
+   },
+   "drive": {
+    "seconds": 10821,
+    "metres": 150181,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4941782642,
+   "name": "Eight Mile Hill",
+   "lat": -41.794511,
+   "lon": 172.095893,
+   "elevation_m": 568,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 743,
+    "distance_from_trailhead_m": 1170
+   },
+   "trailhead": {
+    "lat": -41.806515,
+    "lon": 172.102562,
+    "road": "Upper Buller Gorge Road",
+    "metres_from_road": 247
+   },
+   "drive": {
+    "seconds": 7216,
+    "metres": 140915,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3334855095,
+   "name": "Cone Peak",
+   "lat": -40.977992,
+   "lon": 173.885404,
+   "elevation_m": 565,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 943,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -40.971767,
+    "lon": 173.877781,
+    "road": "Te Towaka-Port Ligar Road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 9064,
+    "metres": 118402,
+    "snap_m": 0,
+    "snapped_to": "Te Towaka-Port Ligar Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867580,
+   "name": "Goat Hill",
+   "lat": -41.410267,
+   "lon": 173.18272,
+   "elevation_m": 549,
+   "track": {
+    "name": "Mead Road",
+    "grade": null,
+    "metres_from_summit": 132,
+    "distance_from_trailhead_m": 6543
+   },
+   "trailhead": {
+    "lat": -41.398,
+    "lon": 173.18671,
+    "road": "Aniseed Valley Road",
+    "metres_from_road": 211
+   },
+   "drive": {
+    "seconds": 3004,
+    "metres": 18737,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 8889040117,
+   "name": "Lookout Knob",
+   "lat": -40.817778,
+   "lon": 172.594722,
+   "elevation_m": 535,
+   "track": {
+    "name": "Boulder Lake Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 23,
+    "distance_from_trailhead_m": 6156
+   },
+   "trailhead": {
+    "lat": -40.774546,
+    "lon": 172.581055,
+    "road": "James Road Right Branch",
+    "metres_from_road": 230
+   },
+   "drive": {
+    "seconds": 6940,
+    "metres": 130891,
+    "snap_m": 230,
+    "snapped_to": "James Road Right Branch"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003264,
+   "name": "Mount Norriss",
+   "lat": -41.49282,
+   "lon": 172.86596,
+   "elevation_m": 531,
+   "track": {
+    "name": "Biggs Road",
+    "grade": null,
+    "metres_from_summit": 70,
+    "distance_from_trailhead_m": 4514
+   },
+   "trailhead": {
+    "lat": -41.479011,
+    "lon": 172.864214,
+    "road": "Wakefield - Kohatu Highway",
+    "metres_from_road": 213
+   },
+   "drive": {
+    "seconds": 2390,
+    "metres": 36636,
+    "snap_m": 0,
+    "snapped_to": "F R I Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 6562995183,
+   "name": "Ōkurī Hill",
+   "lat": -40.999639,
+   "lon": 173.771665,
+   "elevation_m": 529,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 181,
+    "distance_from_trailhead_m": 984
+   },
+   "trailhead": {
+    "lat": -40.999072,
+    "lon": 173.77459,
+    "road": "Croisilles French Pass Road",
+    "metres_from_road": 240
+   },
+   "drive": {
+    "seconds": 7832,
+    "metres": 104742,
+    "snap_m": 240,
+    "snapped_to": "Croisilles French Pass Road"
+   },
+   "access": {
+    "status": "road_or_easement",
+    "layers": [
+     "Road Parcels"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867568,
+   "name": "Saxton Hill",
+   "lat": -41.360487,
+   "lon": 173.225386,
+   "elevation_m": 516,
+   "track": {
+    "name": "Barnicoat Ridgeline",
+    "grade": null,
+    "metres_from_summit": 148,
+    "distance_from_trailhead_m": 5853
+   },
+   "trailhead": {
+    "lat": -41.362644,
+    "lon": 173.240624,
+    "road": "unnamed road",
+    "metres_from_road": 245
+   },
+   "drive": {
+    "seconds": 2682,
+    "metres": 22043,
+    "snap_m": 0,
+    "snapped_to": "Barnicoats Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867569,
+   "name": "Richmond Hill",
+   "lat": -41.366952,
+   "lon": 173.197924,
+   "elevation_m": 513,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 13,
+    "distance_from_trailhead_m": 1604
+   },
+   "trailhead": {
+    "lat": -41.357616,
+    "lon": 173.19514,
+    "road": "unnamed road",
+    "metres_from_road": 242
+   },
+   "drive": {
+    "seconds": 2902,
+    "metres": 16406,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867577,
+   "name": "Gentle Annie",
+   "lat": -41.167054,
+   "lon": 173.491004,
+   "elevation_m": 503,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 572,
+    "distance_from_trailhead_m": 2920
+   },
+   "trailhead": {
+    "lat": -41.178807,
+    "lon": 173.495375,
+    "road": "Lower Flowers Road",
+    "metres_from_road": 243
+   },
+   "drive": {
+    "seconds": 3042,
+    "metres": 45400,
+    "snap_m": 243,
+    "snapped_to": "Lower Flowers Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680017156,
+   "name": "Mount Cawte",
+   "lat": -41.272306,
+   "lon": 173.823472,
+   "elevation_m": 474,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 15,
+    "distance_from_trailhead_m": 2429
+   },
+   "trailhead": {
+    "lat": -41.261045,
+    "lon": 173.842768,
+    "road": "Moetapu Bay Road",
+    "metres_from_road": 246
+   },
+   "drive": {
+    "seconds": 7218,
+    "metres": 106736,
+    "snap_m": 246,
+    "snapped_to": "Moetapu Bay Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028537,
+   "name": "Mount Treblow",
+   "lat": -40.806889,
+   "lon": 172.60225,
+   "elevation_m": 468,
+   "track": {
+    "name": "Boulder Lake Track",
+    "grade": "mountain_hiking",
+    "metres_from_summit": 376,
+    "distance_from_trailhead_m": 4811
+   },
+   "trailhead": {
+    "lat": -40.774546,
+    "lon": 172.581055,
+    "road": "James Road Right Branch",
+    "metres_from_road": 230
+   },
+   "drive": {
+    "seconds": 6940,
+    "metres": 130891,
+    "snap_m": 230,
+    "snapped_to": "James Road Right Branch"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867581,
+   "name": "Rocky Knob",
+   "lat": -41.434543,
+   "lon": 173.167168,
+   "elevation_m": 464,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 581,
+    "distance_from_trailhead_m": 1039
+   },
+   "trailhead": {
+    "lat": -41.427481,
+    "lon": 173.157299,
+    "road": "Lee Valley Road",
+    "metres_from_road": 218
+   },
+   "drive": {
+    "seconds": 2465,
+    "metres": 19268,
+    "snap_m": 0,
+    "snapped_to": "Lucy Creek Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3308749997,
+   "name": "Kākā Hill",
+   "lat": -41.265294,
+   "lon": 173.325518,
+   "elevation_m": 459,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 18,
+    "distance_from_trailhead_m": 820
+   },
+   "trailhead": {
+    "lat": -41.264289,
+    "lon": 173.330354,
+    "road": "Kaka Road",
+    "metres_from_road": 239
+   },
+   "drive": {
+    "seconds": 1838,
+    "metres": 18357,
+    "snap_m": 240,
+    "snapped_to": "Kaka Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867561,
+   "name": "Wells Hill",
+   "lat": -41.240395,
+   "lon": 173.34222,
+   "elevation_m": 458,
+   "track": {
+    "name": "Wells Hill",
+    "grade": null,
+    "metres_from_summit": 117,
+    "distance_from_trailhead_m": 140
+   },
+   "trailhead": {
+    "lat": -41.239962,
+    "lon": 173.343934,
+    "road": "unnamed road",
+    "metres_from_road": 211
+   },
+   "drive": {
+    "seconds": 3702,
+    "metres": 22514,
+    "snap_m": 315,
+    "snapped_to": "Bobs Fern Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3324057163,
+   "name": "Red Hill",
+   "lat": -41.131246,
+   "lon": 173.559174,
+   "elevation_m": 450,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 954,
+    "distance_from_trailhead_m": 6521
+   },
+   "trailhead": {
+    "lat": -41.153267,
+    "lon": 173.532881,
+    "road": "Kokorua Road",
+    "metres_from_road": 238
+   },
+   "drive": {
+    "seconds": 3041,
+    "metres": 46865,
+    "snap_m": 201,
+    "snapped_to": "Kokorua Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3334855097,
+   "name": "Crichtons Hill",
+   "lat": -40.905437,
+   "lon": 173.968335,
+   "elevation_m": 443,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 751,
+    "distance_from_trailhead_m": 2733
+   },
+   "trailhead": {
+    "lat": -40.919516,
+    "lon": 173.95142,
+    "road": "Bulwer Road",
+    "metres_from_road": 250
+   },
+   "drive": {
+    "seconds": 10259,
+    "metres": 129648,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 5694011454,
+   "name": "Wairere",
+   "lat": -41.211056,
+   "lon": 174.253828,
+   "elevation_m": 435,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 18,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 5697804354,
+   "name": "Te Mahia",
+   "lat": -41.21637,
+   "lon": 173.983269,
+   "elevation_m": 416,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 7,
+    "distance_from_trailhead_m": 1066
+   },
+   "trailhead": {
+    "lat": -41.217135,
+    "lon": 173.97691,
+    "road": "Kenepuru Road",
+    "metres_from_road": 239
+   },
+   "drive": {
+    "seconds": 8837,
+    "metres": 118042,
+    "snap_m": 239,
+    "snapped_to": "Kenepuru Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 2796410277,
+   "name": "Gibbs Hill",
+   "lat": -40.810408,
+   "lon": 172.977889,
+   "elevation_m": 405,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 4,
+    "distance_from_trailhead_m": 5143
+   },
+   "trailhead": {
+    "lat": -40.809543,
+    "lon": 172.956273,
+    "road": "unnamed road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 6081,
+    "metres": 110807,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3324057161,
+   "name": "Stuart Hill",
+   "lat": -41.149759,
+   "lon": 173.425877,
+   "elevation_m": 401,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 819,
+    "distance_from_trailhead_m": 116
+   },
+   "trailhead": {
+    "lat": -41.155409,
+    "lon": 173.41813,
+    "road": "Cable Bay Road",
+    "metres_from_road": 247
+   },
+   "drive": {
+    "seconds": 2700,
+    "metres": 35297,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3324057168,
+   "name": "Goat Hill",
+   "lat": -41.103221,
+   "lon": 173.63712,
+   "elevation_m": 395,
+   "track": {
+    "name": "Goat Hill Track",
+    "grade": null,
+    "metres_from_summit": 115,
+    "distance_from_trailhead_m": 110
+   },
+   "trailhead": {
+    "lat": -41.104454,
+    "lon": 173.637506,
+    "road": "Croisilles Road",
+    "metres_from_road": 233
+   },
+   "drive": {
+    "seconds": 5099,
+    "metres": 74440,
+    "snap_m": 233,
+    "snapped_to": "Croisilles Road"
+   },
+   "access": {
+    "status": "road_or_easement",
+    "layers": [
+     "Road Parcels"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3308749999,
+   "name": "Grampians",
+   "lat": -41.298016,
+   "lon": 173.279772,
+   "elevation_m": 390,
+   "track": {
+    "name": "Ridgeline Walkway",
+    "grade": null,
+    "metres_from_summit": 31,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.297885,
+    "lon": 173.279441,
+    "road": "unnamed road",
+    "metres_from_road": 30
+   },
+   "drive": {
+    "seconds": 2858,
+    "metres": 15973,
+    "snap_m": 30,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 5694011445,
+   "name": "Kaitapeha",
+   "lat": -41.227872,
+   "lon": 174.189755,
+   "elevation_m": 387,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 30,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 1225168113,
+   "name": "Cooks Lookout",
+   "lat": -41.216907,
+   "lon": 174.212661,
+   "elevation_m": 383,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 68,
+    "distance_from_trailhead_m": null
+   },
+   "trailhead": null,
+   "drive": null,
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057050,
+   "name": "Weld Cone",
+   "lat": -41.84852,
+   "lon": 174.171314,
+   "elevation_m": 368,
+   "track": {
+    "name": "Needle Track",
+    "grade": null,
+    "metres_from_summit": 589,
+    "distance_from_trailhead_m": 1204
+   },
+   "trailhead": {
+    "lat": -41.845435,
+    "lon": 174.183059,
+    "road": "Ward Beach Road",
+    "metres_from_road": 152
+   },
+   "drive": {
+    "seconds": 10076,
+    "metres": 174772,
+    "snap_m": 100,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028539,
+   "name": "Richmond Hill",
+   "lat": -40.770222,
+   "lon": 172.656222,
+   "elevation_m": 368,
+   "track": {
+    "name": "Richmond Flat Track (DoC)",
+    "grade": null,
+    "metres_from_summit": 220,
+    "distance_from_trailhead_m": 10904
+   },
+   "trailhead": {
+    "lat": -40.752928,
+    "lon": 172.624207,
+    "road": "Devil's Boots Road",
+    "metres_from_road": 240
+   },
+   "drive": {
+    "seconds": 6488,
+    "metres": 122890,
+    "snap_m": 105,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867562,
+   "name": "Sharland Hill",
+   "lat": -41.286755,
+   "lon": 173.306792,
+   "elevation_m": 351,
+   "track": {
+    "name": "Jacks-Firball Firebreak",
+    "grade": null,
+    "metres_from_summit": 14,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.286879,
+    "lon": 173.306847,
+    "road": "MIddle Road",
+    "metres_from_road": 142
+   },
+   "drive": {
+    "seconds": 1821,
+    "metres": 17175,
+    "snap_m": 142,
+    "snapped_to": "MIddle Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931693666,
+   "name": "Vinegar Point",
+   "lat": -41.608925,
+   "lon": 173.981698,
+   "elevation_m": 349,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 970,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.612262,
+    "lon": 173.97092,
+    "road": "Taylor Pass Road",
+    "metres_from_road": 131
+   },
+   "drive": {
+    "seconds": 8114,
+    "metres": 141388,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3324057166,
+   "name": "Teranga",
+   "lat": -41.12823,
+   "lon": 173.607112,
+   "elevation_m": 341,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 714,
+    "distance_from_trailhead_m": 2858
+   },
+   "trailhead": {
+    "lat": -41.116298,
+    "lon": 173.638361,
+    "road": "Croisilles Road",
+    "metres_from_road": 247
+   },
+   "drive": {
+    "seconds": 5361,
+    "metres": 76373,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003261,
+   "name": "Sugar Loaf",
+   "lat": -41.323734,
+   "lon": 172.721092,
+   "elevation_m": 340,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 515,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.319832,
+    "lon": 172.724424,
+    "road": "Tapawera - Baton Road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 5209,
+    "metres": 65877,
+    "snap_m": 0,
+    "snapped_to": "Clarke Road / Tapawera - Baton Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057074,
+   "name": "Deadman Hill",
+   "lat": -42.041897,
+   "lon": 173.959303,
+   "elevation_m": 325,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 902,
+    "distance_from_trailhead_m": 3591
+   },
+   "trailhead": {
+    "lat": -42.039244,
+    "lon": 173.969841,
+    "road": "State Highway 1",
+    "metres_from_road": 57
+   },
+   "drive": {
+    "seconds": 10644,
+    "metres": 200240,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 6564052937,
+   "name": "Mānuka Hill",
+   "lat": -41.08787,
+   "lon": 173.561054,
+   "elevation_m": 320,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 961,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.079671,
+    "lon": 173.564682,
+    "road": "unnamed road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 5469,
+    "metres": 63731,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057089,
+   "name": "Tūtūmāpou Hill",
+   "lat": -41.29148,
+   "lon": 173.651768,
+   "elevation_m": 319,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 481,
+    "distance_from_trailhead_m": 3685
+   },
+   "trailhead": {
+    "lat": -41.291879,
+    "lon": 173.639238,
+    "road": "unnamed road",
+    "metres_from_road": 175
+   },
+   "drive": {
+    "seconds": 4705,
+    "metres": 72847,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003233,
+   "name": "Bare Knob",
+   "lat": -40.930656,
+   "lon": 173.036113,
+   "elevation_m": 314,
+   "track": {
+    "name": "Falls River Track",
+    "grade": null,
+    "metres_from_summit": 407,
+    "distance_from_trailhead_m": 2237
+   },
+   "trailhead": {
+    "lat": -40.94667,
+    "lon": 173.043854,
+    "road": "Manuka Street",
+    "metres_from_road": 242
+   },
+   "drive": {
+    "seconds": 3869,
+    "metres": 55556,
+    "snap_m": 5410,
+    "snapped_to": "Abel Tasman Coast Track"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931687910,
+   "name": "Hollow Top",
+   "lat": -41.87017,
+   "lon": 174.1454,
+   "elevation_m": 310,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 10,
+    "distance_from_trailhead_m": 3747
+   },
+   "trailhead": {
+    "lat": -41.86101,
+    "lon": 174.120919,
+    "road": "State Highway 1",
+    "metres_from_road": 226
+   },
+   "drive": {
+    "seconds": 9505,
+    "metres": 175759,
+    "snap_m": 226,
+    "snapped_to": "State Highway 1"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3308824837,
+   "name": "Sugar Loaf",
+   "lat": -41.296731,
+   "lon": 173.291385,
+   "elevation_m": 308,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 183,
+    "distance_from_trailhead_m": 1429
+   },
+   "trailhead": {
+    "lat": -41.303385,
+    "lon": 173.280363,
+    "road": "Market Road",
+    "metres_from_road": 244
+   },
+   "drive": {
+    "seconds": 896,
+    "metres": 10931,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 8803954928,
+   "name": "Sugar Loaf",
+   "lat": -41.598125,
+   "lon": 173.926946,
+   "elevation_m": 288,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 17,
+    "distance_from_trailhead_m": 3089
+   },
+   "trailhead": {
+    "lat": -41.595396,
+    "lon": 173.922651,
+    "road": "unnamed road",
+    "metres_from_road": 149
+   },
+   "drive": {
+    "seconds": 7921,
+    "metres": 135439,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3324061960,
+   "name": "Mount Barrett",
+   "lat": -41.219768,
+   "lon": 173.581716,
+   "elevation_m": 262,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 13,
+    "distance_from_trailhead_m": 411
+   },
+   "trailhead": {
+    "lat": -41.220492,
+    "lon": 173.582633,
+    "road": "State Highway 6",
+    "metres_from_road": 244
+   },
+   "drive": {
+    "seconds": 3539,
+    "metres": 57286,
+    "snap_m": 244,
+    "snapped_to": "State Highway 6"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028540,
+   "name": "Red Hill",
+   "lat": -40.756111,
+   "lon": 172.651278,
+   "elevation_m": 251,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 44,
+    "distance_from_trailhead_m": 2220
+   },
+   "trailhead": {
+    "lat": -40.739486,
+    "lon": 172.654876,
+    "road": "unnamed road",
+    "metres_from_road": 148
+   },
+   "drive": {
+    "seconds": 6473,
+    "metres": 119961,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867576,
+   "name": "Sentinel Hill",
+   "lat": -41.160156,
+   "lon": 173.403873,
+   "elevation_m": 250,
+   "track": {
+    "name": "Cable Bay Walkway",
+    "grade": null,
+    "metres_from_summit": 14,
+    "distance_from_trailhead_m": 415
+   },
+   "trailhead": {
+    "lat": -41.160764,
+    "lon": 173.408142,
+    "road": "unnamed road",
+    "metres_from_road": 247
+   },
+   "drive": {
+    "seconds": 2381,
+    "metres": 34421,
+    "snap_m": 248,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 5304111581,
+   "name": "Charleys Head",
+   "lat": -41.070973,
+   "lon": 173.574483,
+   "elevation_m": 248,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 14,
+    "distance_from_trailhead_m": 2153
+   },
+   "trailhead": {
+    "lat": -41.07797,
+    "lon": 173.566464,
+    "road": "unnamed road",
+    "metres_from_road": 237
+   },
+   "drive": {
+    "seconds": 5471,
+    "metres": 63744,
+    "snap_m": 237,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057059,
+   "name": "Corner Hill",
+   "lat": -42.134968,
+   "lon": 173.8724,
+   "elevation_m": 235,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 925,
+    "distance_from_trailhead_m": 1578
+   },
+   "trailhead": {
+    "lat": -42.148759,
+    "lon": 173.865496,
+    "road": "Waipapa Road",
+    "metres_from_road": 82
+   },
+   "drive": {
+    "seconds": 12126,
+    "metres": 221626,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003247,
+   "name": "Mount Rollinson",
+   "lat": -40.867293,
+   "lon": 173.024445,
+   "elevation_m": 228,
+   "track": {
+    "name": "Coastal Track",
+    "grade": "hiking",
+    "metres_from_summit": 409,
+    "distance_from_trailhead_m": 6225
+   },
+   "trailhead": {
+    "lat": -40.843481,
+    "lon": 172.990213,
+    "road": "Awaroa Road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 6299,
+    "metres": 115785,
+    "snap_m": 0,
+    "snapped_to": "Awaroa Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867572,
+   "name": "Cut Hill",
+   "lat": -41.299815,
+   "lon": 173.037201,
+   "elevation_m": 219,
+   "track": {
+    "name": "Cut Hill Road",
+    "grade": null,
+    "metres_from_summit": 45,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.300166,
+    "lon": 173.037465,
+    "road": "Moutere Highway",
+    "metres_from_road": 150
+   },
+   "drive": {
+    "seconds": 3218,
+    "metres": 22925,
+    "snap_m": 0,
+    "snapped_to": "Cut Hill Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 6564285664,
+   "name": "Taupō Hill",
+   "lat": -40.787506,
+   "lon": 172.963107,
+   "elevation_m": 205,
+   "track": {
+    "name": "Inland Track",
+    "grade": null,
+    "metres_from_summit": 519,
+    "distance_from_trailhead_m": 3545
+   },
+   "trailhead": {
+    "lat": -40.807601,
+    "lon": 172.955214,
+    "road": "unnamed road",
+    "metres_from_road": 231
+   },
+   "drive": {
+    "seconds": 6082,
+    "metres": 110812,
+    "snap_m": 230,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 3344569171,
+   "name": "Mount Pleasant",
+   "lat": -40.932771,
+   "lon": 173.843573,
+   "elevation_m": 202,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 251,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -40.934976,
+    "lon": 173.844182,
+    "road": "Croisilles French Pass Road",
+    "metres_from_road": 129
+   },
+   "drive": {
+    "seconds": 9284,
+    "metres": 115976,
+    "snap_m": 129,
+    "snapped_to": "Croisilles French Pass Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 9003057080,
+   "name": "Mount Tako",
+   "lat": -41.737132,
+   "lon": 174.252998,
+   "elevation_m": 194,
+   "track": {
+    "name": "Cape Campbell track (low tide access only)",
+    "grade": null,
+    "metres_from_summit": 486,
+    "distance_from_trailhead_m": 1745
+   },
+   "trailhead": {
+    "lat": -41.729125,
+    "lon": 174.272604,
+    "road": "Lighthouse Road",
+    "metres_from_road": 173
+   },
+   "drive": {
+    "seconds": 11676,
+    "metres": 181461,
+    "snap_m": 173,
+    "snapped_to": "Lighthouse Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003246,
+   "name": "Waiharakeke Bay",
+   "lat": -40.854684,
+   "lon": 173.016828,
+   "elevation_m": 192,
+   "track": {
+    "name": "Coastal Track",
+    "grade": null,
+    "metres_from_summit": 562,
+    "distance_from_trailhead_m": 3370
+   },
+   "trailhead": {
+    "lat": -40.841842,
+    "lon": 172.991803,
+    "road": "Awaroa Road",
+    "metres_from_road": 216
+   },
+   "drive": {
+    "seconds": 6279,
+    "metres": 115331,
+    "snap_m": 217,
+    "snapped_to": "Awaroa Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931687913,
+   "name": "Round Knob",
+   "lat": -41.860135,
+   "lon": 174.134929,
+   "elevation_m": 178,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 335,
+    "distance_from_trailhead_m": 1187
+   },
+   "trailhead": {
+    "lat": -41.860891,
+    "lon": 174.120978,
+    "road": "State Highway 1",
+    "metres_from_road": 235
+   },
+   "drive": {
+    "seconds": 9504,
+    "metres": 175748,
+    "snap_m": 235,
+    "snapped_to": "State Highway 1"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3310867570,
+   "name": "Aniseed Hill",
+   "lat": -41.379595,
+   "lon": 173.153166,
+   "elevation_m": 173,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 954,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.386678,
+    "lon": 173.159613,
+    "road": "Aniseed Valley Road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 689,
+    "metres": 8929,
+    "snap_m": 0,
+    "snapped_to": "Aniseed Valley Road / Aniseed Valley Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 7952970092,
+   "name": "Hikurangi / Goulter Hill",
+   "lat": -41.542801,
+   "lon": 173.802276,
+   "elevation_m": 173,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 520,
+    "distance_from_trailhead_m": 1785
+   },
+   "trailhead": {
+    "lat": -41.532045,
+    "lon": 173.802197,
+    "road": "Dog Point Road",
+    "metres_from_road": 245
+   },
+   "drive": {
+    "seconds": 6592,
+    "metres": 117052,
+    "snap_m": 244,
+    "snapped_to": "Dog Point Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680017140,
+   "name": "Malvern Hill",
+   "lat": -40.968996,
+   "lon": 173.792921,
+   "elevation_m": 163,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 58,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -40.968604,
+    "lon": 173.793385,
+    "road": "unnamed road",
+    "metres_from_road": 148
+   },
+   "drive": {
+    "seconds": 8666,
+    "metres": 111677,
+    "snap_m": 148,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 6564411471,
+   "name": "Mount Rinopai",
+   "lat": -40.749769,
+   "lon": 172.679413,
+   "elevation_m": 153,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 0,
+    "distance_from_trailhead_m": 981
+   },
+   "trailhead": {
+    "lat": -40.744657,
+    "lon": 172.678638,
+    "road": "Parapara Valley Road",
+    "metres_from_road": 245
+   },
+   "drive": {
+    "seconds": 5907,
+    "metres": 112320,
+    "snap_m": 245,
+    "snapped_to": "Parapara Valley Road"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931687918,
+   "name": "Single Hill",
+   "lat": -41.89202,
+   "lon": 174.125359,
+   "elevation_m": 149,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 46,
+    "distance_from_trailhead_m": 965
+   },
+   "trailhead": {
+    "lat": -41.887186,
+    "lon": 174.120153,
+    "road": "State Highway 1",
+    "metres_from_road": 246
+   },
+   "drive": {
+    "seconds": 9967,
+    "metres": 179400,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 3308749998,
+   "name": "Botanical Hill",
+   "lat": -41.272816,
+   "lon": 173.299576,
+   "elevation_m": 147,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 3,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.272824,
+    "lon": 173.299537,
+    "road": "unnamed road",
+    "metres_from_road": 221
+   },
+   "drive": {
+    "seconds": 1021,
+    "metres": 13386,
+    "snap_m": 221,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Other Parks & Reserves"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003251,
+   "name": "Tōtaranui",
+   "lat": -40.814063,
+   "lon": 173.011908,
+   "elevation_m": 141,
+   "track": {
+    "name": "Headlands Track",
+    "grade": null,
+    "metres_from_summit": 160,
+    "distance_from_trailhead_m": 479
+   },
+   "trailhead": {
+    "lat": -40.815522,
+    "lon": 173.005872,
+    "road": "unnamed road",
+    "metres_from_road": 240
+   },
+   "drive": {
+    "seconds": 6509,
+    "metres": 118631,
+    "snap_m": 240,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 4931687902,
+   "name": "Tar Barrel",
+   "lat": -41.883524,
+   "lon": 174.115917,
+   "elevation_m": 110,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 501,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.887236,
+    "lon": 174.119345,
+    "road": "State Highway 1",
+    "metres_from_road": 180
+   },
+   "drive": {
+    "seconds": 9916,
+    "metres": 179330,
+    "snap_m": 0,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  },
+  {
+   "id": 6564277413,
+   "name": "Pukekoikoi Hill",
+   "lat": -41.047897,
+   "lon": 173.00534,
+   "elevation_m": 105,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 5,
+    "distance_from_trailhead_m": 116
+   },
+   "trailhead": {
+    "lat": -41.048649,
+    "lon": 173.005683,
+    "road": "Riwaka - Kaiteriteri Road",
+    "metres_from_road": 249
+   },
+   "drive": {
+    "seconds": 3607,
+    "metres": 50619,
+    "snap_m": 68,
+    "snapped_to": "Tank"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Reserve Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680017141,
+   "name": "Waikawa",
+   "lat": -40.953974,
+   "lon": 173.80798,
+   "elevation_m": 68,
+   "track": {
+    "name": null,
+    "grade": null,
+    "metres_from_summit": 154,
+    "distance_from_trailhead_m": 1457
+   },
+   "trailhead": {
+    "lat": -40.957457,
+    "lon": 173.818539,
+    "road": "unnamed road",
+    "metres_from_road": 242
+   },
+   "drive": {
+    "seconds": 9278,
+    "metres": 113324,
+    "snap_m": 122,
+    "snapped_to": null
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680003235,
+   "name": "Cairn Hill",
+   "lat": -40.955686,
+   "lon": 173.066093,
+   "elevation_m": 58,
+   "track": {
+    "name": "Pitt Head Loop",
+    "grade": null,
+    "metres_from_summit": 206,
+    "distance_from_trailhead_m": 2756
+   },
+   "trailhead": {
+    "lat": -40.947278,
+    "lon": 173.049168,
+    "road": "Lagoon Street",
+    "metres_from_road": 59
+   },
+   "drive": {
+    "seconds": 3869,
+    "metres": 55556,
+    "snap_m": 5566,
+    "snapped_to": "Abel Tasman Coast Track"
+   },
+   "access": {
+    "status": "public",
+    "layers": [
+     "Public Access Conservation Land"
+    ],
+    "detail": null
+   }
+  },
+  {
+   "id": 10680028582,
+   "name": "Elfin Bluff",
+   "lat": -41.250333,
+   "lon": 172.191444,
+   "elevation_m": 16,
+   "track": {
+    "name": "Big Rimu Tree Track",
+    "grade": null,
+    "metres_from_summit": 87,
+    "distance_from_trailhead_m": 0
+   },
+   "trailhead": {
+    "lat": -41.249867,
+    "lon": 172.190613,
+    "road": "Umere Road",
+    "metres_from_road": 0
+   },
+   "drive": {
+    "seconds": 17270,
+    "metres": 312676,
+    "snap_m": 0,
+    "snapped_to": "Umere Road"
+   },
+   "access": {
+    "status": "not_shown",
+    "layers": [],
+    "detail": null
+   }
+  }
+ ]
+}

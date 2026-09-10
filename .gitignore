@@ -1,0 +1,18 @@
+# Your home coordinates never leave this machine.
+home.local.json
+data/home.local.json
+
+# Drive times measured from your own front door. The published copy uses
+# data/peaks.public.json instead, which starts from Nelson city centre.
+data/peaks.json
+
+# Cached raw downloads from OpenStreetMap. Rebuildable, and large.
+data/peaks_raw.json
+data/tracks_raw.json
+data/tracks_wide.json
+data/roads_raw.json
+
+build.log
+__pycache__/
+build-public.log
+*.log
