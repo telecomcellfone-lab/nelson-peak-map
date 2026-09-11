@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nelson Peak Map</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.6.1/maplibre-gl.css">
 <style>
   :root{
     --ink:#16211c; --ink-2:#4a5b52; --ink-3:#7b8a82;
@@ -14,9 +14,23 @@
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink)}
   #app{display:flex;height:100%;overflow:hidden}
-  #map{flex:1;min-width:0;background:#e8e4da}
+  #map{flex:1;min-width:0;position:relative;background:#e8e4da}
 
-  /* ---------------------------------------------------------- panel */
+  /* ------------------------------------------------------- map controls */
+  #views{position:absolute;z-index:5;left:10px;top:10px;background:#fffffff2;
+         border:1px solid #b9b4a8;border-radius:6px;padding:8px 10px;
+         box-shadow:0 1px 6px rgba(0,0,0,.22);max-width:196px}
+  #views h4{margin:0 0 5px;font-size:10px;text-transform:uppercase;
+            letter-spacing:.7px;color:var(--ink-3)}
+  #views h4+h4,#views h4:not(:first-child){margin-top:9px;padding-top:8px;
+            border-top:1px solid var(--line)}
+  #views label{display:flex;align-items:center;gap:7px;font-size:12.5px;
+               padding:2px 0;cursor:pointer}
+  #views input{accent-color:var(--chrome);margin:0}
+  .swatch{width:10px;height:10px;border-radius:50%;border:1.5px solid #fff;
+          box-shadow:0 0 0 1px rgba(0,0,0,.4);flex:none}
+
+  /* -------------------------------------------------------------- panel */
   #panel{width:370px;flex:none;background:var(--panel);border-left:1px solid var(--line);
          display:flex;flex-direction:column;overflow:hidden}
   #panel header{padding:14px 16px;background:var(--chrome);color:#f2f0ea}
@@ -31,7 +45,6 @@
 
   .empty{color:var(--ink-3);font-size:13px}
   .empty strong{color:var(--ink);display:block;margin-bottom:6px;font-size:14px}
-
   h2.peak{margin:0 0 2px;font-size:19px;font-weight:650;line-height:1.2}
   .elev{font-size:13px;color:var(--ink-2);margin:0 0 12px}
 
@@ -39,6 +52,7 @@
          font-weight:600;color:#fff;margin-bottom:12px}
   .badge.public{background:var(--green)} .badge.road_or_easement{background:var(--amber)}
   .badge.not_shown{background:var(--grey)} .badge.unknown{background:var(--red)}
+  .badge.open{background:var(--green)} .badge.closed{background:var(--red)}
 
   .row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid var(--line)}
   .row dt{color:var(--ink-3);font-size:12.5px;flex:none}
@@ -62,75 +76,98 @@
   .alert-item b{color:var(--ink);text-transform:none;letter-spacing:0;font-size:12.5px}
   .alert a{color:#7d4f08;font-weight:600}
   .doclink{display:inline-block;margin-top:8px;font-size:12px;font-weight:600}
+  .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+  .chip{background:#eceae3;border:1px solid var(--line);border-radius:10px;
+        padding:2px 8px;font-size:11.5px;color:var(--ink-2)}
 
-  /* ---------------------------------------------------------- markers */
-  .pk{border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.45)}
-  .home-pin{width:18px;height:18px;border-radius:50%;background:#1b64c4;
-            border:3px solid #fff;box-shadow:0 0 0 1.5px rgba(0,0,0,.5)}
-  .leaflet-container{font:inherit}
-  .leaflet-control-attribution{font-size:10.5px}
-
-  #setHome{position:absolute;z-index:1000;left:12px;bottom:26px;background:#fff;border:1px solid #b9b4a8;
-           border-radius:5px;padding:7px 11px;font:600 12px/1 inherit;cursor:pointer;
-           box-shadow:0 1px 4px rgba(0,0,0,.25)}
-  #setHome.arming{background:#1b64c4;color:#fff;border-color:#1b64c4}
-
+  .maplibregl-ctrl-attrib{font-size:10.5px}
   @media (max-width:820px){
     #app{flex-direction:column}
     #panel{width:100%;height:52%;border-left:none;border-top:1px solid var(--line)}
     #map{height:48%}
+    #views{max-width:152px;padding:6px 8px}
+    #views label{font-size:11.5px}
   }
 </style>
 </head>
 <body>
 <div id="app">
-  <div id="map"><button id="setHome" type="button">Set my home</button></div>
+  <div id="map">
+    <div id="views">
+      <h4>Base map</h4>
+      <label><input type="radio" name="base" value="topo" checked> Topo50</label>
+      <label><input type="radio" name="base" value="vector"> Vector topo</label>
+      <label><input type="radio" name="base" value="aerial"> Aerial photo</label>
+      <h4>View</h4>
+      <label><input type="checkbox" id="threeD"> 3D terrain</label>
+      <h4>Show</h4>
+      <label><input type="checkbox" id="ovPeaks" checked>
+        <span class="swatch" style="background:#6b2d3c"></span> Peaks</label>
+      <label><input type="checkbox" id="ovRoutes" checked>
+        <span class="swatch" style="background:#c8341c"></span> Route to summit</label>
+      <label><input type="checkbox" id="ovHuts" checked>
+        <span class="swatch" style="background:#1b64c4"></span> DOC huts</label>
+      <label><input type="checkbox" id="ovTracks">
+        <span class="swatch" style="background:#2f7d4f"></span> All DOC tracks</label>
+    </div>
+  </div>
   <div id="panel">
     <header>
       <h1>Nelson Peak Map</h1>
       <p id="subtitle">loading…</p>
     </header>
     <div id="controls">
-      <label for="driveRange">Show peaks within <span id="driveLabel">4 hours</span> drive</label>
+      <label for="driveRange">Show peaks within <span id="driveLabel">any</span> drive</label>
       <input id="driveRange" type="range" min="15" max="240" step="15" value="240">
     </div>
     <div id="body">
-      <p class="empty"><strong>Click a peak on the map.</strong>
-      Bigger, darker circles are higher. Every number in the panel comes from a
-      named source, and anything that could not be established is left blank
-      rather than guessed.</p>
+      <p class="empty"><strong>Tap a peak or a hut.</strong>
+      Bigger, darker circles are higher. Every number comes from a named source,
+      and anything that could not be established is left blank rather than
+      guessed.</p>
     </div>
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.6.1/maplibre-gl.js"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════════════
 //  LINZ API KEY
-//  A developer key issued by LINZ Basemaps for this project. Developer
-//  keys do not expire and have no request cap. LINZ confirmed it does not
-//  need restricting to a site, so it is fine sitting here in a public page.
+//  A developer key issued by LINZ Basemaps for this project. Developer keys
+//  do not expire and have no request cap. LINZ confirmed it does not need
+//  restricting to a site, so it is fine sitting here in a public page.
 //  Attribution is a condition of use and is shown in the map corner.
 // ═══════════════════════════════════════════════════════════════════════
 const LINZ_API_KEY = "d01m0gkkx2t24zn5bcrp0sxk472";
 
 const HOME_KEY = "nelson-peak-map.home";
-const LINZ_CREDIT =
-  '&copy; <a href="https://www.linz.govt.nz/linz-copyright">LINZ CC BY 4.0</a>';
+const STYLE  = `https://basemaps.linz.govt.nz/v1/styles/topographic.json?api=${LINZ_API_KEY}`;
+const TOPO   = `https://basemaps.linz.govt.nz/v1/tiles/topo-raster/3857/{z}/{x}/{y}.webp?api=${LINZ_API_KEY}`;
+const AERIAL = `https://basemaps.linz.govt.nz/v1/tiles/aerial/3857/{z}/{x}/{y}.webp?api=${LINZ_API_KEY}`;
+const FRESH  = { cache: "no-cache" };
 
 // ------------------------------------------------------------------ map
-const map = L.map("map", { center: [-41.4, 172.9], zoom: 9, zoomControl: true });
+// Built on LINZ's published vector style. That style already carries their
+// national elevation model as a terrain source, so 3D costs one line, and a
+// style fetched by URL loads far more reliably than an inline one. The two
+// raster basemaps are laid over it and switched by visibility.
+const map = new maplibregl.Map({
+  container: "map", style: STYLE,
+  center: [172.9, -41.4], zoom: 8, maxPitch: 80,
+  attributionControl: false
+});
+map.addControl(new maplibregl.AttributionControl({
+  compact: true,
+  customAttribution:
+    '&copy; <a href="https://www.linz.govt.nz/linz-copyright">LINZ CC BY 4.0</a> &middot; ' +
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &middot; ' +
+    'access <a href="https://www.herengaanuku.govt.nz/">Herenga &#257; Nuku</a> &middot; ' +
+    'tracks and huts <a href="https://www.doc.govt.nz/">DOC</a>'
+}));
+map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), "top-right");
+map.addControl(new maplibregl.ScaleControl({ maxWidth: 110 }), "bottom-left");
 
-function linzLayer(tileset) {
-  return L.tileLayer(
-    `https://basemaps.linz.govt.nz/v1/tiles/${tileset}/3857/{z}/{x}/{y}.webp?api=${LINZ_API_KEY}`,
-    { maxZoom: 16, minZoom: 5, attribution: LINZ_CREDIT }
-  );
-}
-const topo = linzLayer("topo-raster").addTo(map);
-const aerial = linzLayer("aerial");
-L.control.layers({ "LINZ topo": topo, "Aerial photo": aerial }, null,
-                 { position: "topright" }).addTo(map);
+let vectorLayerIds = [];
 
 // -------------------------------------------------------------- helpers
 const R = 6371;
@@ -149,15 +186,18 @@ function bearing(a, b, c, d) {
 const POINTS = ["N","NNE","NE","ENE","E","ESE","SE","SSE",
                 "S","SSW","SW","WSW","W","WNW","NW","NNW"];
 const compass = d => POINTS[Math.round(((d % 360) / 22.5)) % 16];
-
 function hhmm(sec) {
   const h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60);
   return h ? `${h} h ${String(m).padStart(2, "0")} min` : `${m} min`;
 }
+function hoursMins(sec) {
+  const h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60);
+  return m ? `${h} h ${m} min` : `${h} h`;
+}
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const clock = iso => iso.slice(11, 16);
 
-// OSM's sac_scale, in words rather than jargon.
 const GRADES = {
   hiking:                     ["Walking track", "Formed and easy to follow."],
   mountain_hiking:            ["Mountain track", "Steep in places. Sure footing needed."],
@@ -171,107 +211,168 @@ const ACCESS = {
   road_or_easement: ["Road or easement only", "road_or_easement"],
   not_shown:        ["Not shown as public land", "not_shown"]
 };
-
-// --------------------------------------------------------------- home
-// Two ways to know where home is, in priority order:
-//   1. data/home.local.json, written by the build script. This is the same
-//      point the drive times were measured from, so the panel stays honest.
-//   2. A pin you drop yourself, kept in this browser only.
-// Neither ever reaches data/peaks.json.
-let home = null, homeFromFile = false;
-try { home = JSON.parse(localStorage.getItem(HOME_KEY) || "null"); } catch (e) { home = null; }
-let homeMarker = null, arming = false;
-
-function drawHome() {
-  if (homeMarker) { map.removeLayer(homeMarker); homeMarker = null; }
-  if (!home) return;
-  homeMarker = L.marker([home.lat, home.lon], {
-    icon: L.divIcon({ className: "", html: '<div class="home-pin"></div>',
-                      iconSize: [18, 18], iconAnchor: [9, 9] }),
-    title: "Your home", zIndexOffset: 1000
-  }).addTo(map).bindTooltip("Home", { direction: "top" });
-}
-const setHomeBtn = document.getElementById("setHome");
-setHomeBtn.onclick = () => {
-  arming = !arming;
-  setHomeBtn.classList.toggle("arming", arming);
-  setHomeBtn.textContent = arming ? "Click the map on your house" : "Set my home";
+const WX = {
+  0:"Clear",1:"Mostly clear",2:"Part cloud",3:"Overcast",45:"Fog",48:"Freezing fog",
+  51:"Light drizzle",53:"Drizzle",55:"Heavy drizzle",56:"Freezing drizzle",
+  57:"Freezing drizzle",61:"Light rain",63:"Rain",65:"Heavy rain",66:"Freezing rain",
+  67:"Freezing rain",71:"Light snow",73:"Snow",75:"Heavy snow",77:"Snow grains",
+  80:"Showers",81:"Showers",82:"Heavy showers",85:"Snow showers",86:"Heavy snow showers",
+  95:"Thunderstorm",96:"Thunderstorm, hail",99:"Thunderstorm, hail"
 };
-map.on("click", e => {
-  if (!arming) return;
-  home = { lat: +e.latlng.lat.toFixed(5), lon: +e.latlng.lng.toFixed(5) };
-  localStorage.setItem(HOME_KEY, JSON.stringify(home));   // stays in this browser
-  arming = false;
-  setHomeBtn.classList.remove("arming");
-  setHomeBtn.textContent = "Move my home";
-  drawHome();
-  if (selected) show(selected);
-});
-drawHome();
-if (home) setHomeBtn.textContent = "Move my home";
 
-// -------------------------------------------------------------- render
-let DATA = null, selected = null;
-const layer = L.layerGroup().addTo(map);
-const markers = new Map();
+let home = null, DATA = null, DOC = null, homeMarker = null;
+try { home = JSON.parse(localStorage.getItem(HOME_KEY) || "null"); } catch (e) { home = null; }
 
-function colourFor(m) {
-  if (m >= 1800) return "#3d1f52";
-  if (m >= 1400) return "#6b2d3c";
-  if (m >= 1000) return "#9c4a1e";
-  if (m >= 600)  return "#8a6a12";
-  return "#4a6b2a";
+const colourFor = m =>
+  m >= 1800 ? "#3d1f52" : m >= 1400 ? "#6b2d3c" :
+  m >= 1000 ? "#9c4a1e" : m >= 600 ? "#8a6a12" : "#4a6b2a";
+
+// --------------------------------------------------------- base layers
+function addBases() {
+  map.addSource("topoRaster", { type: "raster", tiles: [TOPO], tileSize: 256, maxzoom: 16 });
+  map.addSource("aerialRaster", { type: "raster", tiles: [AERIAL], tileSize: 256, maxzoom: 20 });
+  const above = vectorLayerIds[1];
+  map.addLayer({ id: "topoRasterLayer", type: "raster", source: "topoRaster" }, above);
+  map.addLayer({ id: "aerialRasterLayer", type: "raster", source: "aerialRaster",
+                 layout: { visibility: "none" } }, above);
 }
-const radiusFor = m => 4 + Math.min(7, m / 300);
 
-function draw() {
-  layer.clearLayers();
-  markers.clear();
-  const maxSec = +document.getElementById("driveRange").value * 60;
-  let shown = 0;
+function setBase(which) {
+  const showVector = which === "vector";
+  for (const id of vectorLayerIds) {
+    const l = map.getLayer(id);
+    if (l && l.type !== "background") {
+      map.setLayoutProperty(id, "visibility", showVector ? "visible" : "none");
+    }
+  }
+  map.setLayoutProperty("topoRasterLayer", "visibility", which === "topo" ? "visible" : "none");
+  map.setLayoutProperty("aerialRasterLayer", "visibility", which === "aerial" ? "visible" : "none");
+}
 
+function set3D(on) {
+  if (on) {
+    map.setTerrain({ source: "LINZ-Terrain", exaggeration: 1.3 });
+    // MapLibre draws sky through setSky, not as a layer. Mapbox uses a layer,
+    // and using that here fails silently apart from a console warning.
+    map.setSky({
+      "sky-color": "#8fb4d8", "horizon-color": "#dfe7ee",
+      "fog-color": "#e8eef3", "fog-ground-blend": 0.6,
+      "horizon-fog-blend": 0.5, "sky-horizon-blend": 0.6
+    });
+    if (map.getPitch() < 25) map.easeTo({ pitch: 62, duration: 800 });
+  } else {
+    map.setTerrain(null);
+    map.setSky(null);
+    map.easeTo({ pitch: 0, duration: 600 });
+  }
+}
+
+// ------------------------------------------------------------ overlays
+function peakGeoJSON(maxSec) {
+  const f = [];
   for (const p of DATA.peaks) {
     const sec = p.drive ? p.drive.seconds : null;
-    // Peaks with no known drive time are only shown when the filter is wide open.
     if (sec === null ? maxSec < 240 * 60 : sec > maxSec) continue;
-    shown++;
-    const m = L.circleMarker([p.lat, p.lon], {
-      radius: radiusFor(p.elevation_m), className: "pk",
-      color: "#fff", weight: 1.5, opacity: 1,
-      fillColor: colourFor(p.elevation_m), fillOpacity: .92
-    }).addTo(layer);
-    m.bindTooltip(`${p.name} · ${p.elevation_m} m`, { direction: "top" });
-    m.on("click", () => { selected = p; show(p); });
-    markers.set(p.id, m);
+    f.push({ type: "Feature",
+      geometry: { type: "Point", coordinates: [p.lon, p.lat] },
+      properties: { id: p.id, name: p.name, ele: p.elevation_m,
+                    colour: colourFor(p.elevation_m) } });
   }
-  document.getElementById("subtitle").textContent =
-    `${shown} peaks shown · ${DATA.counts.named_peaks_in_region} named peaks in the region`;
+  return { type: "FeatureCollection", features: f };
 }
 
+function routeGeoJSON(only) {
+  const f = [];
+  for (const p of DATA.peaks) {
+    if (!p.route || !p.route.line || p.route.line.length < 2) continue;
+    if (only && p.id !== only) continue;
+    f.push({ type: "Feature",
+      geometry: { type: "LineString", coordinates: p.route.line.map(([a, b]) => [b, a]) },
+      properties: { id: p.id, name: p.name } });
+  }
+  return { type: "FeatureCollection", features: f };
+}
+
+function addOverlays() {
+  map.addSource("docTracks", { type: "geojson", data: DOC.tracks });
+  map.addLayer({
+    id: "docTracksLine", type: "line", source: "docTracks",
+    layout: { visibility: "none", "line-cap": "round" },
+    paint: { "line-color": "#2f7d4f", "line-width": 1.8, "line-opacity": .8,
+             "line-dasharray": [3, 2] }
+  });
+
+  map.addSource("routes", { type: "geojson", data: routeGeoJSON() });
+  map.addLayer({ id: "routeCasing", type: "line", source: "routes",
+    layout: { "line-cap": "round", "line-join": "round" },
+    paint: { "line-color": "#ffffff", "line-width": 5.5, "line-opacity": .9 } });
+  map.addLayer({ id: "routeLine", type: "line", source: "routes",
+    layout: { "line-cap": "round", "line-join": "round" },
+    paint: { "line-color": "#c8341c", "line-width": 2.6 } });
+
+  map.addSource("huts", { type: "geojson", data: DOC.huts });
+  map.addLayer({
+    id: "hutPoints", type: "circle", source: "huts",
+    paint: {
+      "circle-radius": ["interpolate", ["linear"], ["zoom"], 8, 3.2, 13, 6],
+      "circle-color": ["case", ["==", ["get", "status"], "OPEN"], "#1b64c4", "#a33a2a"],
+      "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.6
+    }
+  });
+  map.addLayer({
+    id: "hutLabels", type: "symbol", source: "huts", minzoom: 11,
+    layout: { "text-field": ["get", "name"], "text-size": 11,
+              "text-offset": [0, 1.1], "text-anchor": "top",
+              "text-font": ["Open Sans Regular"] },
+    paint: { "text-color": "#123a6b", "text-halo-color": "#fff", "text-halo-width": 1.6 }
+  });
+
+  map.addSource("peaks", { type: "geojson", data: peakGeoJSON(240 * 60) });
+  map.addLayer({
+    id: "peakPoints", type: "circle", source: "peaks",
+    paint: {
+      "circle-radius": ["interpolate", ["linear"], ["get", "ele"], 300, 4, 1000, 6.5, 1800, 10],
+      "circle-color": ["get", "colour"],
+      "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.6
+    }
+  });
+  map.addLayer({
+    id: "peakLabels", type: "symbol", source: "peaks", minzoom: 10,
+    layout: { "text-field": ["concat", ["get", "name"], "  ", ["get", "ele"], " m"],
+              "text-size": 11.5, "text-offset": [0, 1.2], "text-anchor": "top",
+              "text-font": ["Open Sans Regular"] },
+    paint: { "text-color": "#3a2230", "text-halo-color": "#fff", "text-halo-width": 1.8 }
+  });
+
+  if (home) addHome();
+}
+
+function addHome() {
+  if (homeMarker) homeMarker.remove();
+  const el = document.createElement("div");
+  el.style.cssText = "width:18px;height:18px;border-radius:50%;background:#1b64c4;" +
+    "border:3px solid #fff;box-shadow:0 0 0 1.5px rgba(0,0,0,.5)";
+  homeMarker = new maplibregl.Marker({ element: el })
+    .setLngLat([home.lon, home.lat]).addTo(map);
+}
+
+function highlightRoute(id) {
+  if (!map.getSource("routes")) return;
+  map.getSource("routes").setData(routeGeoJSON(id));
+  const p = DATA.peaks.find(x => x.id === id);
+  if (p && p.route && p.route.line && p.route.line.length > 1) {
+    const b = new maplibregl.LngLatBounds();
+    for (const [la, lo] of p.route.line) b.extend([lo, la]);
+    map.fitBounds(b, { padding: 60, maxZoom: 14, duration: 900 });
+  }
+}
+
+// ----------------------------------------------------------- the panel
 function row(term, value, sub) {
   return `<div class="row"><dt>${term}</dt><dd>${value}` +
          (sub ? `<small>${sub}</small>` : "") + `</dd></div>`;
 }
 
-// ------------------------------------------------------- the route on the map
-const routeLayer = L.layerGroup().addTo(map);
-
-function drawRoute(p) {
-  routeLayer.clearLayers();
-  const rt = p.route;
-  if (!rt || !rt.line || rt.line.length < 2) return;
-  // A pale casing under a bright line, so it reads over a busy topo map.
-  L.polyline(rt.line, { color: "#fff", weight: 6, opacity: .85 }).addTo(routeLayer);
-  L.polyline(rt.line, { color: "#c8341c", weight: 3, opacity: .95 }).addTo(routeLayer);
-  if (p.trailhead) {
-    L.circleMarker([p.trailhead.lat, p.trailhead.lon], {
-      radius: 6, color: "#fff", weight: 2, fillColor: "#1b64c4", fillOpacity: 1
-    }).addTo(routeLayer).bindTooltip("Road end", { direction: "top" });
-  }
-  map.fitBounds(L.polyline(rt.line).getBounds(), { padding: [30, 30], maxZoom: 14 });
-}
-
-// ------------------------------------------------------------ height profile
 function profileChart(rt) {
   const pr = rt.profile;
   if (!pr || pr.length < 3) return "";
@@ -301,134 +402,28 @@ function profileChart(rt) {
   </svg>`;
 }
 
-// ------------------------------------------------------------- time estimate
-function naismith(metres, ascent) {
-  // Classic rule: an hour per 5 km, plus an hour per 600 m of climb.
-  // Applied to the round trip, with the climb counted once.
-  const flat = (metres * 2) / 5000 * 3600;
-  const up = ascent / 600 * 3600;
-  return { total: flat + up };
-}
-function hoursMins(sec) {
-  const h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60);
-  return m ? `${h} h ${m} min` : `${h} h`;
-}
-const clock = iso => iso.slice(11, 16);
+const naismith = (metres, ascent) =>
+  ({ total: (metres * 2) / 5000 * 3600 + ascent / 600 * 3600 });
 
-// ----------------------------------------------------------------- weather
-// WMO weather codes, in plain words.
-const WX = {
-  0: "Clear", 1: "Mostly clear", 2: "Part cloud", 3: "Overcast",
-  45: "Fog", 48: "Freezing fog", 51: "Light drizzle", 53: "Drizzle",
-  55: "Heavy drizzle", 56: "Freezing drizzle", 57: "Freezing drizzle",
-  61: "Light rain", 63: "Rain", 65: "Heavy rain",
-  66: "Freezing rain", 67: "Freezing rain",
-  71: "Light snow", 73: "Snow", 75: "Heavy snow", 77: "Snow grains",
-  80: "Showers", 81: "Showers", 82: "Heavy showers",
-  85: "Snow showers", 86: "Heavy snow showers",
-  95: "Thunderstorm", 96: "Thunderstorm, hail", 99: "Thunderstorm, hail"
-};
+function showPeak(p) {
+  const t = p.track, th = p.trailhead, dr = p.drive, ac = p.access, doc = p.doc;
+  let h = `<h2 class="peak">${esc(p.name)}</h2><p class="elev">${p.elevation_m} m</p>`;
 
-function loadWeather(p) {
-  const box = document.getElementById("wx");
-  if (!box) return;
-  const base = `https://api.open-meteo.com/v1/forecast?latitude=${p.lat}`
-    + `&longitude=${p.lon}&elevation=${p.elevation_m}`
-    + `&timezone=Pacific%2FAuckland&forecast_days=3`;
-  Promise.all([
-    // ECMWF IFS for the numbers. It does not carry freezing level.
-    fetch(base + "&models=ecmwf_ifs025&daily=weather_code,temperature_2m_max,"
-        + "temperature_2m_min,precipitation_sum,wind_speed_10m_max,"
-        + "wind_gusts_10m_max,wind_direction_10m_dominant,sunrise,sunset")
-      .then(r => r.json()),
-    // The multi-model blend, used only for freezing level.
-    fetch(base + "&hourly=freezing_level_height").then(r => r.json())
-  ]).then(([w, f]) => renderWeather(box, p, w, f))
-    .catch(() => {
-      box.innerHTML = `<span class="muted">Could not reach the forecast service.
-        You are probably offline.</span>`;
-    });
-}
-
-function renderWeather(box, p, w, f) {
-  const d = w.daily;
-  if (!d || !d.time) { box.textContent = "No forecast available."; return; }
-
-  const frzFor = day => {
-    if (!f.hourly || !f.hourly.time) return null;
-    const v = f.hourly.time
-      .map((t, i) => t.startsWith(day) ? f.hourly.freezing_level_height[i] : null)
-      .filter(x => x != null);
-    return v.length ? [Math.min(...v), Math.max(...v)] : null;
-  };
-
-  let h = `<dl>`;
-  for (let i = 0; i < d.time.length; i++) {
-    const day = new Date(d.time[i] + "T12:00:00")
-      .toLocaleDateString("en-NZ", { weekday: "short", day: "numeric", month: "short" });
-    const frz = frzFor(d.time[i]);
-    const bits = [
-      `${Math.round(d.temperature_2m_min[i])} to ${Math.round(d.temperature_2m_max[i])}&deg;C`,
-      `${d.precipitation_sum[i].toFixed(1)} mm`,
-      `wind ${Math.round(d.wind_speed_10m_max[i])}, gusts ${Math.round(d.wind_gusts_10m_max[i])} km/h`
-    ];
-    if (frz) {
-      bits.push(`freezing level ${Math.round(frz[0])} to ${Math.round(frz[1])} m`
-        + ` &middot; summit ${p.elevation_m} m`);
-    }
-    h += row(day, esc(WX[d.weather_code[i]] || "?"), bits.join("<br>"));
-  }
-  h += `</dl>`;
-  h += `<div class="note">Forecast for ${p.elevation_m} m, not for the nearest
-        town. Temperature, rain and wind from <b>ECMWF IFS</b>. Freezing level
-        from Open-Meteo's multi-model blend, because ECMWF does not publish it
-        here. A forecast is not a promise.
-        <a href="https://www.yr.no/en/forecast/daily-table/${p.lat},${p.lon}"
-           target="_blank" rel="noopener">Open this spot on yr.no</a>.</div>`;
-  box.innerHTML = h;
-
-  // Daylight, now that we know sunrise and sunset for this exact spot.
-  const dl = document.getElementById("daylight");
-  if (dl && d.sunrise && d.sunset && p.route && p.route.ascent_m != null) {
-    const t = naismith(p.route.length_m, p.route.ascent_m);
-    const set = new Date(d.sunset[0]);
-    const latest = new Date(set.getTime() - t.total * 1000);
-    const rise = clock(d.sunrise[0]);
-    dl.innerHTML = `<dl>`
-      + row("Light today", `${rise} to ${clock(d.sunset[0])}`,
-            "sunrise and sunset at this summit")
-      + row("Latest start", latest.toTimeString().slice(0, 5),
-            "to be back at the car by dark, moving without stops")
-      + `</dl>`;
-  }
-}
-
-function show(p) {
-  const t = p.track, th = p.trailhead, dr = p.drive, ac = p.access;
-  let h = `<h2 class="peak">${esc(p.name)}</h2>
-           <p class="elev">${p.elevation_m} m</p>`;
-
-  // ---- access, first, because it decides whether the rest matters
   const a = ac ? ACCESS[ac.status] : null;
   h += a ? `<span class="badge ${a[1]}">${a[0]}</span>`
          : `<span class="badge unknown">Access could not be checked</span>`;
 
-  // ---- a live DOC alert outranks everything else on the page
-  const doc = p.doc;
   if (doc && doc.alerts && doc.alerts.length) {
     h += `<div class="alert"><b>DOC alert on ${esc(doc.name)}</b>`;
-    for (const a of doc.alerts.slice(0, 3)) {
-      h += `<div class="alert-item"><b>${esc(a.heading || "Notice")}</b>`
-         + (a.date ? ` <span class="muted">${esc(a.date)}</span>` : "")
-         + (a.detail ? `<br>${esc(a.detail).slice(0, 320)}` : "") + `</div>`;
+    for (const al of doc.alerts.slice(0, 3)) {
+      h += `<div class="alert-item"><b>${esc(al.heading || "Notice")}</b>`
+         + (al.date ? ` <span class="muted">${esc(al.date)}</span>` : "")
+         + (al.detail ? `<br>${esc(al.detail).slice(0, 320)}` : "") + `</div>`;
     }
-    if (doc.link) {
-      h += `<a href="${esc(doc.link)}" target="_blank" rel="noopener">Check DOC before you go</a>`;
-    }
+    if (doc.link) h += `<a href="${esc(doc.link)}" target="_blank" rel="noopener">Check DOC before you go</a>`;
     h += `</div>`;
   }
 
-  // ---- getting there
   h += `<div class="sec"><h3>Getting there</h3><dl>`;
   if (dr) {
     h += row("Drive", hhmm(dr.seconds), `${(dr.metres / 1000).toFixed(0)} km`);
@@ -449,13 +444,10 @@ function show(p) {
   h += `</dl>`;
   if (dr && DATA.home_is_placeholder) {
     h += `<div class="note">Drive time is measured from
-          <b>${esc(DATA.home_label || "a stand-in point")}</b>, not your house.
-          To make it exact, put your coordinates in <b>home.local.json</b> and
-          run the build script again.</div>`;
+          <b>${esc(DATA.home_label || "a stand-in point")}</b>, not your house.</div>`;
   }
   h += `</div>`;
 
-  // ---- the walk
   h += `<div class="sec"><h3>The walk in</h3><dl>`;
   if (t.distance_from_trailhead_m != null) {
     h += row("Track distance", `${(t.distance_from_trailhead_m / 1000).toFixed(1)} km`,
@@ -468,68 +460,49 @@ function show(p) {
   const g = GRADES[t.grade];
   h += row("Grade", g ? g[0] : '<span class="muted">not graded</span>',
            g ? g[1] : "no difficulty grade recorded in OpenStreetMap");
+  h += `</dl>`;
   if (t.metres_from_summit > 100) {
-    h += `</dl><div class="note">The mapped track stops about
+    h += `<div class="note">The mapped track stops about
           <b>${t.metres_from_summit} m</b> short of the summit. The last part is
-          untracked, so treat it as a route, not a path.</div><dl>`;
+          untracked, so treat it as a route, not a path.</div>`;
   }
-  h += `</dl></div>`;
+  h += `</div>`;
 
-  // ---- what DOC says, which outranks anything measured off OpenStreetMap
   if (doc) {
     h += `<div class="sec"><h3>What DOC says</h3><dl>`;
     h += row("Track", esc(doc.name), doc.location ? esc(doc.location) : null);
-    if (doc.walk_duration) {
-      h += row("DOC walking time", esc(doc.walk_duration),
-               "their figure, not my estimate");
-    }
+    if (doc.walk_duration) h += row("DOC walking time", esc(doc.walk_duration), "their figure, not my estimate");
     if (doc.distance) h += row("DOC distance", esc(doc.distance));
-    if (doc.walk_category) {
-      h += row("DOC grade", esc(doc.walk_category), "official grading");
-    }
+    if (doc.walk_category) h += row("DOC grade", esc(doc.walk_category), "official grading");
     h += `</dl>`;
-    if (doc.introduction) {
-      h += `<div class="note">${esc(doc.introduction)}</div>`;
-    }
+    if (doc.introduction) h += `<div class="note">${esc(doc.introduction)}</div>`;
     if (doc.others && doc.others.length) {
       h += `<div class="note">DOC lists other tracks past this summit too:
             ${doc.others.map(esc).join(", ")}. I picked the one that looks like
             the route up rather than a longer trip that happens to cross it.</div>`;
     }
-    if (doc.link) {
-      h += `<a class="doclink" href="${esc(doc.link)}" target="_blank"
-              rel="noopener">Open the DOC page for this track</a>`;
-    }
+    if (doc.link) h += `<a class="doclink" href="${esc(doc.link)}" target="_blank" rel="noopener">Open the DOC page for this track</a>`;
     h += `</div>`;
   }
 
-  // ---- climb, measured along the actual route
   const rt = p.route;
   const noWalk = rt && rt.length_m === 0;
-
   if (noWalk) {
-    // The nearest track point to the summit is itself the road access point.
-    // Either the road goes to the top, or nothing walkable heads that way.
     const gap = t.metres_from_summit;
     h += `<div class="sec"><h3>The climb</h3><div class="note">` + (gap <= 100
-      ? `<b>A road reaches this summit.</b> There is no walk in, so there is no
-         climb to report.`
+      ? `<b>A road reaches this summit.</b> There is no walk in, so there is no climb to report.`
       : `<b>No walking track leads to this summit.</b> The nearest mapped track
          is a roadside one about ${gap} m away, so getting to the top means
-         crossing untracked ground. No climb figure is given, because there is
-         no route to measure along.`)
-      + `</div></div>`;
+         crossing untracked ground.`) + `</div></div>`;
   } else {
     h += `<div class="sec"><h3>Climb</h3><dl>`;
     if (rt && rt.ascent_m != null) {
       h += row("Total climb", `${rt.ascent_m} m`,
-               rt.descent_m > 30 ? `and ${rt.descent_m} m of descent on the way up`
-                                 : "one way");
+               rt.descent_m > 30 ? `and ${rt.descent_m} m of descent on the way up` : "one way");
       if (rt.trailhead_elevation_m != null) {
-        const naive = p.elevation_m - rt.trailhead_elevation_m;
         h += row("Road end height", `${rt.trailhead_elevation_m} m`,
-                 `the summit is ${naive} m higher, but the route actually `
-                 + `climbs ${rt.ascent_m} m`);
+                 `the summit is ${p.elevation_m - rt.trailhead_elevation_m} m higher, `
+                 + `but the route actually climbs ${rt.ascent_m} m`);
       }
       h += `</dl>${profileChart(rt)}`;
       h += `<div class="note">Measured by walking the mapped track and reading
@@ -543,46 +516,36 @@ function show(p) {
     h += `</div>`;
   }
 
-  // ---- how long it might take
   if (!noWalk && rt && rt.ascent_m != null && rt.length_m) {
     const est = naismith(rt.length_m, rt.ascent_m);
     const hours = est.total / 3600;
-    const dayTrip = hours <= 10;
     h += `<div class="sec"><h3>How long</h3><dl>`;
     h += row(doc && doc.walk_duration ? "My estimate" : "Return, moving",
              hoursMins(est.total), "Naismith's rule, return trip, no stops");
-    if (doc && doc.walk_duration) {
-      h += row("DOC says", esc(doc.walk_duration), "trust this one");
-    }
+    if (doc && doc.walk_duration) h += row("DOC says", esc(doc.walk_duration), "trust this one");
     h += `</dl>`;
-    if (dayTrip) {
+    if (hours <= 10) {
       h += `<div class="note">An <b>estimate</b>, not a measurement. Naismith
-            allows an hour per 5 km plus an hour per 600 m of climb. It assumes
-            a fit walker, good conditions and no breaks. Add your own time for
-            lunch, photos, and anything technical near the top.</div>
-            <div id="daylight"></div>`;
+            allows an hour per 5 km plus an hour per 600 m of climb, for a fit
+            walker with no breaks.</div><div id="daylight"></div>`;
     } else {
-      h += `<div class="note"><b>This is not a day walk.</b> At roughly
+      h += `<div class="note"><b>This is not a day walk.</b> About
             ${Math.round(hours)} hours of moving time over
-            ${(rt.length_m * 2 / 1000).toFixed(0)} km return, it is a trip of
-            several days with nights in huts or a tent. No start time is
-            suggested, because getting back before dark is not the question.
-            Plan it properly and file trip intentions at adventuresmart.nz.</div>`;
+            ${(rt.length_m * 2 / 1000).toFixed(0)} km return. Plan it properly
+            and file trip intentions at adventuresmart.nz.</div>`;
     }
     h += `</div>`;
   }
 
-  // ---- weather, filled in once it arrives
   h += `<div class="sec"><h3>Weather at the summit</h3>
         <div id="wx" class="muted" style="font-size:12.5px">loading…</div></div>`;
 
-  // ---- where the facts came from
   let accessLine = "Not checked.";
   if (ac) {
     accessLine = ac.layers && ac.layers.length
       ? `Herenga &#257; Nuku shows this summit on: ${esc(ac.layers.join(", "))}.`
-      : "Herenga &#257; Nuku shows no public access area at this summit. " +
-        "That is not proof the land is private, only that it is not mapped as public. Check before you go.";
+      : "Herenga &#257; Nuku shows no public access area at this summit. That is "
+        + "not proof the land is private, only that it is not mapped as public.";
     if (ac.detail) accessLine += ` <span class="muted">${esc(ac.detail)}</span>`;
   }
   h += `<div class="src">
@@ -592,68 +555,176 @@ function show(p) {
       <b>Drive time:</b> OSRM routing over OpenStreetMap roads.<br>
       <b>Climb:</b> LINZ NZ 8 m height model, via OpenTopoData.<br>
       <b>Forecast:</b> ECMWF IFS and Open-Meteo.<br>
-      <b>Official track and alerts:</b> Department of Conservation.<br>
+      <b>Official track, huts and alerts:</b> Department of Conservation.<br>
       <b>Map:</b> LINZ Topo50, CC BY 4.0.<br><br>
       ${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}
-      &middot; <a href="https://www.topomap.co.nz/NZTopoMap?v=2&ll=${p.lat},${p.lon}&z=15"
+      &middot; <a href="https://www.topomap.co.nz/NZTopoMap?v=2&ll=${p.lat},${p.lon}"
                  target="_blank" rel="noopener">open on NZ Topo Map</a>
     </div>`;
 
-  document.getElementById("body").innerHTML = h;
-  document.getElementById("body").scrollTop = 0;
-  drawRoute(p);
+  const body = document.getElementById("body");
+  body.innerHTML = h; body.scrollTop = 0;
+  highlightRoute(p.id);
   loadWeather(p);
 }
 
-// ------------------------------------------------------------- controls
+function showHut(pr, lngLat) {
+  const open = String(pr.status || "").toUpperCase() === "OPEN";
+  let h = `<h2 class="peak">${esc(pr.name)}</h2>`;
+  h += `<p class="elev">${esc(pr.category || "DOC hut")}`
+     + `${pr.place ? " &middot; " + esc(pr.place) : ""}</p>`;
+  h += `<span class="badge ${open ? "open" : "closed"}">${esc(pr.status || "status unknown")}</span>`;
+  h += `<div class="sec"><h3>The hut</h3><dl>`;
+  if (pr.bunks != null && pr.bunks !== "") h += row("Bunks", esc(pr.bunks));
+  if (pr.category) h += row("Category", esc(pr.category));
+  h += row("Booking", String(pr.bookable) === "true" ? "Must be booked" : "First come, first served");
+  if (pr.road_end) h += row("From the road end", esc(pr.road_end));
+  if (home) {
+    const d = distKm(home.lat, home.lon, lngLat.lat, lngLat.lng);
+    const b = bearing(home.lat, home.lon, lngLat.lat, lngLat.lng);
+    h += row("From home", `${d.toFixed(1)} km`, `${compass(b)}, straight line`);
+  }
+  h += `</dl>`;
+  // MapLibre hands array properties back as a JSON string when a feature comes
+  // from a click, but as a real array when called directly. Handle both, and
+  // never split on commas, because facilities like "Water from tap - not
+  // treated, boil before use" contain them.
+  let facs = [];
+  if (Array.isArray(pr.facilities)) {
+    facs = pr.facilities;
+  } else if (typeof pr.facilities === "string" && pr.facilities.trim()) {
+    try { facs = JSON.parse(pr.facilities); } catch (e) { facs = [pr.facilities]; }
+  }
+  if (!Array.isArray(facs)) facs = [];
+  if (facs.length) {
+    h += `<div class="chips">${facs.map(f => `<span class="chip">${esc(f)}</span>`).join("")}</div>`;
+  }
+  if (pr.introduction) h += `<div class="note">${esc(pr.introduction)}</div>`;
+  if (pr.link) h += `<a class="doclink" href="${esc(pr.link)}" target="_blank" rel="noopener">Open the DOC page for this hut</a>`;
+  h += `</div><div class="src"><b>Source:</b> Department of Conservation huts API.<br>
+        ${lngLat.lat.toFixed(5)}, ${lngLat.lng.toFixed(5)}</div>`;
+  const body = document.getElementById("body");
+  body.innerHTML = h; body.scrollTop = 0;
+}
+
+// ----------------------------------------------------------------- weather
+function loadWeather(p) {
+  const box = document.getElementById("wx");
+  if (!box) return;
+  const base = `https://api.open-meteo.com/v1/forecast?latitude=${p.lat}`
+    + `&longitude=${p.lon}&elevation=${p.elevation_m}`
+    + `&timezone=Pacific%2FAuckland&forecast_days=3`;
+  Promise.all([
+    fetch(base + "&models=ecmwf_ifs025&daily=weather_code,temperature_2m_max,"
+        + "temperature_2m_min,precipitation_sum,wind_speed_10m_max,"
+        + "wind_gusts_10m_max,wind_direction_10m_dominant,sunrise,sunset").then(r => r.json()),
+    fetch(base + "&hourly=freezing_level_height").then(r => r.json())
+  ]).then(([w, f]) => renderWeather(box, p, w, f))
+    .catch(() => { box.innerHTML = `<span class="muted">Could not reach the forecast service.</span>`; });
+}
+
+function renderWeather(box, p, w, f) {
+  const d = w.daily;
+  if (!d || !d.time) { box.textContent = "No forecast available."; return; }
+  const frzFor = day => {
+    if (!f.hourly || !f.hourly.time) return null;
+    const v = f.hourly.time.map((t, i) =>
+      t.startsWith(day) ? f.hourly.freezing_level_height[i] : null).filter(x => x != null);
+    return v.length ? [Math.min(...v), Math.max(...v)] : null;
+  };
+  let h = `<dl>`;
+  for (let i = 0; i < d.time.length; i++) {
+    const day = new Date(d.time[i] + "T12:00:00")
+      .toLocaleDateString("en-NZ", { weekday: "short", day: "numeric", month: "short" });
+    const frz = frzFor(d.time[i]);
+    const bits = [
+      `${Math.round(d.temperature_2m_min[i])} to ${Math.round(d.temperature_2m_max[i])}&deg;C`,
+      `${d.precipitation_sum[i].toFixed(1)} mm`,
+      `wind ${Math.round(d.wind_speed_10m_max[i])}, gusts ${Math.round(d.wind_gusts_10m_max[i])} km/h`
+    ];
+    if (frz) bits.push(`freezing level ${Math.round(frz[0])} to ${Math.round(frz[1])} m`
+      + ` &middot; summit ${p.elevation_m} m`);
+    h += row(day, esc(WX[d.weather_code[i]] || "?"), bits.join("<br>"));
+  }
+  h += `</dl><div class="note">Forecast for ${p.elevation_m} m, not for the nearest
+        town. Temperature, rain and wind from <b>ECMWF IFS</b>. Freezing level from
+        Open-Meteo's multi-model blend, because ECMWF does not publish it here.
+        A forecast is not a promise.
+        <a href="https://www.yr.no/en/forecast/daily-table/${p.lat},${p.lon}"
+           target="_blank" rel="noopener">Open this spot on yr.no</a>.</div>`;
+  box.innerHTML = h;
+
+  const dl = document.getElementById("daylight");
+  if (dl && d.sunrise && d.sunset && p.route && p.route.ascent_m != null) {
+    const t = naismith(p.route.length_m, p.route.ascent_m);
+    const latest = new Date(new Date(d.sunset[0]).getTime() - t.total * 1000);
+    dl.innerHTML = `<dl>`
+      + row("Light today", `${clock(d.sunrise[0])} to ${clock(d.sunset[0])}`,
+            "sunrise and sunset at this summit")
+      + row("Latest start", latest.toTimeString().slice(0, 5),
+            "to be back at the car by dark, moving without stops")
+      + `</dl>`;
+  }
+}
+
+// ---------------------------------------------------------------- wiring
 const range = document.getElementById("driveRange");
 range.oninput = () => {
   const v = +range.value;
   document.getElementById("driveLabel").textContent =
     v >= 240 ? "any" : (v >= 60 ? `${(v / 60).toFixed(v % 60 ? 1 : 0)} hour${v > 60 ? "s" : ""}` : `${v} min`);
-  if (DATA) draw();
+  if (DATA && map.getSource("peaks")) {
+    const gj = peakGeoJSON(v * 60);
+    map.getSource("peaks").setData(gj);
+    document.getElementById("subtitle").textContent =
+      `${gj.features.length} peaks · ${DOC ? DOC.huts.features.length : 0} huts · `
+      + `${DATA.counts.named_peaks_in_region} named peaks in the region`;
+  }
 };
+for (const r of document.querySelectorAll('input[name="base"]')) {
+  r.onchange = () => setBase(r.value);
+}
+document.getElementById("threeD").onchange = e => set3D(e.target.checked);
+const vis = (id, on) => map.getLayer(id) &&
+  map.setLayoutProperty(id, "visibility", on ? "visible" : "none");
+document.getElementById("ovPeaks").onchange  = e => { vis("peakPoints", e.target.checked); vis("peakLabels", e.target.checked); };
+document.getElementById("ovRoutes").onchange = e => { vis("routeCasing", e.target.checked); vis("routeLine", e.target.checked); };
+document.getElementById("ovHuts").onchange   = e => { vis("hutPoints", e.target.checked); vis("hutLabels", e.target.checked); };
+document.getElementById("ovTracks").onchange = e => vis("docTracksLine", e.target.checked);
 
-// ---------------------------------------------------------------- load
-// `no-cache` means "ask the server if this changed" rather than "never cache".
-// Without it a rebuilt data file can sit unseen behind a stale browser copy.
-const FRESH = { cache: "no-cache" };
+// ------------------------------------------------------------------ load
+map.on("style.load", async () => {
+  vectorLayerIds = map.getStyle().layers.map(l => l.id);
+  addBases();
+  setBase("topo");
 
-fetch("data/home.local.json", FRESH)
-  .then(r => r.ok ? r.json() : null)
-  .catch(() => null)
-  .then(h => {
-    if (h && typeof h.lat === "number") {
-      home = { lat: h.lat, lon: h.lon };
-      homeFromFile = true;
-      drawHome();
-      setHomeBtn.hidden = true;      // the file is the single source of truth
-    }
-  })
-  // Your own build first. On the published copy that file is absent, so the
-  // page falls back to the public one, whose drive times start from Nelson
-  // city centre rather than your door.
-  .then(() => fetch("data/peaks.json", FRESH))
-  .then(r => r.ok ? r : fetch("data/peaks.public.json", FRESH))
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d => {
-    DATA = d;
-    range.dispatchEvent(new Event("input"));
-    draw();
-    // Ground zero really is the centre of the map.
-    if (homeFromFile) map.setView([home.lat, home.lon], 10);
-    map.attributionControl.addAttribution(
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
-      '&middot; access: <a href="https://www.herengaanuku.govt.nz/">Herenga &#257; Nuku</a>');
-  })
-  .catch(err => {
-    document.getElementById("body").innerHTML =
-      `<p class="empty"><strong>Could not load the peak data.</strong>
-       Run <b>python build_data.py</b> first, then open this page again.
-       If you opened this file directly, your browser may be blocking the data
-       file. Start a local server instead: <b>python -m http.server</b> in this
-       folder, then visit localhost:8000.<br><br>${esc(err.message)}</p>`;
+  const homeFile = await fetch("data/home.local.json", FRESH)
+    .then(r => r.ok ? r.json() : null).catch(() => null);
+  if (homeFile && typeof homeFile.lat === "number") {
+    home = { lat: homeFile.lat, lon: homeFile.lon };
+  }
+
+  DATA = await fetch("data/peaks.json", FRESH)
+    .then(r => r.ok ? r : fetch("data/peaks.public.json", FRESH))
+    .then(r => r.json());
+  DOC = await fetch("data/doc_layers.json", FRESH).then(r => r.json())
+    .catch(() => ({ huts: { type: "FeatureCollection", features: [] },
+                    tracks: { type: "FeatureCollection", features: [] } }));
+
+  addOverlays();
+  range.dispatchEvent(new Event("input"));
+  if (home) map.jumpTo({ center: [home.lon, home.lat], zoom: 9.5 });
+
+  for (const id of ["peakPoints", "hutPoints"]) {
+    map.on("mouseenter", id, () => map.getCanvas().style.cursor = "pointer");
+    map.on("mouseleave", id, () => map.getCanvas().style.cursor = "");
+  }
+  map.on("click", "peakPoints", e => {
+    const p = DATA.peaks.find(x => x.id === e.features[0].properties.id);
+    if (p) showPeak(p);
   });
+  map.on("click", "hutPoints", e => showHut(e.features[0].properties, e.lngLat));
+});
 </script>
 </body>
 </html>

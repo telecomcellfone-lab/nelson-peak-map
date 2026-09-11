@@ -78,9 +78,49 @@ degrees, so `build_doc.py` carries the conversion. It is checked against a
 known point: the Mount Arthur Summit Route ends 60 m from the recorded summit
 and starts at the Flora car park.
 
+## What stage 4 adds
+
+The map moved from Leaflet to MapLibre so that everything can live in one
+place and be switched on and off.
+
+**Base map**, pick one:
+
+* **Topo50**, the printed sheet. Every track and hut is already drawn on it.
+* **Vector topo**, the same data redrawn live. Rotatable and restylable.
+* **Aerial photo.**
+
+**View**: a 3D terrain switch. It drapes whichever base map you chose over
+LINZ's national elevation model, which they serve as terrain tiles up to zoom
+18. The printed Topo50 keeps all its markings when tilted, because they are
+part of the image.
+
+**Show**, any combination:
+
+* **Peaks**, 209 of them, sized and coloured by height.
+* **Route to summit**, the measured line from the road end.
+* **DOC huts**, all 186 in the region. Click one for bunks, category, booking,
+  facilities and whether it is open.
+* **All DOC tracks**, the full official network, 173 tracks.
+
+## Offline
+
+Not supported, and not needed: this is for planning at home. LINZ do publish
+the whole basemap as a single MBTiles file, but only for the vector map. Peter
+King at LINZ confirmed there is no raster export yet, it is on their backlog.
+
 ## What it deliberately does not do yet
 
 **Trip reports and the full filter bar.** Still to come.
+
+## Two MapLibre traps worth remembering
+
+* **Sky is not a layer.** Mapbox GL uses `addLayer({type: "sky"})`, MapLibre
+  uses `map.setSky()`. The layer form fails validation and is only visible as a
+  console warning, so the sky silently never appears.
+* **Load a style by URL, not inline.** An inline style object would not finish
+  loading here, while the same style fetched from LINZ loads every time. The
+  published LINZ style also carries the terrain source already, so 3D is one
+  line rather than a new source.
 
 ## Keys
 
@@ -169,6 +209,8 @@ arrives, replace the single marked line near the top of the `<script>` block.
 | Public access | Herenga a Nuku Aotearoa, Public Access Areas | CC BY 3.0 NZ |
 | Drive time | OSRM routing over OpenStreetMap roads | ODbL |
 | Ground height | LINZ NZ 8m DEM, via OpenTopoData | CC BY 4.0 |
+| 3D terrain | LINZ national elevation model, terrain-RGB tiles | CC BY 4.0 |
+| Huts and official tracks | Department of Conservation | CC BY 4.0 |
 | Forecast | ECMWF IFS and Open-Meteo | CC BY 4.0 |
 
 Rules the build script follows:

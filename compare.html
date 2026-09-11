@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Topo styles compared</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.6.1/maplibre-gl.css">
 <style>
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
@@ -36,7 +36,7 @@
     <div class="hint">drag to rotate &middot; right drag or two fingers to tilt</div></div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/5.6.1/maplibre-gl.js"></script>
 <script>
 const KEY = "d01m0gkkx2t24zn5bcrp0sxk472";
 const AT = [172.6815, -41.2183];      // Mount Arthur, longitude then latitude
@@ -77,9 +77,10 @@ function makeMap(container, { raster, pitch, bearing, zoom }) {
     }
     if (pitch) {
       map.setTerrain({ source: "LINZ-Terrain", exaggeration: 1.4 });
-      map.addLayer({
-        id: "sky", type: "sky",
-        paint: { "sky-type": "atmosphere", "sky-atmosphere-sun-intensity": 5 }
+      map.setSky({
+        "sky-color": "#8fb4d8", "horizon-color": "#dfe7ee",
+        "fog-color": "#e8eef3", "fog-ground-blend": 0.6,
+        "horizon-fog-blend": 0.5, "sky-horizon-blend": 0.6
       });
     }
   });
