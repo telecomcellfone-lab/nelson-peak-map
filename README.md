@@ -131,7 +131,7 @@ Most had nothing to sweep.
 
 | Source | Why not |
 |---|---|
-| Waimea Tramping Club | 490 reports and the closest club to home, but `robots.txt` disallows every crawler. Left alone. Ask the club and it switches on in one line. |
+| Waimea Tramping Club | 490 reports and the closest club to home, but `robots.txt` disallows every crawler. Not indexed. The app carries a plain link to their archive instead, which needs no permission. |
 | Auckland Tramping Club | `robots.txt` disallows every crawler |
 | Christchurch TC | route archive is behind a member login |
 | tramper.nz | the old community site is gone, the domain now serves travel-blog filler |
