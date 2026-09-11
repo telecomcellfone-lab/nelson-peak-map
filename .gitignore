@@ -24,3 +24,4 @@ data/elevation_cache.json
 __pycache__/
 basemaps-key.local.json
 data/doc_hut_cache.json
+data/trip_reports_raw.html

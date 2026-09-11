@@ -108,9 +108,34 @@ Not supported, and not needed: this is for planning at home. LINZ do publish
 the whole basemap as a single MBTiles file, but only for the vector map. Peter
 King at LINZ confirmed there is no raster export yet, it is on their backlog.
 
+## Trip reports
+
+The Nelson Tramping Club has published a report for nearly every outing since
+2003, and the whole index sits on one page. 688 reports, and 79 of the 209
+peaks are named in at least one.
+
+Only the title, the date and a link are stored. The reports themselves are not
+copied, and they are never turned into a claim about the track. The panel says
+"8 reports mention this peak, most recent 21 Jul 2024" and you read them
+yourself, because a report is one person's day in one set of conditions, often
+years ago.
+
+Matching free text to peaks has two traps, both handled:
+
+* Club titles read "Destination, Area, Date", but the separator is sometimes a
+  dash. Splitting only on commas made "Gordons Knob - Mt Richmond FP" look like
+  a trip up Mount Richmond.
+* "Mt Richmond FP" is a park, not a peak. Without a rule for that, every trip
+  in the forest park looked like a trip up the mountain.
+
+One limitation remains and is visible in the app. Matching is by distinctive
+word, so "Arthur's Pass" still turns up under Mount Arthur. Titles are shown in
+full so you can see it, and reports that only mention a peak in passing are
+dimmed and labelled.
+
 ## What it deliberately does not do yet
 
-**Trip reports and the full filter bar.** Still to come.
+**The filter bar.** Still to come.
 
 ## Two MapLibre traps worth remembering
 
@@ -175,6 +200,9 @@ python build_data.py             # private copy, from your address
 python build_data.py --public    # published copy, from Waimea College
 python build_data.py --refresh   # re-download everything from OpenStreetMap
 python build_routes.py           # routes, climb figures and height profiles
+python build_doc.py              # DOC track info and alerts, per peak
+python build_doc_layers.py       # DOC huts and the whole track network
+python build_reports.py          # Nelson Tramping Club trip reports
 ```
 
 `build_routes.py` writes into both data files, because they share the same
@@ -211,6 +239,7 @@ arrives, replace the single marked line near the top of the `<script>` block.
 | Ground height | LINZ NZ 8m DEM, via OpenTopoData | CC BY 4.0 |
 | 3D terrain | LINZ national elevation model, terrain-RGB tiles | CC BY 4.0 |
 | Huts and official tracks | Department of Conservation | CC BY 4.0 |
+| Trip reports | Nelson Tramping Club archive, titles and links only | |
 | Forecast | ECMWF IFS and Open-Meteo | CC BY 4.0 |
 
 Rules the build script follows:

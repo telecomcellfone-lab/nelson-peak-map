@@ -76,6 +76,12 @@
   .alert-item b{color:var(--ink);text-transform:none;letter-spacing:0;font-size:12.5px}
   .alert a{color:#7d4f08;font-weight:600}
   .doclink{display:inline-block;margin-top:8px;font-size:12px;font-weight:600}
+  .reports{margin-top:8px}
+  .report{display:block;padding:7px 0;border-top:1px solid var(--line);
+          font-size:12.5px;line-height:1.4;text-decoration:none;color:var(--ink)}
+  .report:hover{color:#0b4ea2}
+  .report .when{color:var(--ink-3);font-size:11.5px;display:block;margin-top:1px}
+  .report.nearby{opacity:.72}
   .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
   .chip{background:#eceae3;border:1px solid var(--line);border-radius:10px;
         padding:2px 8px;font-size:11.5px;color:var(--ink-2)}
@@ -402,6 +408,15 @@ function profileChart(rt) {
   </svg>`;
 }
 
+function prettyDate(r) {
+  if (!r.date) return r.year ? String(r.year) : "date unknown";
+  const parts = r.date.split("-");
+  const d = new Date(+parts[0], +parts[1] - 1, +(parts[2] || 1));
+  return d.toLocaleDateString("en-NZ",
+    parts[2] ? { day: "numeric", month: "short", year: "numeric" }
+             : { month: "short", year: "numeric" });
+}
+
 const naismith = (metres, ascent) =>
   ({ total: (metres * 2) / 5000 * 3600 + ascent / 600 * 3600 });
 
@@ -485,6 +500,31 @@ function showPeak(p) {
     h += `</div>`;
   }
 
+  // ---- trip reports. Titles and links only, never the text itself.
+  if (p.reports && p.reports.length) {
+    const about = p.reports.filter(r => r.about);
+    const newest = p.reports.reduce((a, r) =>
+      (r.year || 0) > (a.year || 0) ? r : a, p.reports[0]);
+    h += `<div class="sec"><h3>Trip reports</h3>`;
+    h += `<p class="elev" style="margin:0 0 2px">${p.reports.length} report`
+       + `${p.reports.length === 1 ? "" : "s"} mention this peak`
+       + `${newest.year ? `, most recent ${prettyDate(newest)}` : ""}.</p>`;
+    h += `<div class="reports">`;
+    for (const r of p.reports) {
+      h += `<a class="report${r.about ? "" : " nearby"}" target="_blank"
+               rel="noopener" href="${esc(r.url)}">${esc(r.title)}
+               <span class="when">${prettyDate(r)}`
+         + `${r.about ? "" : " &middot; mentions this peak in passing"}</span></a>`;
+    }
+    h += `</div>`;
+    h += `<div class="note">From the <b>Nelson Tramping Club</b> archive, which
+          runs from 2003. These are one person's day in one set of conditions,
+          often years ago, so read them as experience rather than as fact about
+          the track. Matching is by name, so the odd title may be somewhere else
+          with a similar name.</div>`;
+    h += `</div>`;
+  }
+
   const rt = p.route;
   const noWalk = rt && rt.length_m === 0;
   if (noWalk) {
@@ -556,6 +596,7 @@ function showPeak(p) {
       <b>Climb:</b> LINZ NZ 8 m height model, via OpenTopoData.<br>
       <b>Forecast:</b> ECMWF IFS and Open-Meteo.<br>
       <b>Official track, huts and alerts:</b> Department of Conservation.<br>
+      <b>Trip reports:</b> Nelson Tramping Club, titles and links only.<br>
       <b>Map:</b> LINZ Topo50, CC BY 4.0.<br><br>
       ${p.lat.toFixed(5)}, ${p.lon.toFixed(5)}
       &middot; <a href="https://www.topomap.co.nz/NZTopoMap?v=2&ll=${p.lat},${p.lon}"

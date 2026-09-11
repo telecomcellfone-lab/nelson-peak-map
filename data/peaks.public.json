@@ -18,7 +18,8 @@
   "drive_time": "OSRM public routing over OpenStreetMap roads",
   "basemap": "LINZ Topo50 raster basemap, CC BY 4.0",
   "ground_height": "LINZ NZ 8m digital elevation model, via OpenTopoData",
-  "doc": "Department of Conservation Tracks API, api.doc.govt.nz, CC BY 4.0"
+  "doc": "Department of Conservation Tracks API, api.doc.govt.nz, CC BY 4.0",
+  "trip_reports": "Nelson Tramping Club trip report archive, live.nelsontrampingclub.org.nz. Titles and links only."
  },
  "peaks": [
   {
@@ -1082,7 +1083,30 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Tapuae-o-Uenuku, Marlborough, 7 Nov 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=762:mt-tapuae-o-uenuku,-marlborough,-7-nov-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Tapuae-o-Uenuku – Inland Kaikoura Range, 13-15 Dec 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=422:tapuae-o-uenuku-–-inland-kaikoura-range,-13-15-dec-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Tapuae-o-uenuku - 18-20 February 2005",
+     "date": "2005-02-20",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1008:%20mt-tapuae-o-uenuku-18-20-february-2005&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 1574046337,
@@ -2209,7 +2233,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Hopeless Hut / Angelus / Cascade -31 May – 2 June 2003",
+     "date": "2003-05-31",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=909:hopeless-hut-angelus-cascade-31-may-–-2-june-2003&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 1574046315,
@@ -3124,7 +3157,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 2580434624,
@@ -3959,7 +3993,58 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mount Owen Traverse, Kahurangi NP, 7th February 2026",
+     "date": "2026-02-07",
+     "year": 2026,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1038:mount-owen-traverse-2026&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Owen via Fyfe River - return via Sunrise Peak, Kahurangi NP, 23 Dec 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=863:mt-owen-via-fyfe-river-return-via-sunrise-peak,-kahurangi-np,-23-dec-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Owen crossover via Lookout Range, Kahurangi National Park, 28 Jan 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=812:mt-owen-crossover-via-lookout-range,-kahurangi-national-park-28-jan-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Owen Mt Bell and Billies Knob, Kahurangi NP, 26 Feb 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=584:mt-owen-mt-bell-and-billies-knob,-kahurangi-np,-26-feb-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "South Side of Mount Owen, Kahurangi NP, 16-20 Jan 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=350:south-side-of-mount-owen-kahurangi-np-16-20-jan-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Owen – Kahurangi NP, 2-4 June 2012",
+     "date": "2012-06-04",
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=481:mt-owen-–-kahurangi-np,-2-4-june-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Fyfe River - Mt Owen - Sunrise Peak circuit VIDEO, 23-24 Dec 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=862:fyfe-river-mt-owen-sunrise-peak-circuit,-kahurangi-n-p-,-dec-2024&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 5935729235,
@@ -4646,7 +4731,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt. Campbell from Brooklyn Valley, Kahurangi NP, 23 July 2023",
+     "date": "2023-07-23",
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=788:mt-campbell-from-brooklyn-valley,-kahurangi-np,-23-july-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Owen Mt Bell and Billies Knob, Kahurangi NP, 26 Feb 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=584:mt-owen-mt-bell-and-billies-knob,-kahurangi-np,-26-feb-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Campbell, Kahurangi National Park, 22 May 2016",
+     "date": "2016-05-22",
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=342:mount-campbell-kahurangi-national-park-22-may-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Cape Campbell, Marlborough, 14-15 June 2014",
+     "date": "2014-06-15",
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=402:cape-campbell,-marlborough,-14-15-june-2014&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Campbell – Kahurangi NP, 20 July 2013",
+     "date": "2013-07-20",
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=442:mt-campbell-–-kahurangi-np,-20-july-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Crossover: Mt. Campbell–Flora – Arthur Range, Kahurangi NP, 16 Mar 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=455:crossover-mt-campbell–flora-–-arthur-range,-kahurangi-np,-16-mar-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Campbell - 16 November 2003",
+     "date": "2003-11-16",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=927:mt-campbell-16-november-2003&catid=9",
+     "about": true
+    },
+    {
+     "title": "Cape Campbell – Marlborough, 17 Nov 2103",
+     "date": null,
+     "year": null,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=429:cape-campbell-–-marlborough,-17-nov-2103&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 5935729227,
@@ -5433,7 +5576,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3218345813,
@@ -6145,7 +6289,30 @@
     "others": [
      "Angelus Hut tracks and routes"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Julius Summit, Nelson Lakes National Park - 14 Oct 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=163:julius-summit-nelson-lakes-national-park-14-oct-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Julius Summit, Nelson Lakes National Park, 10 Apr 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=337:julius-summit-nelson-lakes-national-park-10-apr-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Julius Summit, Nelson Lakes NP, 9 Dec 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=467:julius-summit,-nelson-lakes-np,-9-dec-2012&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 6564285689,
@@ -7428,7 +7595,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 582502574,
@@ -8168,7 +8336,65 @@
      "Ellis Basin Route",
      "Tableland Circuit"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Arthur, Kahurangi NP, 21 July 2024",
+     "date": "2024-07-21",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=839:mt-arthur,-kahurangi-np,-21-july-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Arthur via Clouston mine circuit, Kahurangi NP, 25 Feb 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=821:mt-arthur-via-clouston-mine-circuit,-kahurangi-np,-25-feb-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Arthur’s Pass day trips, Arthurs Pass National Park, 7 April 2023",
+     "date": "2023-04-07",
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=774:arthur’s-pass-day-trips&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Lodestone & Mt Arthur Hut, Kahurangi NP, 15 Jan 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=730:mt-lodestone-mt-arthur-hut,-kahurangi-np,-15-jan-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Arthur's Pass Easter day trips, Arthur's Pass NP, 15 Apr 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=684:arthur-s-pass-easter-day-trips,-arthur-s-pass-np,-15-apr-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Arthur Peak, Kahurangi NP, 14 Nov 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=563:mt-arthur-peak,-kahurangi-np,-14-nov-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Arthur, Kahurangi National Park - 24 Nov 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=133:mt-arthur-kahurangi-national-park-24-nov-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Arthur Hut - Flora Hut Loop Tramp, Kahurangi National Park - 6 Oct 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=33:mt-arthur-hut-flora-hut-loop-tramp,-kahurangi-national-park-6-oct-2019&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 5700908759,
@@ -8932,7 +9158,65 @@
     "others": [
      "Forks/Riverside Walk"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Richmond Forest Park Alpine Route, Mt Richmond FP, 23 April 2023",
+     "date": "2023-04-23",
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=781:mt-richmond-forest-park-alpine-route,-mt-richmond-fp,-23-april-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Richmond & Mt Fell, Mt Richmond FP, 22 Oct 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=720:mt-richmond-mt-fell,-mt-richmond-fp,-22-oct-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Richmond, Mt Richmond Forest Pk - 30-31 Mar 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=139:mount-richmond-mt-richmond-forest-pk-30-31-mar-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Richmond climb, Mt Richmond Forest Park - 14 July 2018",
+     "date": "2018-07-14",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=173:mt-richmond-climb-mt-richmond-forest-park-14-july-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout walk, Nelson, 27 Nov 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=324:richmond-fire-lookout-walk-nelson-27-nov-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordon’s Knob | Mt Richmond F.P, 5 June 2016",
+     "date": "2016-06-05",
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=328:gordon-s-knob-mt-richmond-f-p-5-june-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout, Nelson, 30 Aug 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=357:richmond-fire-lookout-nelson-30-aug-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Alpine Circuit, Mt Richmond FP, 3-6 April 2015",
+     "date": "2015-04-06",
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=362:richmond-alpine-circuit-mt-richmond-fp-3-6-april-2015&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3324010792,
@@ -9648,7 +9932,44 @@
      "Ellis Basin Route",
      "Tableland Circuit"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Mid-Winter Xmas at Waiuta Lodge, West Coast, 27 July 2024.",
+     "date": "2024-07-27",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=842:mid-winter-xmas-at-waiuta-lodge,-west-coast-28th-july-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Winter Peak Ascent, Kahurangi NP, 26 Jun 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=699:winter-peak-ascent,-kahurangi-np,-26-jun-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mid-winter at Robert Lodge, Nelson Lakes NP, 3 Jul 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=625:mid-winter-at-robert-lodge,-nelson-lakes-np,-3-jul-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Stiggers winter solstice adventure, Nelson Lakes NP, 20 Jun 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=539:stiggers-winter-solstice-adventure,-nelson-lakes-np,-20-jun-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Winter Peak, Mt Arthur, Kahurangi National Park - 18-20 Aug 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=180:winter-peak-mt-arthur-kahurangi-national-park-18-20-aug-2018&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 5935729232,
@@ -10483,7 +10804,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 2196626818,
@@ -11417,7 +11739,8 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 2196634092,
@@ -12351,7 +12674,8 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 3218345823,
@@ -13438,7 +13762,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Patriarch, Wangapeka, Kahurangi NP, 23 Nov 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=859:mt-patriarch,-wangapeka,-kahurangi-np,-23-nov-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt. Patriarch, Kahurangi NP, 21 Oct 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=800:mt-patriarch,-kahurangi-np,-21-october-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Patriarch, Kahurangi NP, 6-9 Sept 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=431:mt-patriarch,-kahurangi-np,-6-9-sept-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Patriarch-3 from Wangapeka – Kahurangi NP, 10 Feb 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=460:mt-patriarch-3-from-wangapeka-–-kahurangi-np,-10-feb-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Patriarch – Kahurangi NP, 4-6 Feb 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=516:mt-patriarch-–-kahurangi-np,-4-6-feb-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Luna & Patriarch - 4-6 June 2005",
+     "date": "2005-06-06",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1029:luna-patriarch-4-6-june-2005&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mts Luna & Patriarch - 5-7 June 2004",
+     "date": "2004-06-07",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=959:mts-luna-patriarch-5-7-june-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Lake Chalice / Patriarch - 28 & 29 February 2004",
+     "date": "2004-02-29",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=940:lake-chalice-patriarch-28-29-february-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 10680157968,
@@ -14006,7 +14388,8 @@
     "others": [
      "Angelus Hut tracks and routes"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 6432104932,
@@ -15385,7 +15768,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Dragons Teeth Traverse - Southbound, Kahurangi NP, 30 Dec 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=662:dragons-teeth-traverse-southbound,-kahurangi-np,-30-dec-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Dragons Teeth, Northbound - Dec 30 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=103:dragons-teeth,-northbound-dec-30-2019&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 6432104931,
@@ -16856,7 +17255,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Anatoki - Waingaro, Kahurangi NP, 29 Jan 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=665:anatoki-waingaro,-kahurangi-np,-29-jan-2022&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 6990576107,
@@ -17114,7 +17522,65 @@
     "metres_from_summit": 5,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Patriarch, Wangapeka, Kahurangi NP, 23 Nov 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=859:mt-patriarch,-wangapeka,-kahurangi-np,-23-nov-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt. Patriarch, Kahurangi NP, 21 Oct 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=800:mt-patriarch,-kahurangi-np,-21-october-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Patriarch, Kahurangi NP, 6-9 Sept 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=431:mt-patriarch,-kahurangi-np,-6-9-sept-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Patriarch-3 from Wangapeka – Kahurangi NP, 10 Feb 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=460:mt-patriarch-3-from-wangapeka-–-kahurangi-np,-10-feb-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Patriarch – Kahurangi NP, 4-6 Feb 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=516:mt-patriarch-–-kahurangi-np,-4-6-feb-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Luna & Patriarch - 4-6 June 2005",
+     "date": "2005-06-06",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1029:luna-patriarch-4-6-june-2005&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mts Luna & Patriarch - 5-7 June 2004",
+     "date": "2004-06-07",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=959:mts-luna-patriarch-5-7-june-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Lake Chalice / Patriarch - 28 & 29 February 2004",
+     "date": "2004-02-29",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=940:lake-chalice-patriarch-28-29-february-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 5935729234,
@@ -17805,7 +18271,30 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Owen Mt Bell and Billies Knob, Kahurangi NP, 26 Feb 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=584:mt-owen-mt-bell-and-billies-knob,-kahurangi-np,-26-feb-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Billies Knob, Kahurangi National Park - 6 Jan 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=150:billies-knob-kahurangi-national-park-6-jan-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Billies Knob - 5 December 2004",
+     "date": "2004-12-05",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=997:billies-knob-5-december-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 5700908757,
@@ -18645,7 +19134,16 @@
     "others": [
      "Mt Richmond routes"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Johnston Peak – Mt Richmond FP, 25-27 April 2014",
+     "date": "2014-04-27",
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=411:johnston-peak-–-mt-richmond-fp,-25-27-april-2014&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3218345820,
@@ -19808,7 +20306,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3310761009,
@@ -20478,7 +20977,30 @@
     "metres_from_summit": 398,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Fishtail, Mt Richmond Forest Park - 22-23 Sept 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=161:mt-fishtail-mt-richmond-forest-park-22-23-sept-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Fishtail – 7 December 2003",
+     "date": "2003-12-07",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=931:mt-fishtail-–-7-december-2003&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Richmond – Mt Fishtail Traverse & RESCUE!, 28-30 Jan 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=514:mt-richmond-–-mt-fishtail-traverse-rescue-,-28-30-jan-2012&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 3361573172,
@@ -21621,7 +22143,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680028523,
@@ -22768,7 +23291,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3310867583,
@@ -23563,7 +24087,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Ben Nevis – Mt Richmond FP, 3rd May 2026",
+     "date": "2026-05-03",
+     "year": 2026,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1054:ben-nevis-–-mt-richmond-fp,-3rd-may-2026&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ben Nevis, Mt. Richmond FP, 4th Nov 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=804:ben-nevis,-saturday-4th-nov-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ben Nevis, Mt Richmond FP, 7 Aug 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=698:ben-nevis,-mt-richmond-fp,-7-aug-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ben Nevis - North Peak Crossover, Mt Richmond FP, 26 Feb 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=670:ben-nevis-north-peak-crossover,-mt-richmond-fp,-26-feb-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Inwood Lookout to Ben Nevis, Mt Richmond FP, 26 Feb 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=668:inwood-lookout-to-ben-nevis-feb-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ben Nevis, Mt Richmond FP, 4 Oct 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=560:ben-nevis,-mt-richmond-fp,-4-oct-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ben Nevis, Mt Richmond Forest Park - 25 Aug 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=181:ben-nevis-mt-richmond-forest-park-25-aug-2118&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ben Nevis, Mt Richmond Forest Park - 10 June 2018",
+     "date": "2018-06-10",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=170:ben-nevis-mt-richmond-forest-park-10-june-2018&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 8590194673,
@@ -24599,7 +25181,44 @@
     "others": [
      "Richmond Ranges Te Araroa route"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Ellis via Hunters Hut and out via the Wairoa, Mt Richmond Forest Park, 25 Apr 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=828:mt-ellis-via-hunters-hut-and-out-via-the-wairoa,-mt-richmond-forest-park,-25-apr-24&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ellis Basin & South Twin, Kahurangi National Park - 13-15 Dec 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=135:ellis-basin-south-twin-kahurangi-national-park-13-15-dec-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ellis Basin Hut – Kahurangi NP, 11-12 Oct 2014",
+     "date": null,
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=380:ellis-basin-hut-kahurangi-np-11-12-oct-2014&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ellis Hut – Kahurangi NP, 29-30 June 2013",
+     "date": "2013-06-30",
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=438:ellis-hut-–-kahurangi-np,-29-30-june-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ellis Basin/Twins - 20-21 November 2004",
+     "date": "2004-11-21",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=991:ellis-basin-twins-20-21-november-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 6564285688,
@@ -25752,7 +26371,30 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Waingaro Forks Hut & Lake Stanley, Kahurangi NP, 30 May 2020",
+     "date": "2020-05-30",
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=535:waingaro-forks-hut-lake-stanley,-kahurangi-np,-30-may-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Waingaro Forks Hut - 3 & 4 July 2004",
+     "date": "2004-07-04",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=964:waingaro-forks-hut-3-4-july-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Anatoki - Waingaro, Kahurangi NP, 29 Jan 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=665:anatoki-waingaro,-kahurangi-np,-29-jan-2022&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 3232378200,
@@ -26649,7 +27291,16 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Mount Fyffe, Kaikoura Ranges, 4-5 Sept 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=358:mount-fyffe-kaikoura-ranges-4-5-sept-2015&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3310759262,
@@ -27469,7 +28120,44 @@
     "others": [
      "Mt Richmond routes"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Richmond & Mt Fell, Mt Richmond FP, 22 Oct 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=720:mt-richmond-mt-fell,-mt-richmond-fp,-22-oct-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Fell Hut, Working Bee - 26-27 May 2018",
+     "date": "2018-05-27",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=169:mount-fell-hut-working-bee-26-27-may-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Fell Hut, Mt Richmond Forest Park, 24-25 Feb 2017",
+     "date": null,
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=289:mt-fell-hut-mt-richmond-forest-park-24-25-feb-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Fell Hut, Mt Richmond F.P, 22-24 Oct 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=320:mt-fell-hut-mt-richmond-f-p-22-24-oct-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Fell Hut Working Bee, Richmond F.P, 22-24 Oct 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=321:mt-fell-hut-working-bee-richmond-f-p-22-24-oct-2016&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4931675307,
@@ -28720,7 +29408,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 5935729230,
@@ -29391,7 +30080,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4930601211,
@@ -30172,7 +30862,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 8591228222,
@@ -31587,7 +32278,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Gordons Pyramid via Hodge Creek, Kahurangi NP, 11 Jun 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=783:gordons-pyramid-via-hodge-creek,-kahurangi-np,-11-jun-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Pyramid, Kahurangi NP, 12 Sep 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=645:gordons-pyramid,-kahurangi-np,-12-sep-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Knob, Mt Richmond FP, 30 Aug 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=553:gordons-knob,-mt-richmond-fp,-30-aug-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Pyramid, Kahurangi National Park, 7 Jan 2017",
+     "date": null,
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=304:gordons-pyramid-kahurangi-national-park-7-jan-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Knob, Mt Richmond Forest Park, 28 Mar 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=336:gordons-knob-mt-richmond-forest-park-28-mar-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Cloustons Mine/Gordons Pyramid, Kahurangi N.P, 6 Dec 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=346:cloustons-mine-gordons-pyramid-kahurangi-n-p-6-dec-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Knob – Mt Richmond FP, 1 Mar 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=370:gordons-knob-mt-richmond-fp-1-mar-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Knob - 22 June 2003",
+     "date": "2003-06-22",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=910:gordons-knob-22-june-2003&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4946765732,
@@ -31905,7 +32654,8 @@
     "metres_from_summit": 276,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 8644356424,
@@ -34172,7 +34922,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3218345812,
@@ -35021,7 +35772,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 5935729228,
@@ -35767,7 +36519,30 @@
     "metres_from_summit": 568,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Lake Bulmer and Sunrise Peak, Kahurangi NP, 10 Mar 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=772:lake-bulmer-and-sunrise-peak,-kahurangi-np,-10-mar-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Fyfe River - Mt Owen - Sunrise Peak circuit VIDEO, 23-24 Dec 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=862:fyfe-river-mt-owen-sunrise-peak-circuit,-kahurangi-n-p-,-dec-2024&catid=9",
+     "about": false
+    },
+    {
+     "title": "Mt Owen via Fyfe River - return via Sunrise Peak, Kahurangi NP, 23 Dec 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=863:mt-owen-via-fyfe-river-return-via-sunrise-peak,-kahurangi-np,-23-dec-2024&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 6432104936,
@@ -37038,7 +37813,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "1000 Acre Plateau Needle Haystack, Kahurangi NP, 19 Feb 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=682:1000-acre-plateau-needle-haystack,-kahurangi-np,-19-feb-2022&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 6432104939,
@@ -38245,7 +39029,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6432104933,
@@ -39828,7 +40613,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 8580599729,
@@ -40786,7 +41572,16 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Slaty Hut – Mt Richmond FP, 19-20 May 2012",
+     "date": "2012-05-20",
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=494:slaty-hut-–-mt-richmond-fp,-19-20-may-2012&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 2196666288,
@@ -41908,7 +42703,8 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 4931675308,
@@ -42870,7 +43666,16 @@
     "metres_from_summit": 61,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Cedric, Nelson Lakes NP, 11 May 2024",
+     "date": "2024-05-11",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=830:mt-cedric,-nelson-lakes-np,11-may-2024&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4941782639,
@@ -43681,7 +44486,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "1000 Acre Plateau Needle Haystack, Kahurangi NP, 19 Feb 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=682:1000-acre-plateau-needle-haystack,-kahurangi-np,-19-feb-2022&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3218345828,
@@ -44828,7 +45642,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4497672038,
@@ -45274,7 +46089,8 @@
     "metres_from_summit": 23,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 2196616369,
@@ -46007,7 +46823,8 @@
      "Richmond Ranges Te Araroa route",
      "Alpine Route"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 2196626466,
@@ -46748,7 +47565,8 @@
      "Richmond Ranges Te Araroa route",
      "Alpine Route"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 8578910726,
@@ -47682,7 +48500,44 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Starveall, Mt Richmond FP, 29 June 2019",
+     "date": "2019-06-29",
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=746:mt-starveall,-mt-richmond-fp,-29-june-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Starveall via Lucy Creek, Mt Richmond Forest Park - 17 Mar 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=186:mt-starveall-via-lucy-creek-mt-richmond-forest-park-17-mar-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Starveall. - 12 September 2004",
+     "date": "2004-09-12",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=978:mt-starveall-12-september-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Starveall – Hacket Ridge - 3 - 4 April 2004",
+     "date": "2004-04-04",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=944:starveall-–-hacket-ridge-3-4-april-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Starveall Hut / Pyramid Rock - 4 January 2004",
+     "date": "2004-01-04",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=933:starveall-hut-pyramid-rock-4-january-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 517341644,
@@ -48937,7 +49792,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6432104930,
@@ -50264,7 +51120,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 512025610,
@@ -50983,7 +51840,51 @@
     "others": [
      "Tableland Circuit"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Gordons Pyramid via Hodge Creek, Kahurangi NP, 11 Jun 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=783:gordons-pyramid-via-hodge-creek,-kahurangi-np,-11-jun-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Pyramid, Kahurangi NP, 12 Sep 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=645:gordons-pyramid,-kahurangi-np,-12-sep-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Pyramid, Kahurangi National Park, 7 Jan 2017",
+     "date": null,
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=304:gordons-pyramid-kahurangi-national-park-7-jan-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Cloustons Mine/Gordons Pyramid, Kahurangi N.P, 6 Dec 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=346:cloustons-mine-gordons-pyramid-kahurangi-n-p-6-dec-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Flora - Gordons Pyramid - Cloustons circuit, Kahurangi NP, 4 Aug 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=841:flora-gordons-pyramid-cloustons-circuit,-kahurangi-np,-4-aug-2024&catid=9",
+     "about": false
+    },
+    {
+     "title": "Cloustons Mine, Gordons Pyramid loop, Kahurangi NP - 17 June 2018",
+     "date": "2018-06-17",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=171:cloustons-mine-gordons-pyramid-loop-kahurangi-np-17-june-2018&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 6432104929,
@@ -52306,7 +53207,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 8143998226,
@@ -53057,7 +53959,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Murchison, Buller District, 9 July 2017",
+     "date": "2017-07-09",
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=283:mt-murchison-buller-district-9-july-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Mantell – Murchison, 10 Jan 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=376:mt-mantell-murchison-10-jan-2015&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 4941782646,
@@ -54319,7 +55237,8 @@
     "metres_from_summit": 306,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 2966756532,
@@ -55256,7 +56175,65 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Heartbreak ridge Browning hut circuit, Mt Richmond FP, 5 Mar 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=771:heartbreak-ridge-browning-hut-circuit,-mt-richmond-fp,-5-mar-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Hacket Browning, Mt Richmond FP, 24 Jul 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=697:hacket-browning,-mt-richmond-fp,-24-jul-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Browning Hut, Mt Richmond FP, 16 May 2021",
+     "date": "2021-05-16",
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=609:browning-hut,-mt-richmond-fp,-16-may-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Browning Hut & Totara Saddle, Mt Richmond FP, 2 Aug 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=547:browning-hut-totara-saddle,-mt-richmond-fp,-2-aug-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Brown Hut, Hokitika, 10 Oct 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=766:mount-brown-hut,-hokitika,-10-oct-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Browning Hut to Rocks Hut – Mt Richmond FP, 5-6 Oct 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=435:browning-hut-to-rocks-hut-–-mt-richmond-fp,-5-6-oct-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Brown Hill – Kahurangi NP, 18-19 Feb 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=520:brown-hill-–-kahurangi-np,-18-19-feb-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Hartebreak Ridge, Totara Saddle, Browning Hut Circuit. 15th Oct 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=799:hartebreak-ridge,-totara-saddle,-browning-hut-circuit-15th-oct-2023&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 582525506,
@@ -55621,7 +56598,51 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Lodestone-Mt Hodder-Flora circuit, Kahurangi National Park, 23 April 2023",
+     "date": "2023-04-23",
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=777:lodestone-–-mt-hodder,-kahurangi-national-park,-23-april-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Lodestone & Mt Arthur Hut, Kahurangi NP, 15 Jan 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=730:mt-lodestone-mt-arthur-hut,-kahurangi-np,-15-jan-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Lodestone, Kahurangi NP, 2 Apr 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=674:lodestone,-kahurangi-np,-2-apr-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Lodestone–Mt Hodder, Kahurangi N.P, 14 May 2017",
+     "date": "2017-05-14",
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=295:mt-lodestone-mt-hodder-kahurangi-n-p-14-may-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Lodestone & Hodder – Kahurangi NP, 10 Mar 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=454:lodestone-hodder-–-kahurangi-np,-10-mar-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Lodestone – Kahurangi NP, 3 June 2012",
+     "date": "2012-06-03",
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=496:lodestone-–-kahurangi-np,-3-june-2012&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 10680028524,
@@ -57056,7 +58077,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6833870714,
@@ -58147,7 +59169,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 8463157395,
@@ -58894,7 +59917,44 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Beebys Knob and Hut, Mt. Richmond FP, 19 May 2024",
+     "date": "2024-05-19",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=829:beebys-hut,-19-may-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Beebys Hut, Mt Richmond FP, 30 April 2023",
+     "date": "2023-04-30",
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=778:beebys-hut,-mt-richmond-forest-park,-30-april-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Beebys Hut, Mt Richmond FP - 6 Jan 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=149:beebys-hut-mt-richmond-fp-6-jan-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Beebys Knob, Mt Richmond Forest Park, 10 July 2016",
+     "date": "2016-07-10",
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=330:beebys-knob-mt-richmond-forest-park-10-july-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Beebys Knob & Hut – Mt Richmond FP, 13 Apr 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=457:beebys-knob-hut-–-mt-richmond-fp,-13-apr-2013&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 10680003268,
@@ -60188,7 +61248,8 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 1572998716,
@@ -60505,7 +61566,16 @@
      "Angelus Hut via Pinchgut Track and Robert Ridge Route",
      "Angelus Hut tracks and routes"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Robert / Pourangahau Loop, Nelson Lakes NP, 5 Apr 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=876:mt-robert-pourangahau-loop,-nelson-lakes-np,-5-apr-2025&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 2196670051,
@@ -61339,7 +62409,23 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "TeeTotal Flats, Rotoiti, 10 Aug 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=894:teetotal-flats,-rotoiti,-10-august-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Cedar Flats Hut, West Coast, 3-5 June 2017",
+     "date": "2017-06-05",
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=279:cedar-flats-hut-west-coast-3-5-june-2017&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 7983721958,
@@ -62054,7 +63140,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Rabbit Island - 23 November 2003",
+     "date": "2003-11-23",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=928:rabbit-island-23-november-2003&catid=9",
+     "about": true
+    },
+    {
+     "title": "Bike Ride & Ferry Trip – Rabbit Island–Mapua, 28 July 2012",
+     "date": "2012-07-28",
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=486:bike-ride-ferry-trip-–-rabbit-island–mapua,-28-july-2012&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 4941782643,
@@ -63200,7 +64302,23 @@
     "metres_from_summit": 483,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Fosters Clearing & Mt Baldy – Mt Richmond FP, 3-4 Mar 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=505:fosters-clearing-mt-baldy-–-mt-richmond-fp,-3-4-mar-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Fosters Clearing/Mt Baldy - 4-5 December 2004",
+     "date": "2004-12-05",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=996:fosters-clearing-mt-baldy-4-5-december-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4941795554,
@@ -64523,7 +65641,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 8577938022,
@@ -65237,7 +66356,23 @@
     "metres_from_summit": 51,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Royal, Mt Richmond FP, 15 Dec 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=466:mt-royal,-mt-richmond-fp,-15-dec-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Royal - 28 March 2004",
+     "date": "2004-03-28",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=943:mt-royal-28-march-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4941782640,
@@ -66447,7 +67582,8 @@
     "metres_from_summit": 77,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 582829424,
@@ -67253,7 +68389,44 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Peel and Balloon hut, Kahurangi NP, 24 Mar 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=773:mt-peel-and-balloon-hut,-kahurangi-np,-24-mar-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Peel and Balloon Hut, Kahurangi NP, 29 Apr 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=691:mount-peel-and-balloon-hut,-kahurangi-np,-29-apr-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Balloon Hut via Asbestos Cottage, Kahurangi NP. 2-3 Dec 2017",
+     "date": null,
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=235:balloon-hut-via-asbestos-cottage-kahurangi-np-2-3-dec-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Balloon Hut, Mount Peel – Kahurangi NP, 29-30 Sept 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=475:balloon-hut,-mount-peel-–-kahurangi-np,-29-30-sept-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Balloon Hut - 21-22 August 2004",
+     "date": "2004-08-22",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=972:balloon-hut-21-22-august-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 8578833052,
@@ -67912,7 +69085,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Fosters Clearing & Mt Baldy – Mt Richmond FP, 3-4 Mar 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=505:fosters-clearing-mt-baldy-–-mt-richmond-fp,-3-4-mar-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Fosters Clearing/Mt Baldy - 4-5 December 2004",
+     "date": "2004-12-05",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=996:fosters-clearing-mt-baldy-4-5-december-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 10680017154,
@@ -68598,7 +69787,16 @@
     "metres_from_summit": 20,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Wakamarina–Mt.Sunday–Mt.Riley circuit, Mt Richmond FP, 6-7 Sept 2014",
+     "date": null,
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=388:wakamarina-mt-sunday-mt-riley-circuit-mt-richmond-fp-6-7-sept-2014&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 10680017153,
@@ -69288,7 +70486,58 @@
     "metres_from_summit": 53,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Industrial Heritage Part II- Sunday June 8th 2025",
+     "date": "2025-06",
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=883:industrial-heritage-part-ii-sunday-june-8th-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Duppa on Sunday, 22 February",
+     "date": null,
+     "year": null,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=939:mt-duppa-on-sunday,-22-february&catid=9",
+     "about": true
+    },
+    {
+     "title": "Parachute Rocks, Nelson Lakes NP, Sunday 30th Nov 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=947:parachute-rocks,-nelson-lakes-np,-sunday-30th-nov-2025&catid=9",
+     "about": false
+    },
+    {
+     "title": "12km MEGAwalk, Sunday 26 October 2025",
+     "date": "2025-10-26",
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=904:12km-megawalk,-sunday-26-october-2025&catid=9",
+     "about": false
+    },
+    {
+     "title": "Saddle Hill made Easy, Sunday 12 October 2025",
+     "date": "2025-10-12",
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=903:saddle-hill-made-easy,-sunday-12-october-2025&catid=9",
+     "about": false
+    },
+    {
+     "title": "Wakamarina Walk, Sunday 1 March 2020",
+     "date": "2020-03-01",
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=250:wakamarina-walk,-sunday-1-march-2020&catid=9",
+     "about": false
+    },
+    {
+     "title": "Wakamarina–Mt.Sunday–Mt.Riley circuit, Mt Richmond FP, 6-7 Sept 2014",
+     "date": null,
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=388:wakamarina-mt-sunday-mt-riley-circuit-mt-richmond-fp-6-7-sept-2014&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 7965686369,
@@ -69906,7 +71155,8 @@
     "metres_from_summit": 19,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 582829421,
@@ -70810,7 +72060,44 @@
      "Lake Peel Track",
      "Leslie-Karamea Track"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Tableland Tour Two, Kahurangi NP, 2 April 2021",
+     "date": "2021-04-02",
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=590:tableland-tour-two,-kahurangi-np,-2-april-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Tableland Tour 1, Kahurangi NP, 5 Mar 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=587:tableland-tour-1,-kahurangi-np,-5-mar-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Tableland Circuit, Kahurangi NP, 25 May 2019",
+     "date": "2019-05-25",
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=745:tableland-circuit,-kahurangi-np,-25-may-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Tableland Historical Exploration, Kahurangi NP, 20 Jan 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=748:tableland-historical-exploration,-kahurangi-np,-20-jan-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Asbestos Cottage–Tableland circuit, Kahurangi Nat Park - 2-4 Feb 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=145:asbestos-cottage-tableland-circuit-kahurangi-nat-park-2-4-feb-2019&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 8591218454,
@@ -71704,7 +72991,8 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 5413313482,
@@ -72440,7 +73728,16 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Parapara Peak - 14-15 May 2005",
+     "date": "2005-05-15",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1025:parapara-peak-14-15-may-2005&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 10680028534,
@@ -73373,7 +74670,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 4963383364,
@@ -74400,7 +75698,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 7965686365,
@@ -74630,7 +75929,8 @@
     "metres_from_summit": 20,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 3310759263,
@@ -75589,7 +76889,44 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Conical Hill, Hope Range, 18 May 2025",
+     "date": "2025-05-18",
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=881:conical-hill,-hope-range,-18-may-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Conical Hill, Hope Range, 18 Aug 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=744:conical-hill,-hope-range,-18-aug-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Conical Hill, Hope Range, Tapawera - 20 May 2018",
+     "date": "2018-05-20",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=167:conical-hill-hope-range-tapawera-20-may-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Conical Hill - 1 August 2004",
+     "date": "2004-08-01",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=969:conical-hill-1-august-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Conical Hill Substitute - 30 May 2004",
+     "date": "2004-05-30",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=958:conical-hill-substitute-30-may-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3308749996,
@@ -75868,7 +77205,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680028548,
@@ -76555,7 +77893,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Kaituna Forks and Mt Stevens, Kahurangi NP, 19 Feb 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=582:kaituna-forks-and-mt-stevens,-kahurangi-np,-19-feb-2021&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4327605465,
@@ -76929,7 +78276,8 @@
     "metres_from_summit": 11,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 5935729233,
@@ -77928,7 +79276,44 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Conical Hill, Hope Range, 18 May 2025",
+     "date": "2025-05-18",
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=881:conical-hill,-hope-range,-18-may-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Conical Hill, Hope Range, 18 Aug 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=744:conical-hill,-hope-range,-18-aug-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Conical Hill, Hope Range, Tapawera - 20 May 2018",
+     "date": "2018-05-20",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=167:conical-hill-hope-range-tapawera-20-may-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Conical Hill - 1 August 2004",
+     "date": "2004-08-01",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=969:conical-hill-1-august-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Conical Hill Substitute - 30 May 2004",
+     "date": "2004-05-30",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=958:conical-hill-substitute-30-may-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 8703656871,
@@ -78689,7 +80074,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Lake Alexander Hut-Bragging, Marlborough, 7 May 2021",
+     "date": "2021-05-07",
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=608:lake-alexander-hut-bragging,-marlborough,-7-may-2021&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4930607522,
@@ -79624,7 +81018,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4930601208,
@@ -80559,7 +81954,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3218345814,
@@ -81206,7 +82602,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "North Twin, Kahurangi NP, 8 Mar 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=879:north-twin,-kahurangi-np,-8-mar-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Dun Mountain Little Twin Dew Lakes Circuit, Nelson, 29 Sept 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=849:dun-mountain-little-twin-dew-lakes-circuit,-nelson,-29-sept-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ellis Basin & South Twin, Kahurangi National Park - 13-15 Dec 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=135:ellis-basin-south-twin-kahurangi-national-park-13-15-dec-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "South Twin, Kahurangi National Park - 25-27 Feb 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=146:south-twin-kahurangi-national-park-25-27-feb-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Dun Mountain & Little Twin, Mt Richmond FP, 30 Jul 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=759:dun-mountain-little-twin,-mt-richmond-fp,-30-jul-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "South Twin - 10 April 2005",
+     "date": "2005-04-10",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1018:south-twin-10-april-2005&catid=9",
+     "about": true
+    },
+    {
+     "title": "Ellis Basin/Twins - 20-21 November 2004",
+     "date": "2004-11-21",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=991:ellis-basin-twins-20-21-november-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Dun Mountain, Little Twin, Dew Lakes, Mt Richmond FP, 25 Jul 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=628:dun-mountain,-little-twin,-dew-lakes-circuit-25-july-2021&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 3310867573,
@@ -81453,7 +82907,58 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Duppa, Bryant Range, Mt Richmond FP, 20 July 2025",
+     "date": "2025-07-20",
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=892:mt-duppa,-bryant-range,-mt-richmond-fp,-20-july-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt.Duppa, Bryant Range Nelson - 23 May 2020",
+     "date": "2020-05-23",
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=524:mt-duppa,-bryant-range-nelson-23-may-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt. Duppa, Bryant Range, Nelson - 17 May 2020",
+     "date": "2020-05-17",
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=530:mt-duppa,-bryant-range,-nelson-17-may-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Duppa, Mt Richmond FP, 9 Oct 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=319:mount-duppa-mt-richmond-fp-9-oct-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt. Duppa – Bryant Range, Nelson, 18 Jan 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=377:mt-duppa-bryant-range-nelson-18-jan-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Duppa - 16 May 2004",
+     "date": "2004-05-16",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=955:mt-duppa-16-may-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Duppa on Sunday, 22 February",
+     "date": null,
+     "year": null,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=939:mt-duppa-on-sunday,-22-february&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 2597917442,
@@ -82124,7 +83629,44 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Dun Mountain Little Twin Dew Lakes Circuit, Nelson, 29 Sept 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=849:dun-mountain-little-twin-dew-lakes-circuit,-nelson,-29-sept-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Dun Mountain, Little Twin, Dew Lakes, Mt Richmond FP, 25 Jul 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=628:dun-mountain,-little-twin,-dew-lakes-circuit-25-july-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Dun Mountain, Mt Richmond Forest Park - 22 July 2018",
+     "date": "2018-07-22",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=174:dun-mountain-mt-richmond-forest-park-22-july-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Dun Mountain & Little Twin, Mt Richmond FP, 30 Jul 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=759:dun-mountain-little-twin,-mt-richmond-fp,-30-jul-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Angelus Hut & Mountain - 24 & 25 July 2004",
+     "date": "2004-07-25",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=968:angelus-hut-mountain-24-25-july-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3310759261,
@@ -82679,7 +84221,58 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Wooded Peak, Nelson, 15 Nov 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=906:wooded-peak,-15-november-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Wooded Peak, Mt Richmond FP, 16 Aug 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=550:wooded-peak,-mt-richmond-fp,-16-aug-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Wooded Peak, Nelson, 10 Sept 2017",
+     "date": null,
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=276:wooded-peak-nelson-10-sept-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Wooded Peak, Nelson, 14 Aug 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=758:wooded-peak,-nelson,-14-aug-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Wooded Peak – Nelson, 21 Sept 2014",
+     "date": null,
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=391:wooded-peak-nelson-21-sept-2014&catid=9",
+     "about": true
+    },
+    {
+     "title": "Wooded Peak/Windy Point - 16 May 2004",
+     "date": "2004-05-16",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=956:wooded-peak-windy-point-16-may-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Wooded Peak – 7 September 2003",
+     "date": "2003-09-07",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=921:wooded-peak-–-7-september-2003&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4963383362,
@@ -83526,7 +85119,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Heartbreak ridge Browning hut circuit, Mt Richmond FP, 5 Mar 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=771:heartbreak-ridge-browning-hut-circuit,-mt-richmond-fp,-5-mar-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Hacket Browning, Mt Richmond FP, 24 Jul 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=697:hacket-browning,-mt-richmond-fp,-24-jul-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Browning Hut, Mt Richmond FP, 16 May 2021",
+     "date": "2021-05-16",
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=609:browning-hut,-mt-richmond-fp,-16-may-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Browning Hut & Totara Saddle, Mt Richmond FP, 2 Aug 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=547:browning-hut-totara-saddle,-mt-richmond-fp,-2-aug-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Brown Hut, Hokitika, 10 Oct 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=766:mount-brown-hut,-hokitika,-10-oct-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Browning Hut to Rocks Hut – Mt Richmond FP, 5-6 Oct 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=435:browning-hut-to-rocks-hut-–-mt-richmond-fp,-5-6-oct-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Brown Hill – Kahurangi NP, 18-19 Feb 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=520:brown-hill-–-kahurangi-np,-18-19-feb-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Hartebreak Ridge, Totara Saddle, Browning Hut Circuit. 15th Oct 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=799:hartebreak-ridge,-totara-saddle,-browning-hut-circuit-15th-oct-2023&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 10680003241,
@@ -83770,7 +85421,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4947838525,
@@ -84477,7 +86129,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Lyell Saddle Hut– Upper Buller region, 8-9 July 2012",
+     "date": "2012-07-09",
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=484:lyell-saddle-hut–-upper-buller-region,-8-9-july-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Lyell Walkway - 6 March 2005",
+     "date": "2005-03-06",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1012:lyell-walkway-6-march-2005&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4931688221,
@@ -85622,7 +87290,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680146279,
@@ -86456,7 +88125,51 @@
     "metres_from_summit": 341,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Owen crossover via Lookout Range, Kahurangi National Park, 28 Jan 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=812:mt-owen-crossover-via-lookout-range,-kahurangi-national-park-28-jan-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Inwood Lookout to Ben Nevis, Mt Richmond FP, 26 Feb 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=668:inwood-lookout-to-ben-nevis-feb-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout walk, Nelson, 27 Nov 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=324:richmond-fire-lookout-walk-nelson-27-nov-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout, Nelson, 30 Aug 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=357:richmond-fire-lookout-nelson-30-aug-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Hope & Lookout Ranges – Kahurangi NP, 19-20 Oct 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=427:hope-lookout-ranges-–-kahurangi-np,-19-20-oct-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Lookout Point - 9 May 2004",
+     "date": "2004-05-09",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=954:lookout-point-9-may-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 6564345063,
@@ -86531,7 +88244,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680003243,
@@ -86586,7 +88300,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4930646537,
@@ -86610,7 +88325,8 @@
     "detail": null
    },
    "route": null,
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4939461356,
@@ -87180,7 +88896,8 @@
     "metres_from_summit": 2,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 10680112224,
@@ -87749,7 +89466,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3308744141,
@@ -88548,7 +90266,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Dun Mtn/Maungatapu Circuit, Nelson, 13 Oct 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=436:dun-mtn-maungatapu-circuit,-nelson,-13-oct-2013&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4931703679,
@@ -89047,7 +90774,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680157925,
@@ -89071,7 +90799,8 @@
     "detail": null
    },
    "route": null,
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4931693662,
@@ -89608,7 +91337,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3310867567,
@@ -90079,7 +91809,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mts Malita & Meares, Nelson, 17 August 2024",
+     "date": "2024-08-17",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=844:mts-malita-meares,-roding-forestry-waterworks-reserve,-17-august-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Champion Mine & Mt Malita, Mt Richmond FP, 16 Oct 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=721:champion-mine-mt-malita,-mt-richmond-fp,-16-oct-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "United and Champion mines and Mt Malita, Mt Richmond FP, 20 Sep 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=557:united-and-champion-mines-and-mt-malita,-mt-richmond-fp,-20-sep-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Malita via Roding River, Nelson, 21 May 2017",
+     "date": "2017-05-21",
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=296:mount-malita-via-roding-river-nelson-21-may-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Malita – Nelson, 5 Aug 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=489:mt-malita-–-nelson,-5-aug-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Malita – Mt Richmond FP, 15 Apr 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=492:mount-malita-–-mt-richmond-fp,-15-apr-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Malita via Hackett, Nelson, 6 Feb 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=517:mt-malita-via-hackett,-nelson,-6-feb-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Whispering Falls/Malita - 2 April 2005",
+     "date": "2005-04-02",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1016:whispering-falls-malita-2-april-2005&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 1573895816,
@@ -90144,7 +91932,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Ferratering on Takaka Hill, Kahurangi NP, 22 Mar 2026",
+     "date": null,
+     "year": 2026,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1043:ferratering-on-takaka-hill-sunday-22nd-mar-2026&catid=9",
+     "about": true
+    },
+    {
+     "title": "Takaka Hill Walkway, Golden Bay, 7 July 2024",
+     "date": "2024-07-07",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=837:takaka-hill-walkway,-golden-bay,-7-july-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Cullen Creek Crossover / Waikakaho Walkway, Mt Richmond FP, 3 Jun 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=782:cullen-creek-crossover-waikakaho-walkway,-marlborough-sounds,-3-jun-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Takaka Hill Walkway and Harwoods Hole, Abel Tasman NP, 8 Jan 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=661:takaka-hill-walkway-and-harwoods-hole,-abel-tasman-np,-8-jan-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Takaka Hill Walkway - 22 Sept 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=138:takaka-hill-walkway-22-sept-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Takaka Hill Walkway & Harwood’s Hole, Abel Tasman N.P, 1 May 2016",
+     "date": "2016-05-01",
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=339:takaka-hill-walkway-harwood-s-hole-abel-tasman-n-p-1-may-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Takaka Hill Walkway – Golden Bay, 21 Jan 2012",
+     "date": null,
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=513:takaka-hill-walkway-–-golden-bay,-21-jan-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Takaka Hill Walkway - 1 May 2005",
+     "date": "2005-05-01",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1022:takaka-hill-walkway-1-may-2005&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4939469528,
@@ -90762,7 +92608,8 @@
     "metres_from_summit": 396,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 9003057043,
@@ -91527,7 +93374,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3310867563,
@@ -92379,7 +94227,65 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Parachute Rocks, Nelson Lakes NP, Sunday 30th Nov 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=947:parachute-rocks,-nelson-lakes-np,-sunday-30th-nov-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Porter Rocks, Abel Tasman NP, 11 August 2024",
+     "date": "2024-08-11",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=843:porter-rocks,-abel-tasman-np,-sunday-11-august-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Parachute Rocks, Nelson Lakes NP, 2 June 2024",
+     "date": "2024-06-02",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=832:parachute-rocks,-nelson-lakes-np,-2-june-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Rocks Hut Overnighter, Mt Richmond FP, 17 June 2023",
+     "date": "2023-06-17",
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=784:rocks-hut-overnighter,-mt-richmond-fp,-17-june-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Rocks Hut, Mt Richmond FP, 21 May 2022",
+     "date": "2022-05-21",
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=694:rocks-hut,-mt-richmond-fp,-21-may-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Rocks Hut, Mt Richmond FP, 11 Jul 2020",
+     "date": null,
+     "year": 2020,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=542:rocks-hut,-mt-richmond-fp,-11-jul-2020&catid=9",
+     "about": true
+    },
+    {
+     "title": "Rocks Hut, Mount Richmond FP, 29-30 July 2017",
+     "date": "2017-07-30",
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=286:rocks-hut-mount-richmond-fp-29-30-july-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Parachute Rocks, Nelson Lakes National Park, 14 Jan 2017",
+     "date": null,
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=303:parachute-rocks-nelson-lakes-national-park-14-jan-2017&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 9003057057,
@@ -93068,7 +94974,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680028551,
@@ -94451,7 +96358,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4963383363,
@@ -96031,7 +97939,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 4941692744,
@@ -96678,7 +98587,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4931693670,
@@ -97487,7 +99397,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3310867566,
@@ -97770,7 +99681,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mts Malita & Meares, Nelson, 17 August 2024",
+     "date": "2024-08-17",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=844:mts-malita-meares,-roding-forestry-waterworks-reserve,-17-august-2024&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3310867582,
@@ -98479,7 +100399,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Starveall via Lucy Creek, Mt Richmond Forest Park - 17 Mar 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=186:mt-starveall-via-lucy-creek-mt-richmond-forest-park-17-mar-2018&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4963383361,
@@ -100359,7 +102288,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 3308744130,
@@ -100412,7 +102342,37 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Fringed Hill Circuit, Nelson, 3 Aug 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=893:fringed-hill-circuit,-nelson,-3-aug-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Brook-Third House-Fringed Hill circuit, Nelson, 14 Apr 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=825:brook-third-house-fringed-hill-circuit,-nelson,-14-april-24&catid=9",
+     "about": true
+    },
+    {
+     "title": "Fringed Hill – Nelson, 7 July 2012",
+     "date": "2012-07-07",
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=483:fringed-hill-–-nelson,-7-july-2012&catid=9",
+     "about": true
+    },
+    {
+     "title": "Fringed Hill - 6 March 2005",
+     "date": "2005-03-06",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1011:fringed-hill-6-march-2005&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 953595128,
@@ -100919,7 +102879,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Jenkins Hill, Barnicoat Range, Nelson, 14 May 2016",
+     "date": "2016-05-14",
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=340:jenkins-hill-barnicoat-range-nelson-14-may-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Jenkins Hill/Third House - 13 June 2004",
+     "date": "2004-06-13",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=961:jenkins-hill-third-house-13-june-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3334855093,
@@ -101294,7 +103270,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4948087421,
@@ -101360,7 +103337,8 @@
     "metres_from_summit": 28,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 5697804351,
@@ -101655,7 +103633,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680157978,
@@ -101768,7 +103747,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 8128879896,
@@ -102121,7 +104101,30 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Takorika, Marlborough Sounds, 24 August 2024",
+     "date": "2024-08-24",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=847:mt-takorika,-marlborough-sounds,-24-august-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt. Takorika Tramp, 23 October 2021",
+     "date": "2021-10-23",
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=642:mt-takorika-tramp,-23-october-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Takorika, Havelock, Marlborough, 26 Jan 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=462:mount-takorika,-havelock,-marlborough,-26-jan-2013&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4946804672,
@@ -102808,7 +104811,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 8578910734,
@@ -103714,7 +105718,58 @@
     "others": [
      "Alpine Route"
     ]
-   }
+   },
+   "reports": [
+    {
+     "title": "Gordons Pyramid via Hodge Creek, Kahurangi NP, 11 Jun 2023",
+     "date": null,
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=783:gordons-pyramid-via-hodge-creek,-kahurangi-np,-11-jun-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Pyramid, Kahurangi NP, 12 Sep 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=645:gordons-pyramid,-kahurangi-np,-12-sep-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordons Pyramid, Kahurangi National Park, 7 Jan 2017",
+     "date": null,
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=304:gordons-pyramid-kahurangi-national-park-7-jan-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Cloustons Mine/Gordons Pyramid, Kahurangi N.P, 6 Dec 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=346:cloustons-mine-gordons-pyramid-kahurangi-n-p-6-dec-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Starveall Hut / Pyramid Rock - 4 January 2004",
+     "date": "2004-01-04",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=933:starveall-hut-pyramid-rock-4-january-2004&catid=9",
+     "about": true
+    },
+    {
+     "title": "Flora - Gordons Pyramid - Cloustons circuit, Kahurangi NP, 4 Aug 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=841:flora-gordons-pyramid-cloustons-circuit,-kahurangi-np,-4-aug-2024&catid=9",
+     "about": false
+    },
+    {
+     "title": "Cloustons Mine, Gordons Pyramid loop, Kahurangi NP - 17 June 2018",
+     "date": "2018-06-17",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=171:cloustons-mine-gordons-pyramid-loop-kahurangi-np-17-june-2018&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 10680003265,
@@ -104487,7 +106542,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4931703690,
@@ -105117,7 +107173,8 @@
     "metres_from_summit": 205,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 7959440962,
@@ -105184,7 +107241,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mount Stanley (971m), Tennyson Inlet, Marlborough Sounds, 23 JUly 2017",
+     "date": "2017-07-23",
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=285:mount-stanley-971m-tennyson-inlet-marlborough-sounds-23-july-2018&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 3310867575,
@@ -105605,7 +107671,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4941692745,
@@ -105708,7 +107775,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 7747573426,
@@ -106117,7 +108185,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 9003057077,
@@ -106766,7 +108835,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4283657928,
@@ -107119,7 +109189,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Kahikatea Track – Sun. evening, 7 December 2003",
+     "date": "2003-12-07",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=930:kahikatea-track-–-sun-evening,-7-december-2003&catid=9",
+     "about": true
+    },
+    {
+     "title": "Kahikatea Track, Grampians – 5 October 2003",
+     "date": "2003-10-05",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=923:kahikatea-track,-grampians-–-5-october-2003&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 5700890827,
@@ -107185,7 +109271,8 @@
     "metres_from_summit": 255,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 4939461357,
@@ -107620,7 +109707,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 9003057061,
@@ -108173,7 +110261,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4956421255,
@@ -108826,7 +110915,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 5693978164,
@@ -109167,7 +111257,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4975089006,
@@ -109222,7 +111313,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 2966757365,
@@ -109951,7 +112043,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 7488203327,
@@ -110006,7 +112099,44 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Barnicoat Range Traverse, Nelson, 7 Jun 2021",
+     "date": null,
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=614:barnicoat-range-traverse,-nelson,-7-jun-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Barnicoat Walkway, Nelson, 21 Feb 2017",
+     "date": null,
+     "year": 2017,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=298:barnicoat-walkway-nelson-21-feb-2017&catid=9",
+     "about": true
+    },
+    {
+     "title": "Barnicoat Walkway – Nelson, 22 Feb 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=369:barnicoat-walkway-nelson-22-feb-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Barnicoat Walkway - 15 May 2005",
+     "date": "2005-05-15",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1026:barnicoat-walkway-15-may-2005&catid=9",
+     "about": true
+    },
+    {
+     "title": "Jenkins Hill, Barnicoat Range, Nelson, 14 May 2016",
+     "date": "2016-05-14",
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=340:jenkins-hill-barnicoat-range-nelson-14-may-2016&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 10680104373,
@@ -110671,7 +112801,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6564285510,
@@ -111281,7 +113412,8 @@
     "metres_from_summit": 403,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 3310867579,
@@ -111974,7 +114106,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 5183241082,
@@ -112639,7 +114772,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4941782642,
@@ -112838,7 +114972,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3334855095,
@@ -112891,7 +115026,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Robert Ridge - scones with views!, Nelson Lakes NP, 2 Nov 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=905:robert-ridge-scones-with-views-,-nelson-lakes-np,-2-nov-2025&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 3310867580,
@@ -113468,7 +115612,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Goat Hill - Okiwi Bay, Marlborough, 9 June 2012",
+     "date": "2012-06-09",
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=482:goat-hill-okiwi-bay,-marlborough,-9-june-2012&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 8889040117,
@@ -114041,7 +116194,51 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": [
+    {
+     "title": "Mt Owen crossover via Lookout Range, Kahurangi National Park, 28 Jan 2024",
+     "date": null,
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=812:mt-owen-crossover-via-lookout-range,-kahurangi-national-park-28-jan-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Inwood Lookout to Ben Nevis, Mt Richmond FP, 26 Feb 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=668:inwood-lookout-to-ben-nevis-feb-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout walk, Nelson, 27 Nov 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=324:richmond-fire-lookout-walk-nelson-27-nov-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout, Nelson, 30 Aug 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=357:richmond-fire-lookout-nelson-30-aug-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Hope & Lookout Ranges – Kahurangi NP, 19-20 Oct 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=427:hope-lookout-ranges-–-kahurangi-np,-19-20-oct-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Lookout Point - 9 May 2004",
+     "date": "2004-05-09",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=954:lookout-point-9-may-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 10680003264,
@@ -114642,7 +116839,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6562995183,
@@ -114817,7 +117015,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3310867568,
@@ -115578,7 +117777,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Leatham–Saxton– Severn Valleys, Marlborough - 18-21 Oct 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=164:leatham-saxton-severn-valleys-marlborough-18-21-oct-2018&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 3310867569,
@@ -115833,7 +118041,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Richmond Forest Park Alpine Route, Mt Richmond FP, 23 April 2023",
+     "date": "2023-04-23",
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=781:mt-richmond-forest-park-alpine-route,-mt-richmond-fp,-23-april-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Richmond & Mt Fell, Mt Richmond FP, 22 Oct 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=720:mt-richmond-mt-fell,-mt-richmond-fp,-22-oct-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Richmond, Mt Richmond Forest Pk - 30-31 Mar 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=139:mount-richmond-mt-richmond-forest-pk-30-31-mar-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Richmond climb, Mt Richmond Forest Park - 14 July 2018",
+     "date": "2018-07-14",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=173:mt-richmond-climb-mt-richmond-forest-park-14-july-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout walk, Nelson, 27 Nov 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=324:richmond-fire-lookout-walk-nelson-27-nov-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordon’s Knob | Mt Richmond F.P, 5 June 2016",
+     "date": "2016-06-05",
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=328:gordon-s-knob-mt-richmond-f-p-5-june-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout, Nelson, 30 Aug 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=357:richmond-fire-lookout-nelson-30-aug-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Alpine Circuit, Mt Richmond FP, 3-6 April 2015",
+     "date": "2015-04-06",
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=362:richmond-alpine-circuit-mt-richmond-fp-3-6-april-2015&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3310867577,
@@ -116242,7 +118508,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680017156,
@@ -116593,7 +118860,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mount Cawte, Marlborough, 14th Sep 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=897:mount-cawte,-marlborough,-14th-sep-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Cawte – Marlborough Sounds, 1 Feb 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=378:mount-cawte-marlborough-sounds-1-feb-2015&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 10680028537,
@@ -117254,7 +119537,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 3310867581,
@@ -117435,7 +119719,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3308749997,
@@ -117592,7 +119877,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3310867561,
@@ -117665,7 +119951,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3324057163,
@@ -118244,7 +120531,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3334855097,
@@ -118629,7 +120917,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 5694011454,
@@ -118651,7 +120940,8 @@
     "detail": null
    },
    "route": null,
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 5697804354,
@@ -118860,7 +121150,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 2796410277,
@@ -119549,7 +121840,8 @@
      "Gibbs Hill Track",
      "Inland Track"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 3324057161,
@@ -119622,7 +121914,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3324057168,
@@ -119697,7 +121990,16 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Goat Hill - Okiwi Bay, Marlborough, 9 June 2012",
+     "date": "2012-06-09",
+     "year": 2012,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=482:goat-hill-okiwi-bay,-marlborough,-9-june-2012&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3308749999,
@@ -119752,7 +122054,37 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Tour de Grampians, Nelson - 2 Dec 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=142:tour-de-grampians-nelson-2-dec-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "The Grampians, Nelson, 28 Feb 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=331:the-grampians-nelson-28-feb-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "The Grampians – Nelson, 29 June 2013",
+     "date": "2013-06-29",
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=439:the-grampians-–-nelson,-29-june-2013&catid=9",
+     "about": true
+    },
+    {
+     "title": "Kahikatea Track, Grampians – 5 October 2003",
+     "date": "2003-10-05",
+     "year": 2003,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=923:kahikatea-track,-grampians-–-5-october-2003&catid=9",
+     "about": false
+    }
+   ]
   },
   {
    "id": 5694011445,
@@ -119776,7 +122108,8 @@
     "detail": null
    },
    "route": null,
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 1225168113,
@@ -119800,7 +122133,8 @@
     "detail": null
    },
    "route": null,
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 9003057050,
@@ -120005,7 +122339,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680028539,
@@ -120792,7 +123127,65 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Richmond Forest Park Alpine Route, Mt Richmond FP, 23 April 2023",
+     "date": "2023-04-23",
+     "year": 2023,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=781:mt-richmond-forest-park-alpine-route,-mt-richmond-fp,-23-april-2023&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Richmond & Mt Fell, Mt Richmond FP, 22 Oct 2022",
+     "date": null,
+     "year": 2022,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=720:mt-richmond-mt-fell,-mt-richmond-fp,-22-oct-2022&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Richmond, Mt Richmond Forest Pk - 30-31 Mar 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=139:mount-richmond-mt-richmond-forest-pk-30-31-mar-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt Richmond climb, Mt Richmond Forest Park - 14 July 2018",
+     "date": "2018-07-14",
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=173:mt-richmond-climb-mt-richmond-forest-park-14-july-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout walk, Nelson, 27 Nov 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=324:richmond-fire-lookout-walk-nelson-27-nov-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Gordon’s Knob | Mt Richmond F.P, 5 June 2016",
+     "date": "2016-06-05",
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=328:gordon-s-knob-mt-richmond-f-p-5-june-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Fire Lookout, Nelson, 30 Aug 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=357:richmond-fire-lookout-nelson-30-aug-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Richmond Alpine Circuit, Mt Richmond FP, 3-6 April 2015",
+     "date": "2015-04-06",
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=362:richmond-alpine-circuit-mt-richmond-fp-3-6-april-2015&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3310867562,
@@ -120845,7 +123238,30 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Sharland’s Bush Reserve, Nelson, 17th Aug 2025",
+     "date": null,
+     "year": 2025,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=895:sharland’s-bush-reserve-nelson-17th-august-2025&catid=9",
+     "about": true
+    },
+    {
+     "title": "Sharlands Creek traverse to Marybank Road, Nelson, 31 Jan 2016",
+     "date": null,
+     "year": 2016,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=353:sharlands-creek-traverse-to-marybank-road-nelson-31-jan-2016&catid=9",
+     "about": true
+    },
+    {
+     "title": "Sharlands Creek - 17 April 2005",
+     "date": "2005-04-17",
+     "year": 2005,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1020:sharlands-creek-17-april-2005&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 4931693666,
@@ -120898,7 +123314,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3324057166,
@@ -121299,7 +123716,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680003261,
@@ -121352,7 +123770,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 9003057074,
@@ -121837,7 +124256,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6564052937,
@@ -121890,7 +124310,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 9003057089,
@@ -122387,7 +124808,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680003233,
@@ -122714,7 +125136,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4931687910,
@@ -123219,7 +125642,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3308824837,
@@ -123448,7 +125872,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 8803954928,
@@ -123873,7 +126298,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3324061960,
@@ -123982,7 +126408,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680028540,
@@ -124307,7 +126734,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3310867576,
@@ -124433,7 +126861,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 5304111581,
@@ -124750,7 +127179,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 9003057059,
@@ -124995,7 +127425,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680003247,
@@ -125533,7 +127964,8 @@
      }
     ],
     "others": []
-   }
+   },
+   "reports": null
   },
   {
    "id": 3310867572,
@@ -125586,7 +128018,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6564285664,
@@ -126082,7 +128515,8 @@
     "others": [
      "Abel Tasman Coast Track"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 3344569171,
@@ -126135,7 +128569,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 9003057080,
@@ -126296,7 +128731,30 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Mt Takorika, Marlborough Sounds, 24 August 2024",
+     "date": "2024-08-24",
+     "year": 2024,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=847:mt-takorika,-marlborough-sounds,-24-august-2024&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mt. Takorika Tramp, 23 October 2021",
+     "date": "2021-10-23",
+     "year": 2021,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=642:mt-takorika-tramp,-23-october-2021&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Takorika, Havelock, Marlborough, 26 Jan 2013",
+     "date": null,
+     "year": 2013,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=462:mount-takorika,-havelock,-marlborough,-26-jan-2013&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 10680003246,
@@ -126773,7 +129231,8 @@
      "Tōtaranui to Awaroa Bay",
      "Abel Tasman Coast Track"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 4931687913,
@@ -126970,7 +129429,23 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": [
+    {
+     "title": "Around the Raglan Ranges, Marlborough, 23 Oct 2015",
+     "date": null,
+     "year": 2015,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=764:around-the-raglan-ranges,-marlborough,-23-oct-2015&catid=9",
+     "about": true
+    },
+    {
+     "title": "Round Lake - 17-18 January 2004",
+     "date": "2004-01-18",
+     "year": 2004,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=934:round-lake-17-18-january-2004&catid=9",
+     "about": true
+    }
+   ]
   },
   {
    "id": 3310867570,
@@ -127023,7 +129498,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 7952970092,
@@ -127292,7 +129768,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680017140,
@@ -127345,7 +129822,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6564411471,
@@ -127520,7 +129998,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 4931687918,
@@ -127693,7 +130172,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 3308749998,
@@ -127748,7 +130228,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680003251,
@@ -127876,7 +130357,8 @@
     "others": [
      "Headlands Track"
     ]
-   }
+   },
+   "reports": null
   },
   {
    "id": 4931687902,
@@ -127929,7 +130411,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 6564277413,
@@ -128004,7 +130487,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680017141,
@@ -128239,7 +130723,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680003235,
@@ -128554,7 +131039,8 @@
     "climb_threshold_m": 5.0,
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
-   "doc": null
+   "doc": null,
+   "reports": null
   },
   {
    "id": 10680028582,
@@ -128618,8 +131104,10 @@
     "metres_from_summit": 98,
     "alerts": [],
     "others": []
-   }
+   },
+   "reports": null
   }
  ],
- "doc_checked": "2026-09-10 16:53"
+ "doc_checked": "2026-09-10 16:53",
+ "reports_checked": "2026-09-11 17:56"
 }
