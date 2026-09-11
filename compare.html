@@ -4,72 +4,91 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Topo styles compared</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.css">
 <style>
   *{box-sizing:border-box}
   html,body{margin:0;height:100%;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
             background:#16211c;color:#f2f0ea}
-  #grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr;height:100%;gap:2px}
+  #grid{display:grid;grid-template-columns:repeat(3,1fr);height:100%;gap:2px}
   .pane{position:relative;min-width:0;overflow:hidden;background:#e8e4da}
   .pane .map{position:absolute;inset:0}
   .cap{position:absolute;z-index:500;left:0;right:0;top:0;padding:9px 12px;
-       background:linear-gradient(#16211ce8,#16211c00);pointer-events:none}
+       background:linear-gradient(#16211ceb,#16211c00);pointer-events:none}
   .cap b{display:block;font-size:13px}
   .cap span{font-size:11.5px;color:#a8b5ae}
+  .hint{position:absolute;z-index:500;left:0;right:0;bottom:0;padding:7px 12px;
+        background:linear-gradient(#16211c00,#16211ceb);font-size:11px;color:#a8b5ae;
+        pointer-events:none}
   @media (max-width:900px){ #grid{grid-template-columns:1fr;grid-template-rows:repeat(3,1fr)} }
 </style>
 </head>
 <body>
 <div id="grid">
   <div class="pane"><div class="map" id="m1"></div>
-    <div class="cap"><b>1. Raster Topo50</b><span>what your map uses now</span></div></div>
+    <div class="cap"><b>1. Topo50, flat</b><span>what the map uses today</span></div></div>
   <div class="pane"><div class="map" id="m2"></div>
-    <div class="cap"><b>2. Vector topographic</b><span>same data, drawn live, can rotate and restyle</span></div></div>
+    <div class="cap"><b>2. Topo50 draped on 3D terrain</b>
+      <span>the printed sheet, so every track and hut is still marked</span></div>
+    <div class="hint">drag to rotate &middot; right drag or two fingers to tilt</div></div>
   <div class="pane"><div class="map" id="m3"></div>
-    <div class="cap"><b>3. Vector with 3D terrain</b><span>tilted, draped over real elevation</span></div></div>
+    <div class="cap"><b>3. Vector topo on 3D terrain</b>
+      <span>modern styling, and the only one that can go offline</span></div>
+    <div class="hint">drag to rotate &middot; right drag or two fingers to tilt</div></div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.js"></script>
 <script>
 const KEY = "d01m0gkkx2t24zn5bcrp0sxk472";
-const AT = [-41.2183, 172.6815];   // Mount Arthur
-const Z  = 13;
-const CREDIT = '&copy; LINZ CC BY 4.0';
+const AT = [172.6815, -41.2183];      // Mount Arthur, longitude then latitude
+const STYLE = `https://basemaps.linz.govt.nz/v1/styles/topographic.json?api=${KEY}`;
+const RASTER = `https://basemaps.linz.govt.nz/v1/tiles/topo-raster/3857/{z}/{x}/{y}.webp?api=${KEY}`;
 
-// ---- 1. the raster Topo50, exactly as the real map draws it
-L.map("m1", { center: AT, zoom: Z, attributionControl: false })
- .addLayer(L.tileLayer(
-   `https://basemaps.linz.govt.nz/v1/tiles/topo-raster/3857/{z}/{x}/{y}.webp?api=${KEY}`,
-   { maxZoom: 16 }));
+/*
+  All three start from LINZ's published vector style. That style already
+  carries the terrain source, so switching 3D on is one line, and loading a
+  style by URL is more reliable than handing MapLibre an inline one.
 
-// ---- 2. the vector topographic style, flat, for a like for like look
-const flat = new maplibregl.Map({
-  container: "m2",
-  style: `https://basemaps.linz.govt.nz/v1/styles/topographic.json?api=${KEY}`,
-  center: [AT[1], AT[0]], zoom: Z - 1, attributionControl: false
-});
-
-// ---- 3. the same vector style, tilted and draped over real elevation.
-// LINZ do publish terrain, it is just not where I first looked. Their own
-// style references it, as the national digital elevation model served as
-// terrain-RGB tiles right up to zoom 18. That is far better than the global
-// data I nearly settled for.
-const solid = new maplibregl.Map({
-  container: "m3",
-  style: `https://basemaps.linz.govt.nz/v1/styles/topographic.json?api=${KEY}`,
-  center: [AT[1], AT[0]], zoom: Z - 1.4, pitch: 68, bearing: 24,
-  attributionControl: false, maxPitch: 85
-});
-solid.on("load", () => {
-  // The style already carries this source, so we can just switch it on.
-  solid.setTerrain({ source: "LINZ-Terrain", exaggeration: 1.4 });
-  solid.addLayer({
-    id: "sky", type: "sky",
-    paint: { "sky-type": "atmosphere", "sky-atmosphere-sun-intensity": 6 }
+  For the raster panes every vector layer is hidden and the printed Topo50
+  sheet is laid on top. The tracks and huts you want are drawn into that
+  image, so draping it over the terrain keeps them exactly as they look on
+  paper, only now the land underneath has shape.
+*/
+function makeMap(container, { raster, pitch, bearing, zoom }) {
+  const map = new maplibregl.Map({
+    container, style: STYLE, center: AT, zoom,
+    pitch, bearing, maxPitch: 85, attributionControl: false
   });
-});
+  map.addControl(new maplibregl.AttributionControl({
+    compact: true, customAttribution: "&copy; LINZ CC BY 4.0"
+  }));
+  map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }));
+
+  map.on("style.load", () => {
+    if (raster) {
+      for (const l of map.getStyle().layers) {
+        if (l.type !== "background") {
+          map.setLayoutProperty(l.id, "visibility", "none");
+        }
+      }
+      map.addSource("topo", {
+        type: "raster", tiles: [RASTER], tileSize: 256, maxzoom: 16
+      });
+      map.addLayer({ id: "topoRaster", type: "raster", source: "topo" });
+    }
+    if (pitch) {
+      map.setTerrain({ source: "LINZ-Terrain", exaggeration: 1.4 });
+      map.addLayer({
+        id: "sky", type: "sky",
+        paint: { "sky-type": "atmosphere", "sky-atmosphere-sun-intensity": 5 }
+      });
+    }
+  });
+  return map;
+}
+
+makeMap("m1", { raster: true,  pitch: 0,  bearing: 0,  zoom: 13 });
+makeMap("m2", { raster: true,  pitch: 70, bearing: 20, zoom: 12.4 });
+makeMap("m3", { raster: false, pitch: 70, bearing: 20, zoom: 12.4 });
 </script>
 </body>
 </html>
