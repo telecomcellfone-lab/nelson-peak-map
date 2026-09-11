@@ -1,0 +1,23 @@
+To: basemaps@linz.govt.nz
+Subject: Re: Request for a developer API key for LINZ Basemaps
+
+Kia ora Pete,
+
+Thank you, the key works.
+
+Attribution is on the map, bottom right, alongside OpenStreetMap and Herenga a
+Nuku. The whole project is public on GitHub as well, so the code and the
+attribution are both open:
+
+  https://github.com/telecomcellfone-lab/nelson-peak-map
+
+One question. The map uses the topo-raster tiles, because I wanted the printed
+topographic look rather than the vector styling. Your export URL is for
+topographic-v2. Is there an MBTiles export for the raster topo, or would going
+offline mean moving to vector and restyling it to match?
+
+The offline tip is well timed either way. Most of these peaks have no coverage
+anywhere near the top.
+
+Nga mihi,
+Adam

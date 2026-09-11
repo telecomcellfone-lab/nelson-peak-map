@@ -107,11 +107,12 @@
 <script>
 // ═══════════════════════════════════════════════════════════════════════
 //  LINZ API KEY
-//  This is the public key from LINZ's own documentation. It works, but
-//  keys of this kind expire every 90 days. When LINZ sends you your own
-//  developer key, paste it here. That is the only change needed.
+//  A developer key issued by LINZ Basemaps for this project. Developer
+//  keys do not expire and have no request cap. LINZ confirmed it does not
+//  need restricting to a site, so it is fine sitting here in a public page.
+//  Attribution is a condition of use and is shown in the map corner.
 // ═══════════════════════════════════════════════════════════════════════
-const LINZ_API_KEY = "d01eerf7nz5n1cxad3tqy91d0sa";
+const LINZ_API_KEY = "d01m0gkkx2t24zn5bcrp0sxk472";
 
 const HOME_KEY = "nelson-peak-map.home";
 const LINZ_CREDIT =
@@ -128,41 +129,8 @@ function linzLayer(tileset) {
 }
 const topo = linzLayer("topo-raster").addTo(map);
 const aerial = linzLayer("aerial");
-const layerControl = L.control.layers(
-  { "LINZ topo": topo, "Aerial photo": aerial }, null,
-  { position: "topright" }).addTo(map);
-
-// On this machine only, prefer your own LINZ Data Service key. It serves the
-// same Topo50 map and does not expire, so the local copy keeps working even
-// if the shared key in this file lapses.
-//
-// This is deliberately NOT used on the published page. A key sitting in a
-// public web page can be lifted and spent by anyone, and an LDS key is tied
-// to your account. The published page stays on the shared key until LINZ
-// issue a developer key restricted to that one address.
-fetch("data/linz-key.local.json", { cache: "no-cache" })
-  .then(r => r.ok ? r.json() : null)
-  .catch(() => null)
-  .then(k => {
-    if (!k || !k.lds_key) return;
-    const mine = L.tileLayer(
-      `https://tiles-a.data-cdn.linz.govt.nz/services;key=${k.lds_key}`
-      + `/tiles/v4/layer=50767/EPSG:3857/{z}/{x}/{y}.png`,
-      { maxZoom: 16, minZoom: 5, attribution: LINZ_CREDIT });
-    map.removeLayer(topo);
-    mine.addTo(map);
-    layerControl.addBaseLayer(mine, "LINZ Topo50 (your key)");
-  });
-
-// Leaflet caches the map's pixel size. If the window is resized, the phone is
-// rotated, or the tab is hidden and comes back, that cached size goes stale and
-// the map draws into a small box in the middle. Watching the container and
-// re-measuring keeps it filling the space.
-new ResizeObserver(() => map.invalidateSize({ animate: false }))
-  .observe(document.getElementById("map"));
-document.addEventListener("visibilitychange", () => {
-  if (!document.hidden) map.invalidateSize({ animate: false });
-});
+L.control.layers({ "LINZ topo": topo, "Aerial photo": aerial }, null,
+                 { position: "topright" }).addTo(map);
 
 // -------------------------------------------------------------- helpers
 const R = 6371;

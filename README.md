@@ -90,16 +90,26 @@ Three, all free, none of them in the repository.
 |---|---|---|
 | `doc-api-key.local.json` | DOC tracks and alerts | Register at api.doc.govt.nz, then subscribe the key to v1-tracks and v2-alerts |
 | `linz-api-key.local.json` | LINZ Data Service | data.linz.govt.nz, your name, API Keys, Create |
-| in `index.html` | LINZ Basemaps tiles | The shared key from LINZ's docs, until a developer key arrives |
+| in `index.html` | LINZ Basemaps tiles | A developer key issued by LINZ. It does not expire, has no cap, and LINZ confirmed it does not need restricting to a site |
 
 A DOC key that exists but is not subscribed returns a bare "Forbidden" with no
 explanation. That is the usual cause.
 
-The LINZ Data Service key also serves Topo50 tiles, and those do not expire.
-The local copy uses it through `data/linz-key.local.json`. The **published**
-copy deliberately does not: a key sitting in a public web page can be lifted
-and spent by anyone, and that key is tied to your account. The published page
-stays on the shared key until LINZ issue a site-restricted developer key.
+The Basemaps key sits in `index.html` in plain sight, which is fine: LINZ
+issued it for this project and said it does not need site restriction. It
+replaced an earlier workaround that served tiles through the Data Service key
+to dodge the 90 day expiry on shared keys. That workaround is gone.
+
+The Data Service key stays, but only for vector data such as track
+centrelines. It is tied to the account, so it never goes in the page.
+
+LINZ also offer the whole basemap as a single MBTiles file for offline use,
+which matters here because most of these summits have no phone coverage:
+
+    https://basemaps.linz.govt.nz/v1/export/topographic-v2/WebMercatorQuad.mbtiles?api=KEY
+
+That export is the vector basemap, not the raster Topo50 this map uses, so
+going offline would mean restyling. Not done yet.
 
 ## Two data files, and why
 

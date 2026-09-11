@@ -22,3 +22,4 @@ data/elevation_cache.json
 # --- scratch -------------------------------------------------------
 *.log
 __pycache__/
+basemaps-key.local.json
