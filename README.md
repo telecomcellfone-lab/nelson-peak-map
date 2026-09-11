@@ -110,6 +110,40 @@ King at LINZ confirmed there is no raster export yet, it is on their backlog.
 
 ## Trip reports
 
+Two club archives, 123 of the 209 peaks covered.
+
+| Club | Reports | Notes |
+|---|---|---|
+| Nelson Tramping Club | 688, from 2003 | whole index on one page |
+| Wellington TMC | 1,107 | paginated, and each entry is tagged with the places it visited |
+
+Wellington's place tags are the useful part. A trip tagged with every hut, spur
+and range it touched turns up under peaks its title never names, which is why
+coverage went from 79 peaks to 123.
+
+Reports are marked either **about** this peak or **passed through**, and the
+second kind is dimmed.
+
+### Clubs surveyed and not used
+
+Federated Mountain Clubs lists about 110 clubs, 27 in the top of the South.
+Most had nothing to sweep.
+
+| Source | Why not |
+|---|---|
+| Waimea Tramping Club | 490 reports and the closest club to home, but `robots.txt` disallows every crawler. Left alone. Ask the club and it switches on in one line. |
+| Auckland Tramping Club | `robots.txt` disallows every crawler |
+| Christchurch TC | route archive is behind a member login |
+| tramper.nz | the old community site is gone, the domain now serves travel-blog filler |
+| OTMC, CMC, PTC | static sites, no report archive |
+| remotehuts.co.nz | hut pages, not trip reports |
+| Marlborough, Motueka, Golden Bay | informal, on webs.com, weebly or a community page |
+
+`robots.txt` is checked before anything is fetched and the rules for
+`User-agent: *` are obeyed. A club that disallows crawling is skipped and the
+skip is reported rather than hidden. Requests are spaced 1.5 seconds apart, and
+only titles, dates and links are taken.
+
 The Nelson Tramping Club has published a report for nearly every outing since
 2003, and the whole index sits on one page. 688 reports, and 79 of the 209
 peaks are named in at least one.

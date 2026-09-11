@@ -25,3 +25,4 @@ __pycache__/
 basemaps-key.local.json
 data/doc_hut_cache.json
 data/trip_reports_raw.html
+data/club_reports.json

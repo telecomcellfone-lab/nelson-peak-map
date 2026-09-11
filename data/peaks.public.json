@@ -19,7 +19,8 @@
   "basemap": "LINZ Topo50 raster basemap, CC BY 4.0",
   "ground_height": "LINZ NZ 8m digital elevation model, via OpenTopoData",
   "doc": "Department of Conservation Tracks API, api.doc.govt.nz, CC BY 4.0",
-  "trip_reports": "Nelson Tramping Club trip report archive, live.nelsontrampingclub.org.nz. Titles and links only."
+  "trip_reports": "Nelson Tramping Club trip report archive, live.nelsontrampingclub.org.nz. Titles and links only.",
+  "club_reports": "Trip report titles and links from Wellington Tramping and Mountaineering Club, plus the Nelson Tramping Club. Titles and links only."
  },
  "peaks": [
   {
@@ -1085,6 +1086,54 @@
    },
    "doc": null,
    "reports": [
+    {
+     "title": "Tapuae-o-uenuku",
+     "date": "2024-04-21",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/tapuae-o-uenuku-2/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Tapuae-o-Uenuku – a late summer climb",
+     "date": "2024-07-22",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/tapuae-o-uenuku/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Tapuae-o-Uenuku. Well almost.",
+     "date": "2024-03-13",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/tapuae-o-uenuku-well-almost/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt. Alarm (2877m) / Mt. Tapuae-o-Uenuku (2885m)",
+     "date": "2024-04-21",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/mt-alarm-2877m-mt-tapuae-o-uenuku-2885m/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt Tapuae-o-Uenuku – Inland Kaikouras",
+     "date": "2024-03-13",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/mt-tapuae-o-uenuku-inland-kaikouras/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Ascent of Tapuae-o-Uenuku",
+     "date": "2024-03-13",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/ascent-of-tapuae-o-uenuku/",
+     "about": true,
+     "club": "WTMC"
+    },
     {
      "title": "Mt Tapuae-o-Uenuku, Marlborough, 7 Nov 2015",
      "date": null,
@@ -2236,11 +2285,59 @@
    "doc": null,
    "reports": [
     {
+     "title": "Hopelessly Cupola – Nelson Lakes National Park",
+     "date": "2024-02-28",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/hopelessly-cupola-nelson-lakes-national-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Hopelessly head over heels for Hopeless",
+     "date": "2024-02-28",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/hopelessly-head-over-heels-for-hopeless/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Hopeless Hut / Angelus / Cascade -31 May – 2 June 2003",
      "date": "2003-05-31",
      "year": 2003,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=909:hopeless-hut-angelus-cascade-31-may-–-2-june-2003&catid=9",
      "about": true
+    },
+    {
+     "title": "Lake Angelus – Nelson Lakes National Park",
+     "date": "2025-03-16",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/lake-angelus-nelson-lakes-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Travers-Sabine Circuit and Blue Lake – Nelson Lakes National Park",
+     "date": "2025-02-07",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/travers-sabine-and-blue-lake-nelson-lakes-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "A Sparkly September Trip to Maniniaro / Angelus Peak – Nelson Lakes National Park",
+     "date": "2024-07-29",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/a-sparkly-september-trip-to-maniniaro-angelus-peak-nelson-lakes-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Holy Cupola!",
+     "date": "2024-04-24",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/holy-cupola/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -3158,7 +3255,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "A Sparkly September Trip to Maniniaro / Angelus Peak – Nelson Lakes National Park",
+     "date": "2024-07-29",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/a-sparkly-september-trip-to-maniniaro-angelus-peak-nelson-lakes-national-park/",
+     "about": true,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 2580434624,
@@ -4017,6 +4123,22 @@
      "about": true
     },
     {
+     "title": "A Karst Limestone Wonderland at Mount Owen",
+     "date": "2024-05-05",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/a-karst-limestone-wonderland-at-mount-owen/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt Owen Easter Weekend 2013",
+     "date": "2024-05-05",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/mt-owen-easter-weekend-2013/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Mt Owen Mt Bell and Billies Knob, Kahurangi NP, 26 Feb 2021",
      "date": null,
      "year": 2021,
@@ -4038,11 +4160,35 @@
      "about": true
     },
     {
+     "title": "Lake Chalice Hut – Mt Richmond Forest Park (and aborted Mt Owen trip)",
+     "date": "2026-02-16",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/lake-chalice-hut-mt-richmond-forest-park-and-aborted-mt-owen-trip/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
      "title": "Fyfe River - Mt Owen - Sunrise Peak circuit VIDEO, 23-24 Dec 2024",
      "date": null,
      "year": 2024,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=862:fyfe-river-mt-owen-sunrise-peak-circuit,-kahurangi-n-p-,-dec-2024&catid=9",
      "about": false
+    },
+    {
+     "title": "Bulmer Lake by photos",
+     "date": "2024-05-06",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/bulmer-lake-by-photos/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "1000 Acre Plateau",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/1000-acre-plateau/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -4734,11 +4880,35 @@
    "doc": null,
    "reports": [
     {
+     "title": "Dumb-bell Lake & Mt Sutton",
+     "date": "2026-07-02",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/dumb-bell-lake-mt-sutton/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Modified Pouakai Circuit (aka Mangorei Road to Bells Falls return) – Mt Egmont National Park",
+     "date": "2024-04-20",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/modified-pouakai-circuit-aka-mangorei-road-to-bells-falls-return-mt-egmont-national-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Mt. Campbell from Brooklyn Valley, Kahurangi NP, 23 July 2023",
      "date": "2023-07-23",
      "year": 2023,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=788:mt-campbell-from-brooklyn-valley,-kahurangi-np,-23-july-2023&catid=9",
      "about": true
+    },
+    {
+     "title": "Jingle bells, jingle bells… mid-winter Christmas is here !",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/jingle-bells-jingle-bells-mid-winter-christmas-is-here/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Mt Owen Mt Bell and Billies Knob, Kahurangi NP, 26 Feb 2021",
@@ -4788,6 +4958,14 @@
      "year": null,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=429:cape-campbell-–-marlborough,-17-nov-2103&catid=9",
      "about": true
+    },
+    {
+     "title": "Papakura o Taranaki |Pouākai Circuit – Egmont National Park",
+     "date": "2025-04-26",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/papakura-o-taranaki-pouakai-circuit-egmont-national-park/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -6311,6 +6489,14 @@
      "year": 2012,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=467:julius-summit,-nelson-lakes-np,-9-dec-2012&catid=9",
      "about": true
+    },
+    {
+     "title": "Robert Ridge – Angelus",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/robert-ridge-angelus/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -8353,13 +8539,6 @@
      "about": true
     },
     {
-     "title": "Arthur’s Pass day trips, Arthurs Pass National Park, 7 April 2023",
-     "date": "2023-04-07",
-     "year": 2023,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=774:arthur’s-pass-day-trips&catid=9",
-     "about": true
-    },
-    {
      "title": "Mt Lodestone & Mt Arthur Hut, Kahurangi NP, 15 Jan 2023",
      "date": null,
      "year": 2023,
@@ -8367,11 +8546,12 @@
      "about": true
     },
     {
-     "title": "Arthur's Pass Easter day trips, Arthur's Pass NP, 15 Apr 2022",
-     "date": null,
+     "title": "Mt Arthur, Tablelands and Rock Shelters in the Kahurangi NP",
+     "date": "2022-04-11",
      "year": 2022,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=684:arthur-s-pass-easter-day-trips,-arthur-s-pass-np,-15-apr-2022&catid=9",
-     "about": true
+     "url": "https://wtmc.org.nz/trip-report/mt-arthur-tablelands-and-rock-shelters-in-the-kahurangi-np/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Mt Arthur Peak, Kahurangi NP, 14 Nov 2020",
@@ -8393,6 +8573,44 @@
      "year": 2019,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=33:mt-arthur-hut-flora-hut-loop-tramp,-kahurangi-national-park-6-oct-2019&catid=9",
      "about": true
+    },
+    {
+     "title": "Mount Arthur - Kahurangi NP - 24 Mar 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=32:mount-arthur-kahurangi-np-24-mar-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Mount Arthur Climb, Kahurangi National Park - 15 Apr 2018",
+     "date": null,
+     "year": 2018,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=191:mount-arthur-climb-kahurangi-national-park-15-apr-2018&catid=9",
+     "about": true
+    },
+    {
+     "title": "Avalanche-Lyell-Bealey Loop – The ‘Triple Crown’",
+     "date": "2025-08-26",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/avalanche-lyell-bealey-loop-the-triple-crown/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Poulter Valley – an Arthur’s Pass adventure",
+     "date": "2024-11-01",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/poulter-valley-an-arthurs-pass-adventure/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Alpine Week – Arthur’s Pass National Park",
+     "date": "2024-10-10",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/alpine-week-arthurs-pass-national-park/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -9161,11 +9379,36 @@
    },
    "reports": [
     {
-     "title": "Mt Richmond Forest Park Alpine Route, Mt Richmond FP, 23 April 2023",
-     "date": "2023-04-23",
+     "title": "Mount Richmond with penguins and snails – Mt Richmond Forest Park",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-with-penguins-and-snails-mt-richmond-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range (a primer)",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/richmond-range-primer/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range – I want me money back",
+     "date": "2024-02-27",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/i-want-me-money-back/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Saddle Hut – Mount Richmond Forest Park",
+     "date": "2023-07-08",
      "year": 2023,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=781:mt-richmond-forest-park-alpine-route,-mt-richmond-fp,-23-april-2023&catid=9",
-     "about": true
+     "url": "https://wtmc.org.nz/trip-report/richmond-saddle-hut-mount-richmond-forest-park/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Mt Richmond & Mt Fell, Mt Richmond FP, 22 Oct 2022",
@@ -9173,6 +9416,22 @@
      "year": 2022,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=720:mt-richmond-mt-fell,-mt-richmond-fp,-22-oct-2022&catid=9",
      "about": true
+    },
+    {
+     "title": "Mount Richmond Tripping",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-tripping/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range midnight special",
+     "date": "2020-11-21",
+     "year": 2020,
+     "url": "https://wtmc.org.nz/trip-report/midnight-special/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Mount Richmond, Mt Richmond Forest Pk - 30-31 Mar 2019",
@@ -9207,13 +9466,6 @@
      "date": null,
      "year": 2015,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=357:richmond-fire-lookout-nelson-30-aug-2015&catid=9",
-     "about": true
-    },
-    {
-     "title": "Richmond Alpine Circuit, Mt Richmond FP, 3-6 April 2015",
-     "date": "2015-04-06",
-     "year": 2015,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=362:richmond-alpine-circuit-mt-richmond-fp-3-6-april-2015&catid=9",
      "about": true
     }
    ]
@@ -9935,6 +10187,14 @@
    },
    "reports": [
     {
+     "title": "Winter wander beyond Sunrise hut",
+     "date": "2026-08-07",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/winter-wander-on-the-ruahine-tops/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Mid-Winter Xmas at Waiuta Lodge, West Coast, 27 July 2024.",
      "date": "2024-07-27",
      "year": 2024,
@@ -9956,6 +10216,30 @@
      "about": true
     },
     {
+     "title": "Winter Womble to Tararua Tops",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/winter-womble-to-tararua-tops/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Winter wander to Makaretu Hut",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/winter-wander-to-makaretu-hut/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "A Great Walk in winter",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/a-great-walk-in-winter/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Stiggers winter solstice adventure, Nelson Lakes NP, 20 Jun 2020",
      "date": null,
      "year": 2020,
@@ -9968,6 +10252,22 @@
      "year": 2018,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=180:winter-peak-mt-arthur-kahurangi-national-park-18-20-aug-2018&catid=9",
      "about": true
+    },
+    {
+     "title": "Pāua hut – Winter working bees",
+     "date": "2026-09-11",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/paua-hut-winter-working-bees/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Stumpy Stream – a winter tramp in the Hakatere Conservation Area",
+     "date": "2024-05-29",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/hakatere-conservation-park-stumpy-stream/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -10805,7 +11105,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Outrageous Otago mountain biking",
+     "date": "2024-04-10",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/outrageous-otago-mountain-biking/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 2196626818,
@@ -11740,7 +12049,32 @@
      "Alpine Route"
     ]
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Rintoul Hut",
+     "date": "2021-06-30",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/rintoul-hut/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mount Richmond Tripping",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-tripping/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range midnight special",
+     "date": "2020-11-21",
+     "year": 2020,
+     "url": "https://wtmc.org.nz/trip-report/midnight-special/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 2196634092,
@@ -12675,7 +13009,32 @@
      "Alpine Route"
     ]
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Rintoul Hut",
+     "date": "2021-06-30",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/rintoul-hut/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mount Richmond Tripping",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-tripping/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range midnight special",
+     "date": "2020-11-21",
+     "year": 2020,
+     "url": "https://wtmc.org.nz/trip-report/midnight-special/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 3218345823,
@@ -13779,6 +14138,14 @@
      "about": true
     },
     {
+     "title": "Mt Patriarch – Mt Richmond Forest Park",
+     "date": "2023-06-22",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/mt-patriarch-mt-richmond-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Mt Patriarch, Kahurangi NP, 6-9 Sept 2013",
      "date": null,
      "year": 2013,
@@ -13819,6 +14186,30 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=940:lake-chalice-patriarch-28-29-february-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Lake Chalice Hut – Mt Richmond Forest Park (and aborted Mt Owen trip)",
+     "date": "2026-02-16",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/lake-chalice-hut-mt-richmond-forest-park-and-aborted-mt-owen-trip/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Easies and Mediums on a Mystery trip to Kahurangi NP",
+     "date": "2022-11-28",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/easies-and-mediums-on-a-mystery-trip-to-kahurangi-np/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Easter Weekend at Wangapeka and Tops",
+     "date": "2022-06-23",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/easter-weekend-at-wangapeka-and-tops/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -15771,6 +16162,14 @@
    "doc": null,
    "reports": [
     {
+     "title": "Dragons Teeth (Low Route)",
+     "date": "2026-02-16",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/dragons-teeth-low-route/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Dragons Teeth Traverse - Southbound, Kahurangi NP, 30 Dec 2021",
      "date": null,
      "year": 2021,
@@ -15783,6 +16182,14 @@
      "year": 2019,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=103:dragons-teeth,-northbound-dec-30-2019&catid=9",
      "about": true
+    },
+    {
+     "title": "Dragon’s Teeth",
+     "date": "2016-05-20",
+     "year": 2016,
+     "url": "https://wtmc.org.nz/trip-report/dragons-teeth/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -17263,6 +17670,14 @@
      "year": 2022,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=665:anatoki-waingaro,-kahurangi-np,-29-jan-2022&catid=9",
      "about": true
+    },
+    {
+     "title": "Dragon’s Teeth",
+     "date": "2016-05-20",
+     "year": 2016,
+     "url": "https://wtmc.org.nz/trip-report/dragons-teeth/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -17539,6 +17954,14 @@
      "about": true
     },
     {
+     "title": "Mt Patriarch – Mt Richmond Forest Park",
+     "date": "2023-06-22",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/mt-patriarch-mt-richmond-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Mt Patriarch, Kahurangi NP, 6-9 Sept 2013",
      "date": null,
      "year": 2013,
@@ -17579,6 +18002,30 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=940:lake-chalice-patriarch-28-29-february-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Lake Chalice Hut – Mt Richmond Forest Park (and aborted Mt Owen trip)",
+     "date": "2026-02-16",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/lake-chalice-hut-mt-richmond-forest-park-and-aborted-mt-owen-trip/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Easies and Mediums on a Mystery trip to Kahurangi NP",
+     "date": "2022-11-28",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/easies-and-mediums-on-a-mystery-trip-to-kahurangi-np/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Easter Weekend at Wangapeka and Tops",
+     "date": "2022-06-23",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/easter-weekend-at-wangapeka-and-tops/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -20307,7 +20754,40 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Joe Gibbs Hut – Tararua Forest Park",
+     "date": "2023-06-03",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/joe-gibbs-hut-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Inland Track (Tōtaranui to Marahau) – Abel Tasman National Park",
+     "date": "2024-07-07",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/inland-track-abel-tasman-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Tutuwai Hut Day Trip in Pictures",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/tutuwai-hut-day-trip-in-pictures/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mix and Mingle with Bush Lawyer Crumble",
+     "date": "2017-06-25",
+     "year": 2017,
+     "url": "https://wtmc.org.nz/trip-report/mix-and-mingle-with-bush-lawyer-crumble/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 3310761009,
@@ -20992,6 +21472,14 @@
      "year": 2003,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=931:mt-fishtail-–-7-december-2003&catid=9",
      "about": true
+    },
+    {
+     "title": "Mount Richmond with penguins and snails – Mt Richmond Forest Park",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-with-penguins-and-snails-mt-richmond-forest-park/",
+     "about": false,
+     "club": "WTMC"
     },
     {
      "title": "Mt Richmond – Mt Fishtail Traverse & RESCUE!, 28-30 Jan 2012",
@@ -22144,7 +22632,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Across the Paparoa Range for Matariki",
+     "date": "2026-07-30",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/paparoa-range-matariki-weekend-trip-report/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 10680028523,
@@ -25217,6 +25714,14 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=991:ellis-basin-twins-20-21-november-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Richmond Range – I want me money back",
+     "date": "2024-02-27",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/i-want-me-money-back/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -26388,6 +26893,14 @@
      "about": true
     },
     {
+     "title": "Lockett Range Loop – Kahurangi National Park",
+     "date": "2023-03-10",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/lockett-range-loop-kahurangi-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
      "title": "Anatoki - Waingaro, Kahurangi NP, 29 Jan 2022",
      "date": null,
      "year": 2022,
@@ -27294,6 +27807,38 @@
    },
    "reports": [
     {
+     "title": "Mt Fyffe – Hapuku Hut traverse (Seaward Kaikoura Range – Marlborough)",
+     "date": "2026-02-16",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mt-fyffe-hapuku-hut-traverse-seaward-kaikoura-range-marlborough/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Exploring Kaikoura and Mt Fyffe – Seaward Kaikoura Range",
+     "date": "2024-03-23",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/exploring-kaikoura-and-mt-fyffe-seaward-kaikoura-range/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt Fyffe – Hapuku Hut loop – Seaward Kaikoura Range",
+     "date": "2024-03-18",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/mt-fyffe-hapuku-hut-loop-seaward-kaikoura-range/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mount Fyffe Circuit – Seaward Kaikouras",
+     "date": "2016-05-12",
+     "year": 2016,
+     "url": "https://wtmc.org.nz/trip-report/mount-fyffe-circuit-seaward-kaikouras/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Mount Fyffe, Kaikoura Ranges, 4-5 Sept 2015",
      "date": null,
      "year": 2015,
@@ -28156,6 +28701,22 @@
      "year": 2016,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=321:mt-fell-hut-working-bee-richmond-f-p-22-24-oct-2016&catid=9",
      "about": true
+    },
+    {
+     "title": "Mount Richmond with penguins and snails – Mt Richmond Forest Park",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-with-penguins-and-snails-mt-richmond-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "We’re not climbing that, are we? A Mt Richmond trip – South Island",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/were-not-climbing-that-are-we-a-mt-richmond-trip-south-island/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -29409,7 +29970,32 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "The name is Tongue and Meats! A geriatric old codger braves the Ranges of Everlasting Mud and Misery",
+     "date": "2018-10-10",
+     "year": 2018,
+     "url": "https://wtmc.org.nz/trip-report/the-name-is-tongue-and-meats-a-geriatric-old-codger-braves-the-ranges-of-everlasting-mud-and-misery/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Lees Hellfire Circuit — The Bounds of Hades",
+     "date": "2024-04-20",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/lees-hellfire-circuit-the-bounds-of-hades/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Two Thumb Range – Boundary Stream, Opuha River",
+     "date": "2024-04-21",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/two-thumb-range/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 5935729230,
@@ -30863,7 +31449,24 @@
     ],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Mt Fyffe – Hapuku Hut traverse (Seaward Kaikoura Range – Marlborough)",
+     "date": "2026-02-16",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mt-fyffe-hapuku-hut-traverse-seaward-kaikoura-range-marlborough/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt Uwerau yes, Mt Manakau no (again)",
+     "date": "2019-09-25",
+     "year": 2019,
+     "url": "https://wtmc.org.nz/trip-report/mt-uwerau-yes-mt-manakau-no-again/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 8591228222,
@@ -32335,6 +32938,22 @@
      "year": 2003,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=910:gordons-knob-22-june-2003&catid=9",
      "about": true
+    },
+    {
+     "title": "Salisbury Lodge and environs – Kahurangi National Park",
+     "date": "2025-04-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/salisbury-lodge-and-environs-kahurangi-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "At the top table – Four days around Mt Arthur Tableland",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/at-the-top-table-four-days-around-mt-arthur-tableland/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -32655,7 +33274,24 @@
     "alerts": [],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Aoraki Mount Cook",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/aoraki-mount-cook/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Westland: Served in many different ways",
+     "date": "2014-02-02",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/westland-served-in-many-different-ways/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 8644356424,
@@ -35773,7 +36409,56 @@
     ],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Waiopehu Hut via Waiopehu track and Gable End Ridge",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/waiopehu-hut-via-waiopehu-track-and-gable-end-ridge/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt Fyffe – Hapuku Hut traverse (Seaward Kaikoura Range – Marlborough)",
+     "date": "2026-02-16",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mt-fyffe-hapuku-hut-traverse-seaward-kaikoura-range-marlborough/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mud, sweat and sour squirms: Waiopehu Hut – Gable End Ridge Loop – Tararua Forest Park",
+     "date": "2025-04-24",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/mud-sweat-and-sour-squirms-waiopehu-hut-gable-end-ridge-loop-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Te Matawai Hut – Tararua Forest Park",
+     "date": "2024-06-03",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/te-matawai-hut-tararua-forest-park-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Tararua Northern Crossing",
+     "date": "2024-03-23",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/tararua-northern-crossing-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Te Matawai Hut – Tararua Forest Park",
+     "date": "2023-09-29",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/te-matawai-hut-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 5935729228,
@@ -36522,11 +37207,59 @@
    },
    "reports": [
     {
+     "title": "Winter wander beyond Sunrise hut",
+     "date": "2026-08-07",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/winter-wander-on-the-ruahine-tops/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Sunrise Hut: Masterchef cook-off",
+     "date": "2026-02-16",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/sunrise-hut-masterchef-cook-off/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Sunrise Hut – Ruahine Forest Park",
+     "date": "2024-12-27",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/sunrise-hut-ruahine-forest-park-2/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Sunrise Hut – Ruahine Forest Park",
+     "date": "2024-10-13",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/sunrise-hut-ruahine-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Sunrise Hut & Top Maropea Hut – Ruahine Forest Park",
+     "date": "2024-08-17",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/sunrise-hut-top-maropea-hut-ruahine-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Lake Bulmer and Sunrise Peak, Kahurangi NP, 10 Mar 2023",
      "date": null,
      "year": 2023,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=772:lake-bulmer-and-sunrise-peak,-kahurangi-np,-10-mar-2023&catid=9",
      "about": true
+    },
+    {
+     "title": "Sunrise Hut",
+     "date": "2015-02-14",
+     "year": 2015,
+     "url": "https://wtmc.org.nz/trip-report/sunrise-hut/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Fyfe River - Mt Owen - Sunrise Peak circuit VIDEO, 23-24 Dec 2024",
@@ -37821,6 +38554,22 @@
      "year": 2022,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=682:1000-acre-plateau-needle-haystack,-kahurangi-np,-19-feb-2022&catid=9",
      "about": true
+    },
+    {
+     "title": "1000 Acre Plateau",
+     "date": "2024-04-24",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/1000-acre-plateau-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "1000 Acre Plateau",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/1000-acre-plateau/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -41580,6 +42329,14 @@
      "year": 2012,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=494:slaty-hut-–-mt-richmond-fp,-19-20-may-2012&catid=9",
      "about": true
+    },
+    {
+     "title": "Mount Richmond Tripping",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-tripping/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -43674,6 +44431,14 @@
      "year": 2024,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=830:mt-cedric,-nelson-lakes-np,11-may-2024&catid=9",
      "about": true
+    },
+    {
+     "title": "Robert Ridge – Angelus",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/robert-ridge-angelus/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -45643,7 +46408,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Peel and Lockett Traverse",
+     "date": "2022-05-26",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/peel-and-lockett-traverse/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 4497672038,
@@ -51871,11 +52645,27 @@
      "about": true
     },
     {
+     "title": "Salisbury Lodge and environs – Kahurangi National Park",
+     "date": "2025-04-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/salisbury-lodge-and-environs-kahurangi-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
      "title": "Flora - Gordons Pyramid - Cloustons circuit, Kahurangi NP, 4 Aug 2024",
      "date": null,
      "year": 2024,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=841:flora-gordons-pyramid-cloustons-circuit,-kahurangi-np,-4-aug-2024&catid=9",
      "about": false
+    },
+    {
+     "title": "At the top table – Four days around Mt Arthur Tableland",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/at-the-top-table-four-days-around-mt-arthur-tableland/",
+     "about": false,
+     "club": "WTMC"
     },
     {
      "title": "Cloustons Mine, Gordons Pyramid loop, Kahurangi NP - 17 June 2018",
@@ -53969,6 +54759,22 @@
      "about": true
     },
     {
+     "title": "D’Urville Hut (Though we didn’t actually make it to D’Urville Hut)",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/durville-hut-though-we-didnt-actually-make-it-to-durville-hut/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Old Ghost Road",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/old-ghost-road/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
      "title": "Mt Mantell – Murchison, 10 Jan 2015",
      "date": null,
      "year": 2015,
@@ -55238,7 +56044,32 @@
     "alerts": [],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Minimum effort, maximum gain: Sentry Box, Parks Peak and Upper Makaroro Huts – Ruahine Forest Park",
+     "date": "2024-11-09",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/minimum-effort-maximum-gain-sentry-box-parks-peak-and-upper-makaroro-huts-ruahine-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Upper Makaroro",
+     "date": "2022-08-24",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/upper-makaroro/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Holdsworth Jumbo",
+     "date": "2014-01-22",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/holdsworth-jumbo/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 2966756532,
@@ -56213,6 +57044,13 @@
      "about": true
     },
     {
+     "title": "Hacket–Browning Huts Loop, Mount Richmond FP, 5 July 2014",
+     "date": "2014-07-05",
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=404:hacket–browning-huts-loop,-mount-richmond-fp,-5-july-2014&catid=9",
+     "about": true
+    },
+    {
      "title": "Browning Hut to Rocks Hut – Mt Richmond FP, 5-6 Oct 2013",
      "date": null,
      "year": 2013,
@@ -56220,18 +57058,35 @@
      "about": true
     },
     {
-     "title": "Brown Hill – Kahurangi NP, 18-19 Feb 2012",
+     "title": "Hacket–Browning Huts – Mt Richmond FP, 9 Apr 2012",
      "date": null,
      "year": 2012,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=520:brown-hill-–-kahurangi-np,-18-19-feb-2012&catid=9",
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=506:hacket–browning-huts-–-mt-richmond-fp,-9-apr-2012&catid=9",
      "about": true
     },
     {
-     "title": "Hartebreak Ridge, Totara Saddle, Browning Hut Circuit. 15th Oct 2023",
-     "date": null,
-     "year": 2023,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=799:hartebreak-ridge,-totara-saddle,-browning-hut-circuit-15th-oct-2023&catid=9",
-     "about": false
+     "title": "Pelorus Track – Mt Richmond Forest Park",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/pelorus-track-mt-richmond-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Pāua Hut Family Trip – Remutaka Forest Park",
+     "date": "2025-06-08",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/paua-hut-family-trip-remutaka-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "March 2015 Bushcraft",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/march-2015-bushcraft/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -61249,7 +62104,24 @@
      "Alpine Route"
     ]
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Salisbury Lodge and environs – Kahurangi National Park",
+     "date": "2025-04-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/salisbury-lodge-and-environs-kahurangi-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Lake Peel and Balloon Hut",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/lake-peel-and-balloon-hut/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 1572998716,
@@ -62417,6 +63289,54 @@
      "year": 2025,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=894:teetotal-flats,-rotoiti,-10-august-2025&catid=9",
      "about": true
+    },
+    {
+     "title": "Mitre Flats Hut and Mitre Peak – Tararua Forest Park",
+     "date": "2025-11-23",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/mitre-flats-hut-and-mitre-peak-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Pukeamoamo/ Mitre via Mitre Flats Hut – Tararua Forest Park",
+     "date": "2025-04-23",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/pukeamoamo-mitre-via-mitre-flats-hut-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mangahao Flats Hut – Tararua Forest Park",
+     "date": "2024-12-26",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/mangahao-flats-hut-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Totara Flats Hut via the Gentle Annie Track – Tararua Forest Park",
+     "date": "2024-08-22",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/totara-flats-hut-via-the-gentle-annie-track-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Totara Flats Hut via High Ridge – Tararua Forest Park",
+     "date": "2024-08-03",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/totara-flats-hut-via-high-ridge-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mitre Flats Hut/ Mitre – Tararua Forest Park",
+     "date": "2024-05-27",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/mitre-flats-hut-mitre-peak-tararua-forest-park-2/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Cedar Flats Hut, West Coast, 3-5 June 2017",
@@ -64305,6 +65225,22 @@
    },
    "reports": [
     {
+     "title": "A Baldy – South King – Mitre Flats Hut adventure – Tararua Forest Park",
+     "date": "2025-04-15",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/a-baldy-south-king-mitre-flats-hut-adventure-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Turning into popsicles on Baldy…",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/turning-into-popsicles-on-baldy/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Fosters Clearing & Mt Baldy – Mt Richmond FP, 3-4 Mar 2012",
      "date": null,
      "year": 2012,
@@ -64317,6 +65253,38 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=996:fosters-clearing-mt-baldy-4-5-december-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Dorset Ridge – Tararua Forest Park",
+     "date": "2025-05-23",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/dorset-ridge-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Broken Axe Pinnacles – a day walk",
+     "date": "2025-02-17",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/broken-axe-pinnacles-day-walk/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Tarn Ridge Hut Loop – Tararua Forest Park",
+     "date": "2024-05-19",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/tarn-ridge-hut-loop-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Broken Axe Pinnacles – The Not Tappy, Light and Fast Daywalk",
+     "date": "2024-03-26",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/the-not-tappy-light-and-fast-daywalk/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -66371,6 +67339,14 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=943:mt-royal-28-march-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Devils Creek Hut – Mt Richmond Forest Park",
+     "date": "2024-10-09",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/devils-creek-hut-mt-richmond-forest-park/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -67583,7 +68559,16 @@
     "alerts": [],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Old Ghost Road",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/old-ghost-road/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 582829424,
@@ -68406,6 +69391,14 @@
      "about": true
     },
     {
+     "title": "Lake Peel and Balloon Hut",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/lake-peel-and-balloon-hut/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Balloon Hut via Asbestos Cottage, Kahurangi NP. 2-3 Dec 2017",
      "date": null,
      "year": 2017,
@@ -68425,6 +69418,22 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=972:balloon-hut-21-22-august-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Tablelands – Cobb Valley (combined EM and M trip – Kahurangi National Park)",
+     "date": "2021-05-26",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/tablelands-cobb-valley-combined-em-and-m-trip-kahurangi-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Kahurangi Tablelands 2012",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/kahurangi-tablelands-2012/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -69088,6 +70097,22 @@
    "doc": null,
    "reports": [
     {
+     "title": "A Baldy – South King – Mitre Flats Hut adventure – Tararua Forest Park",
+     "date": "2025-04-15",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/a-baldy-south-king-mitre-flats-hut-adventure-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Turning into popsicles on Baldy…",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/turning-into-popsicles-on-baldy/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Fosters Clearing & Mt Baldy – Mt Richmond FP, 3-4 Mar 2012",
      "date": null,
      "year": 2012,
@@ -69100,6 +70125,38 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=996:fosters-clearing-mt-baldy-4-5-december-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Dorset Ridge – Tararua Forest Park",
+     "date": "2025-05-23",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/dorset-ridge-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Broken Axe Pinnacles – a day walk",
+     "date": "2025-02-17",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/broken-axe-pinnacles-day-walk/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Tarn Ridge Hut Loop – Tararua Forest Park",
+     "date": "2024-05-19",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/tarn-ridge-hut-loop-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Broken Axe Pinnacles – The Not Tappy, Light and Fast Daywalk",
+     "date": "2024-03-26",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/the-not-tappy-light-and-fast-daywalk/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -69794,7 +70851,7 @@
      "date": null,
      "year": 2014,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=388:wakamarina-mt-sunday-mt-riley-circuit-mt-richmond-fp-6-7-sept-2014&catid=9",
-     "about": false
+     "about": true
     }
    ]
   },
@@ -70496,6 +71553,37 @@
      "about": true
     },
     {
+     "title": "Red Rocks Sunday Stroll",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/red-rocks-sunday-stroll/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "A Sawtooth Sunday",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/a-sawtooth-sunday/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Wakamarina–Mt.Sunday–Mt.Riley circuit, Mt Richmond FP, 6-7 Sept 2014",
+     "date": null,
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=388:wakamarina-mt-sunday-mt-riley-circuit-mt-richmond-fp-6-7-sept-2014&catid=9",
+     "about": true
+    },
+    {
+     "title": "Drought busting Sunday – Kapakapanui day walk",
+     "date": "2014-02-09",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/drought-busting-sunday-kapakapanui-day-walk/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Mt Duppa on Sunday, 22 February",
      "date": null,
      "year": null,
@@ -70528,13 +71616,6 @@
      "date": "2020-03-01",
      "year": 2020,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=250:wakamarina-walk,-sunday-1-march-2020&catid=9",
-     "about": false
-    },
-    {
-     "title": "Wakamarina–Mt.Sunday–Mt.Riley circuit, Mt Richmond FP, 6-7 Sept 2014",
-     "date": null,
-     "year": 2014,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=388:wakamarina-mt-sunday-mt-riley-circuit-mt-richmond-fp-6-7-sept-2014&catid=9",
      "about": false
     }
    ]
@@ -71156,7 +72237,16 @@
     "alerts": [],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Alpine week – Methven and the Lewis Pass",
+     "date": "2025-10-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/alpine-week-methven-and-the-lewis-pass/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 582829421,
@@ -72077,10 +73167,33 @@
      "about": true
     },
     {
+     "title": "Tablelands – Cobb Valley (combined EM and M trip – Kahurangi National Park)",
+     "date": "2021-05-26",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/tablelands-cobb-valley-combined-em-and-m-trip-kahurangi-national-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Kahurangi Tablelands 2012",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/kahurangi-tablelands-2012/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Tableland Circuit, Kahurangi NP, 25 May 2019",
      "date": "2019-05-25",
      "year": 2019,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=745:tableland-circuit,-kahurangi-np,-25-may-2019&catid=9",
+     "about": true
+    },
+    {
+     "title": "Asbestos Cottage–Tableland circuit, Kahurangi Nat Park - 2-4 Feb 2019",
+     "date": null,
+     "year": 2019,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=145:asbestos-cottage-tableland-circuit-kahurangi-nat-park-2-4-feb-2019&catid=9",
      "about": true
     },
     {
@@ -72091,11 +73204,28 @@
      "about": true
     },
     {
-     "title": "Asbestos Cottage–Tableland circuit, Kahurangi Nat Park - 2-4 Feb 2019",
-     "date": null,
-     "year": 2019,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=145:asbestos-cottage-tableland-circuit-kahurangi-nat-park-2-4-feb-2019&catid=9",
-     "about": false
+     "title": "Salisbury Lodge and environs – Kahurangi National Park",
+     "date": "2025-04-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/salisbury-lodge-and-environs-kahurangi-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt Arthur, Tablelands and Rock Shelters in the Kahurangi NP",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/mt-arthur-tablelands-and-rock-shelters-in-the-kahurangi-np/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "At the top table – Four days around Mt Arthur Tableland",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/at-the-top-table-four-days-around-mt-arthur-tableland/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -72992,7 +74122,16 @@
      "Alpine Route"
     ]
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Mud, sweat and sour squirms: Waiopehu Hut – Gable End Ridge Loop – Tararua Forest Park",
+     "date": "2025-04-24",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/mud-sweat-and-sour-squirms-waiopehu-hut-gable-end-ridge-loop-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 5413313482,
@@ -73731,11 +74870,59 @@
    },
    "reports": [
     {
+     "title": "Te Atuaoparapara – Ruahine Forest Park",
+     "date": "2025-05-16",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/te-atuaoparapara-ruahine-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Te Atuaoparapara peak – Ruahine Forest Park",
+     "date": "2024-12-26",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/te-atuaoparapara-peak-ruahine-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Parapara Peak - 14-15 May 2005",
      "date": "2005-05-15",
      "year": 2005,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1025:parapara-peak-14-15-may-2005&catid=9",
      "about": true
+    },
+    {
+     "title": "Waikamaka Hut",
+     "date": "2022-04-13",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/waikamaka-hut/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Kapiti Island",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/kapiti-island/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mountain Biking on the Kāpiti Coast",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/mountain-biking-on-the-kapiti-coast/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Waterfall Hut",
+     "date": "2019-12-01",
+     "year": 2019,
+     "url": "https://wtmc.org.nz/trip-report/waterfall-hut-2/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -75699,7 +76886,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Heaphy Track – November 2015",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/heaphy-track-november-2015/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 7965686365,
@@ -82605,6 +83801,14 @@
    "doc": null,
    "reports": [
     {
+     "title": "Twin tripping to Howletts and Daphne Huts",
+     "date": "2026-06-14",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/twin-tripping-to-howletts-and-daphne-huts/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "North Twin, Kahurangi NP, 8 Mar 2025",
      "date": null,
      "year": 2025,
@@ -82654,11 +83858,35 @@
      "about": true
     },
     {
+     "title": "Mud, sweat and sour squirms: Waiopehu Hut – Gable End Ridge Loop – Tararua Forest Park",
+     "date": "2025-04-24",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/mud-sweat-and-sour-squirms-waiopehu-hut-gable-end-ridge-loop-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
      "title": "Dun Mountain, Little Twin, Dew Lakes, Mt Richmond FP, 25 Jul 2021",
      "date": null,
      "year": 2021,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=628:dun-mountain,-little-twin,-dew-lakes-circuit-25-july-2021&catid=9",
      "about": false
+    },
+    {
+     "title": "Waiopehu Sludge",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/waiopehu-sludge/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mud and sun at Te Matawai",
+     "date": "2019-08-17",
+     "year": 2019,
+     "url": "https://wtmc.org.nz/trip-report/mud-and-sun-at-te-matawai/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -83637,6 +84865,54 @@
      "year": 2024,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=849:dun-mountain-little-twin-dew-lakes-circuit,-nelson,-29-sept-2024&catid=9",
      "about": true
+    },
+    {
+     "title": "Round the Mountain Track – Tongariro National Park",
+     "date": "2024-02-25",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/round-the-mountain-track-tongariro-national-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Otago Mountain Biking – sunshine and snow",
+     "date": "2024-04-04",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/otago-mountainbiking/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Outrageous Otago mountain biking",
+     "date": "2024-04-10",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/outrageous-otago-mountain-biking/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Around the Mountain Circuit – Egmont National Park",
+     "date": "2023-05-29",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/around-the-mountain-circuit-egmont-national-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mountain House Shelter Working Party",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/mountain-house-shelter-working-party/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mountainless Snow",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/mountainless-snow/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Dun Mountain, Little Twin, Dew Lakes, Mt Richmond FP, 25 Jul 2021",
@@ -85157,6 +86433,13 @@
      "about": true
     },
     {
+     "title": "Hacket–Browning Huts Loop, Mount Richmond FP, 5 July 2014",
+     "date": "2014-07-05",
+     "year": 2014,
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=404:hacket–browning-huts-loop,-mount-richmond-fp,-5-july-2014&catid=9",
+     "about": true
+    },
+    {
      "title": "Browning Hut to Rocks Hut – Mt Richmond FP, 5-6 Oct 2013",
      "date": null,
      "year": 2013,
@@ -85164,18 +86447,35 @@
      "about": true
     },
     {
-     "title": "Brown Hill – Kahurangi NP, 18-19 Feb 2012",
+     "title": "Hacket–Browning Huts – Mt Richmond FP, 9 Apr 2012",
      "date": null,
      "year": 2012,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=520:brown-hill-–-kahurangi-np,-18-19-feb-2012&catid=9",
+     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=506:hacket–browning-huts-–-mt-richmond-fp,-9-apr-2012&catid=9",
      "about": true
     },
     {
-     "title": "Hartebreak Ridge, Totara Saddle, Browning Hut Circuit. 15th Oct 2023",
-     "date": null,
-     "year": 2023,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=799:hartebreak-ridge,-totara-saddle,-browning-hut-circuit-15th-oct-2023&catid=9",
-     "about": false
+     "title": "Pelorus Track – Mt Richmond Forest Park",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/pelorus-track-mt-richmond-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Pāua Hut Family Trip – Remutaka Forest Park",
+     "date": "2025-06-08",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/paua-hut-family-trip-remutaka-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "March 2015 Bushcraft",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/march-2015-bushcraft/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -86132,6 +87432,14 @@
    "doc": null,
    "reports": [
     {
+     "title": "Avalanche-Lyell-Bealey Loop – The ‘Triple Crown’",
+     "date": "2025-08-26",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/avalanche-lyell-bealey-loop-the-triple-crown/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Lyell Saddle Hut– Upper Buller region, 8-9 July 2012",
      "date": "2012-07-09",
      "year": 2012,
@@ -86144,6 +87452,22 @@
      "year": 2005,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1012:lyell-walkway-6-march-2005&catid=9",
      "about": true
+    },
+    {
+     "title": "Arthur’s Pass – alpine adventures with different beans",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/arthurs-pass-alpine-adventures-with-different-beans/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Old Ghost Road",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/old-ghost-road/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -87291,7 +88615,32 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "WTMC Ruapehu Lodge – the aurora and the honey mead 🧸",
+     "date": "2025-03-10",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/wtmc-ruapehu-lodge-the-aurora-and-the-honey-mead/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Jam Hut – with real jam and marshmallows",
+     "date": "2023-10-24",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/jam-hut-with-real-jam-and-marshmallows/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Cathedral Rocks Climbing",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/cathedral-rocks-climbing/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 10680146279,
@@ -88168,6 +89517,22 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=954:lookout-point-9-may-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Queen Charlotte Track – Marlborough Sounds",
+     "date": "2024-01-25",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/queen-charlotte-track-marlborough-sounds-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Holdsworth Jumbo",
+     "date": "2014-01-22",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/holdsworth-jumbo/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -88301,7 +89666,56 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Mud, sweat and sour squirms: Waiopehu Hut – Gable End Ridge Loop – Tararua Forest Park",
+     "date": "2025-04-24",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/mud-sweat-and-sour-squirms-waiopehu-hut-gable-end-ridge-loop-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Waiopehu Hut – Tararua Forest Park",
+     "date": "2024-06-06",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/waiopehu-hut-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Te Matawai Hut – Tararua Forest Park",
+     "date": "2024-06-03",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/te-matawai-hut-tararua-forest-park-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Hanging out in the Hopkins wishing I had a helicopter…",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/hanging-out-in-the-hopkins-wishing-i-had-a-helicopter/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Waiopehu Sludge",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/waiopehu-sludge/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mud and sun at Te Matawai",
+     "date": "2019-08-17",
+     "year": 2019,
+     "url": "https://wtmc.org.nz/trip-report/mud-and-sun-at-te-matawai/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 4930646537,
@@ -90800,7 +92214,16 @@
    },
    "route": null,
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Lake Christabel Hut",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/lake-christabel-hut/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 4931693662,
@@ -91963,6 +93386,14 @@
      "about": true
     },
     {
+     "title": "Neill Forks via Makaka Spur",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/neill-forks-via-makaka-spur/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Takaka Hill Walkway - 22 Sept 2019",
      "date": null,
      "year": 2019,
@@ -91989,6 +93420,30 @@
      "year": 2005,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1022:takaka-hill-walkway-1-may-2005&catid=9",
      "about": true
+    },
+    {
+     "title": "Salisbury Lodge and environs – Kahurangi National Park",
+     "date": "2025-04-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/salisbury-lodge-and-environs-kahurangi-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Paekākāriki Escarpment",
+     "date": "2025-04-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/paekakariki-escarpment/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Te Araroa walkway – Paekakariki Escarpment",
+     "date": "2025-04-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/te-araroa-walkway-paekakariki-escarpment/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -94251,6 +95706,30 @@
      "about": true
     },
     {
+     "title": "Red Rocks – Wellington: runners and trampers – but the seals steal the show.",
+     "date": "2024-08-17",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/red-rocks-wellington-runners-and-trampers-but-the-seals-steal-the-show/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Makara Beach to Red Rocks",
+     "date": "2024-02-06",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/makara-beach-to-red-rocks/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Makara Beach to Owhiro Bay (Red Rocks)",
+     "date": "2024-09-16",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/makara-beach-to-owhiro-ohiro-bay/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Rocks Hut Overnighter, Mt Richmond FP, 17 June 2023",
      "date": "2023-06-17",
      "year": 2023,
@@ -94265,24 +95744,34 @@
      "about": true
     },
     {
+     "title": "Rocks Hut",
+     "date": "2022-05-27",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/rocks-hut/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Red Rocks Sunday Stroll",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/red-rocks-sunday-stroll/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Cathedral Rocks Climbing",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/cathedral-rocks-climbing/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Rocks Hut, Mt Richmond FP, 11 Jul 2020",
      "date": null,
      "year": 2020,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=542:rocks-hut,-mt-richmond-fp,-11-jul-2020&catid=9",
-     "about": true
-    },
-    {
-     "title": "Rocks Hut, Mount Richmond FP, 29-30 July 2017",
-     "date": "2017-07-30",
-     "year": 2017,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=286:rocks-hut-mount-richmond-fp-29-30-july-2017&catid=9",
-     "about": true
-    },
-    {
-     "title": "Parachute Rocks, Nelson Lakes National Park, 14 Jan 2017",
-     "date": null,
-     "year": 2017,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=303:parachute-rocks-nelson-lakes-national-park-14-jan-2017&catid=9",
      "about": true
     }
    ]
@@ -103338,7 +104827,56 @@
     "alerts": [],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Covert Ops Black Tie Lunch at the Waihohonu Hilton – November 2011",
+     "date": "2021-06-30",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/covert-ops-black-tie-lunch-at-the-waihohonu-hilton-november-2011/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Strawberries and Cream with the Men in Black",
+     "date": "2016-05-14",
+     "year": 2016,
+     "url": "https://wtmc.org.nz/trip-report/strawberries-and-cream-with-the-men-in-black/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "South Ohau Hut via Blackwater Stream and Butcher Creek",
+     "date": "2014-02-28",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/south-ohau-hut-via-blackwater-stream-and-butcher-creek/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Awatere Hut – Ruahine Forest Park",
+     "date": "2025-11-23",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/awatere-hut-ruahine-forest-park-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Queen Charlotte Track – Marlborough Sounds",
+     "date": "2025-07-16",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/queen-charlotte-track/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Matariki weekend trip to Kawekas",
+     "date": "2022-08-24",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/matariki-weekend-trip-to-kawekas/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 5697804351,
@@ -103748,7 +105286,56 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Mt McKerrow – Remutaka Forest Park",
+     "date": "2024-07-16",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/mt-mckerrow-remutaka-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt McKerrow",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/mt-mckerrow/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "A trifle easy (medium) weekend (Paua Hut via Mt McKerrow)",
+     "date": "2014-01-22",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/a-trifle-easy-medium-weekend-paua-hut-via-mt-mckerrow/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Madness and Bananagrams on Mt Matthews",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/madness-and-bananagrams-on-mt-matthews/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Holy Cupola!",
+     "date": "2024-04-24",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/holy-cupola/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Turere Waterfall – Remutaka Forest Park",
+     "date": "2024-02-27",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/turere-falls-adventure/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 8128879896,
@@ -105756,11 +107343,43 @@
      "about": true
     },
     {
+     "title": "Salisbury Lodge and environs – Kahurangi National Park",
+     "date": "2025-04-27",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/salisbury-lodge-and-environs-kahurangi-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
      "title": "Flora - Gordons Pyramid - Cloustons circuit, Kahurangi NP, 4 Aug 2024",
      "date": null,
      "year": 2024,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=841:flora-gordons-pyramid-cloustons-circuit,-kahurangi-np,-4-aug-2024&catid=9",
      "about": false
+    },
+    {
+     "title": "At the top table – Four days around Mt Arthur Tableland",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/at-the-top-table-four-days-around-mt-arthur-tableland/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "A day for summits",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/a-day-for-summits/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Ruapehu Summits from the Lodge",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/ruapehu-summits/",
+     "about": false,
+     "club": "WTMC"
     },
     {
      "title": "Cloustons Mine, Gordons Pyramid loop, Kahurangi NP - 17 June 2018",
@@ -107244,6 +108863,30 @@
    "doc": null,
    "reports": [
     {
+     "title": "Tennyson Inlet Kayak",
+     "date": "2021-04-26",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/tennyson-inlet-kayak/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Nydia Track – Marlborough Sounds",
+     "date": "2023-09-06",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/nydia-track-marlborough-sounds/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Marlborough Sounds Kayaking",
+     "date": "2021-06-29",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/marlborough-sounds-kayaking/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
      "title": "Mount Stanley (971m), Tennyson Inlet, Marlborough Sounds, 23 JUly 2017",
      "date": "2017-07-23",
      "year": 2017,
@@ -107776,7 +109419,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Across the Paparoa Range for Matariki",
+     "date": "2026-07-30",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/paparoa-range-matariki-weekend-trip-report/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 7747573426,
@@ -109272,7 +110924,16 @@
     "alerts": [],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Lake Christabel",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/lake-christabel/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 4939461357,
@@ -111314,7 +112975,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Mt Potts and Dogs Range – frozen boots and bobsleds",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mt-potts-and-dogs-range-frozen-boots-and-bobsleds/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 2966757365,
@@ -112044,7 +113714,56 @@
     ],
     "others": []
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Covert Ops Black Tie Lunch at the Waihohonu Hilton – November 2011",
+     "date": "2021-06-30",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/covert-ops-black-tie-lunch-at-the-waihohonu-hilton-november-2011/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Strawberries and Cream with the Men in Black",
+     "date": "2016-05-14",
+     "year": 2016,
+     "url": "https://wtmc.org.nz/trip-report/strawberries-and-cream-with-the-men-in-black/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "South Ohau Hut via Blackwater Stream and Butcher Creek",
+     "date": "2014-02-28",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/south-ohau-hut-via-blackwater-stream-and-butcher-creek/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Awatere Hut – Ruahine Forest Park",
+     "date": "2025-11-23",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/awatere-hut-ruahine-forest-park-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Queen Charlotte Track – Marlborough Sounds",
+     "date": "2025-07-16",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/queen-charlotte-track/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Matariki weekend trip to Kawekas",
+     "date": "2022-08-24",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/matariki-weekend-trip-to-kawekas/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 7488203327,
@@ -115029,6 +116748,54 @@
    "doc": null,
    "reports": [
     {
+     "title": "Snow Cone",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/snow-cone/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Cone to Alpha Huts (via Neill, Winchcombe and Hector)",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/cone-to-alpha-huts-via-neill-winchcombe-and-hector/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Remarkables Ice/Mixed Festival and Single Cone Climb",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/remarkables-icemixed-festival-and-single-cone-climb/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Waiohine-Cone-Neill Forks Hut-Totara Flats-Waiohine",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/waiohine-cone-neill-forks-hut-totara-flats-waiohine/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Cone Hut",
+     "date": "2015-02-14",
+     "year": 2015,
+     "url": "https://wtmc.org.nz/trip-report/cone-hut/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Cone to Tutuwai",
+     "date": "2014-01-17",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/cone-to-tutuwai/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Robert Ridge - scones with views!, Nelson Lakes NP, 2 Nov 2025",
      "date": null,
      "year": 2025,
@@ -115615,11 +117382,51 @@
    "doc": null,
    "reports": [
     {
+     "title": "Congratulations to Amanda and Megan for running The Goat!",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/congratulations-to-amanda-and-megan-for-running-the-goat/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Goat Hill - Okiwi Bay, Marlborough, 9 June 2012",
      "date": "2012-06-09",
      "year": 2012,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=482:goat-hill-okiwi-bay,-marlborough,-9-june-2012&catid=9",
      "about": true
+    },
+    {
+     "title": "Alpine Week – Arthur’s Pass National Park",
+     "date": "2024-10-10",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/alpine-week-arthurs-pass-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Ōrongorongo Valley hut-bagging",
+     "date": "2024-09-07",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/orongorongo-valley-hut-bagging-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "South Saddle via Goat Stream – Remutaka Forest Park",
+     "date": "2023-05-08",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/south-saddle-via-goat-stream-remutaka-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Old Ghost Road",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/old-ghost-road/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -116237,6 +118044,22 @@
      "year": 2004,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=954:lookout-point-9-may-2004&catid=9",
      "about": true
+    },
+    {
+     "title": "Queen Charlotte Track – Marlborough Sounds",
+     "date": "2024-01-25",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/queen-charlotte-track-marlborough-sounds-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Holdsworth Jumbo",
+     "date": "2014-01-22",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/holdsworth-jumbo/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -117784,7 +119607,7 @@
      "date": null,
      "year": 2018,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=164:leatham-saxton-severn-valleys-marlborough-18-21-oct-2018&catid=9",
-     "about": false
+     "about": true
     }
    ]
   },
@@ -118044,11 +119867,36 @@
    "doc": null,
    "reports": [
     {
-     "title": "Mt Richmond Forest Park Alpine Route, Mt Richmond FP, 23 April 2023",
-     "date": "2023-04-23",
+     "title": "Mount Richmond with penguins and snails – Mt Richmond Forest Park",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-with-penguins-and-snails-mt-richmond-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range (a primer)",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/richmond-range-primer/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range – I want me money back",
+     "date": "2024-02-27",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/i-want-me-money-back/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Saddle Hut – Mount Richmond Forest Park",
+     "date": "2023-07-08",
      "year": 2023,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=781:mt-richmond-forest-park-alpine-route,-mt-richmond-fp,-23-april-2023&catid=9",
-     "about": true
+     "url": "https://wtmc.org.nz/trip-report/richmond-saddle-hut-mount-richmond-forest-park/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Mt Richmond & Mt Fell, Mt Richmond FP, 22 Oct 2022",
@@ -118056,6 +119904,22 @@
      "year": 2022,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=720:mt-richmond-mt-fell,-mt-richmond-fp,-22-oct-2022&catid=9",
      "about": true
+    },
+    {
+     "title": "Mount Richmond Tripping",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-tripping/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range midnight special",
+     "date": "2020-11-21",
+     "year": 2020,
+     "url": "https://wtmc.org.nz/trip-report/midnight-special/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Mount Richmond, Mt Richmond Forest Pk - 30-31 Mar 2019",
@@ -118090,13 +119954,6 @@
      "date": null,
      "year": 2015,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=357:richmond-fire-lookout-nelson-30-aug-2015&catid=9",
-     "about": true
-    },
-    {
-     "title": "Richmond Alpine Circuit, Mt Richmond FP, 3-6 April 2015",
-     "date": "2015-04-06",
-     "year": 2015,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=362:richmond-alpine-circuit-mt-richmond-fp-3-6-april-2015&catid=9",
      "about": true
     }
    ]
@@ -118509,7 +120366,56 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Totara Flats Hut via the Gentle Annie Track – Tararua Forest Park",
+     "date": "2024-08-22",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/totara-flats-hut-via-the-gentle-annie-track-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Holdsworth Day Walks – Gentle Annie Saddle, Pinnacle, and the Summit.",
+     "date": "2025-04-28",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/holdsworth-daywalks-gentle-annie-saddle-pinnacle-and-the-summit/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Pack floating down the Waiohine Gorge – Tararua Forest Park",
+     "date": "2025-03-25",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/pack-floating-down-the-waiohine-gorge-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mid-Waiohine Hut and Pizza – Tararua Forest Park",
+     "date": "2025-03-23",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/mid-waiohine-hut-and-pizza-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Totara Flats Hut via High Ridge – Tararua Forest Park",
+     "date": "2024-08-03",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/totara-flats-hut-via-high-ridge-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Powell Hut – Tararua Forest Park",
+     "date": "2024-07-29",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/powell-hut-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 10680017156,
@@ -119720,7 +121626,32 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Minimum effort, maximum gain: Sentry Box, Parks Peak and Upper Makaroro Huts – Ruahine Forest Park",
+     "date": "2024-11-09",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/minimum-effort-maximum-gain-sentry-box-parks-peak-and-upper-makaroro-huts-ruahine-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Upper Makaroro",
+     "date": "2022-08-24",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/upper-makaroro/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Holdsworth Jumbo",
+     "date": "2014-01-22",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/holdsworth-jumbo/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 3308749997,
@@ -119952,7 +121883,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Queen Charlotte Track – Marlborough Sounds",
+     "date": "2024-01-25",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/queen-charlotte-track-marlborough-sounds-2/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 3324057163,
@@ -120941,7 +122881,16 @@
    },
    "route": null,
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Masterton Mystery Cycle Trip",
+     "date": "2016-05-20",
+     "year": 2016,
+     "url": "https://wtmc.org.nz/trip-report/masterton-mystery-cycle-trip/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 5697804354,
@@ -121841,7 +123790,40 @@
      "Inland Track"
     ]
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Joe Gibbs Hut – Tararua Forest Park",
+     "date": "2023-06-03",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/joe-gibbs-hut-tararua-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Inland Track (Tōtaranui to Marahau) – Abel Tasman National Park",
+     "date": "2024-07-07",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/inland-track-abel-tasman-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Tutuwai Hut Day Trip in Pictures",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/tutuwai-hut-day-trip-in-pictures/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mix and Mingle with Bush Lawyer Crumble",
+     "date": "2017-06-25",
+     "year": 2017,
+     "url": "https://wtmc.org.nz/trip-report/mix-and-mingle-with-bush-lawyer-crumble/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 3324057161,
@@ -121993,11 +123975,51 @@
    "doc": null,
    "reports": [
     {
+     "title": "Congratulations to Amanda and Megan for running The Goat!",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/congratulations-to-amanda-and-megan-for-running-the-goat/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Goat Hill - Okiwi Bay, Marlborough, 9 June 2012",
      "date": "2012-06-09",
      "year": 2012,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=482:goat-hill-okiwi-bay,-marlborough,-9-june-2012&catid=9",
      "about": true
+    },
+    {
+     "title": "Alpine Week – Arthur’s Pass National Park",
+     "date": "2024-10-10",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/alpine-week-arthurs-pass-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Ōrongorongo Valley hut-bagging",
+     "date": "2024-09-07",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/orongorongo-valley-hut-bagging-2/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "South Saddle via Goat Stream – Remutaka Forest Park",
+     "date": "2023-05-08",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/south-saddle-via-goat-stream-remutaka-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Old Ghost Road",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/old-ghost-road/",
+     "about": false,
+     "club": "WTMC"
     }
    ]
   },
@@ -123130,11 +125152,36 @@
    "doc": null,
    "reports": [
     {
-     "title": "Mt Richmond Forest Park Alpine Route, Mt Richmond FP, 23 April 2023",
-     "date": "2023-04-23",
+     "title": "Mount Richmond with penguins and snails – Mt Richmond Forest Park",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-with-penguins-and-snails-mt-richmond-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range (a primer)",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/richmond-range-primer/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range – I want me money back",
+     "date": "2024-02-27",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/i-want-me-money-back/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Saddle Hut – Mount Richmond Forest Park",
+     "date": "2023-07-08",
      "year": 2023,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=781:mt-richmond-forest-park-alpine-route,-mt-richmond-fp,-23-april-2023&catid=9",
-     "about": true
+     "url": "https://wtmc.org.nz/trip-report/richmond-saddle-hut-mount-richmond-forest-park/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Mt Richmond & Mt Fell, Mt Richmond FP, 22 Oct 2022",
@@ -123142,6 +125189,22 @@
      "year": 2022,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=720:mt-richmond-mt-fell,-mt-richmond-fp,-22-oct-2022&catid=9",
      "about": true
+    },
+    {
+     "title": "Mount Richmond Tripping",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/mount-richmond-tripping/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Richmond Range midnight special",
+     "date": "2020-11-21",
+     "year": 2020,
+     "url": "https://wtmc.org.nz/trip-report/midnight-special/",
+     "about": true,
+     "club": "WTMC"
     },
     {
      "title": "Mount Richmond, Mt Richmond Forest Pk - 30-31 Mar 2019",
@@ -123176,13 +125239,6 @@
      "date": null,
      "year": 2015,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=357:richmond-fire-lookout-nelson-30-aug-2015&catid=9",
-     "about": true
-    },
-    {
-     "title": "Richmond Alpine Circuit, Mt Richmond FP, 3-6 April 2015",
-     "date": "2015-04-06",
-     "year": 2015,
-     "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=362:richmond-alpine-circuit-mt-richmond-fp-3-6-april-2015&catid=9",
      "about": true
     }
    ]
@@ -123252,14 +125308,14 @@
      "date": null,
      "year": 2016,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=353:sharlands-creek-traverse-to-marybank-road-nelson-31-jan-2016&catid=9",
-     "about": true
+     "about": false
     },
     {
      "title": "Sharlands Creek - 17 April 2005",
      "date": "2005-04-17",
      "year": 2005,
      "url": "https://live.nelsontrampingclub.org.nz/trip-reports?view=article&id=1020:sharlands-creek-17-april-2005&catid=9",
-     "about": true
+     "about": false
     }
    ]
   },
@@ -123717,7 +125773,24 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Taputeranga Island – 17½m in 27s",
+     "date": "2025-01-04",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/taputeranga-17%c2%bdm-in-27s/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Makara Beach to Owhiro Bay (Red Rocks)",
+     "date": "2024-09-16",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/makara-beach-to-owhiro-ohiro-bay/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 10680003261,
@@ -123771,7 +125844,24 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Five passes (Mount Aspiring National Park)",
+     "date": "2025-01-26",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/five-passes-mount-aspiring-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "The Five Passes",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/the-five-passes/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 9003057074,
@@ -124257,7 +126347,48 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Rangiwahia Hut and Deadman’s Track – Ruahine Forest Park",
+     "date": "2023-06-26",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/rangiwahia-hut-and-deadmans-track-ruahine-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Triangle Hut via Deadman’s Track",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/triangle-hut-via-deadmans-track/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Rangiwahia Hut via Deadmans Track",
+     "date": "2014-02-09",
+     "year": 2014,
+     "url": "https://wtmc.org.nz/trip-report/rangiwahia-hut-via-deadmans-track/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Triangle Hut Traverse – Ruahine Forest Park",
+     "date": "2025-10-11",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/triangle-hut-traverse-ruahine-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Terrific Triangle",
+     "date": "2021-06-29",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/terrific-triangle/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 6564052937,
@@ -124311,7 +126442,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Ōrongorongo Valley hut-bagging",
+     "date": "2024-09-07",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/orongorongo-valley-hut-bagging-2/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 9003057089,
@@ -125873,7 +128013,24 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Five passes (Mount Aspiring National Park)",
+     "date": "2025-01-26",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/five-passes-mount-aspiring-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "The Five Passes",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/the-five-passes/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 8803954928,
@@ -126299,7 +128456,24 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Five passes (Mount Aspiring National Park)",
+     "date": "2025-01-26",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/five-passes-mount-aspiring-national-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "The Five Passes",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/the-five-passes/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 3324061960,
@@ -127426,7 +129600,56 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Ruahine Corner – Ruahine Forest Park",
+     "date": "2024-06-04",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/ruahine-corner-ruahine-forest-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Snailing around Ruahine Corner Hut",
+     "date": "2020-10-30",
+     "year": 2020,
+     "url": "https://wtmc.org.nz/trip-report/snailing-around-ruahine-corner-hut/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mt Matthews from Corner Creek – Remutaka Forest Park",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/mt-matthews-from-corner-creek/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Corner Creek to Mt Matthews in photos",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/corner-creek-to-mt-matthews-in-photos/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Mud, sweat and sour squirms: Waiopehu Hut – Gable End Ridge Loop – Tararua Forest Park",
+     "date": "2025-04-24",
+     "year": 2025,
+     "url": "https://wtmc.org.nz/trip-report/mud-sweat-and-sour-squirms-waiopehu-hut-gable-end-ridge-loop-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Rimutaka Cycle Trail",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/rimutaka-cycle-trail/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 10680003247,
@@ -128516,7 +130739,40 @@
      "Abel Tasman Coast Track"
     ]
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Round Taupo with Picnicking & Coffee – Will you go?",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/round-taupo-with-picnicking-coffee-will-you-go/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Taupo Cycle Challenge – The Time is Now!",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/taupo-cycle-challenge-the-time-is-now/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Hauhungatahi – the accessible wilderness",
+     "date": "2024-06-02",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/hauhungatahi-the-accessible-wilderness/",
+     "about": false,
+     "club": "WTMC"
+    },
+    {
+     "title": "Rock climbing at Kawakawa Bay",
+     "date": "2022-04-11",
+     "year": 2022,
+     "url": "https://wtmc.org.nz/trip-report/rock-climbing-at-kawakawa-bay/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 3344569171,
@@ -128570,7 +130826,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "A Pleasant River Trip",
+     "date": "2016-05-06",
+     "year": 2016,
+     "url": "https://wtmc.org.nz/trip-report/a-pleasant-river-trip/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 9003057080,
@@ -129432,6 +131697,54 @@
    "doc": null,
    "reports": [
     {
+     "title": "Crawling around Tapokopoko",
+     "date": "2026-01-08",
+     "year": 2026,
+     "url": "https://wtmc.org.nz/trip-report/crawling-around-tapokopoko/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "A four seasons Easter around Mount Ruapehu – Round the Mountain Track: Tongariro National Park",
+     "date": "2024-04-07",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/a-four-seasons-easter-around-mount-ruapehu/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Round the Mountain Track – Tongariro National Park",
+     "date": "2024-02-25",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/round-the-mountain-track-tongariro-national-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Around the Mountain Circuit – Egmont National Park",
+     "date": "2023-05-29",
+     "year": 2023,
+     "url": "https://wtmc.org.nz/trip-report/around-the-mountain-circuit-egmont-national-park/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Round Taupo with Picnicking & Coffee – Will you go?",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/round-taupo-with-picnicking-coffee-will-you-go/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
+     "title": "Snow-related fun around Tongariro",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/snow-related-fun-around-tongariro/",
+     "about": true,
+     "club": "WTMC"
+    },
+    {
      "title": "Around the Raglan Ranges, Marlborough, 23 Oct 2015",
      "date": null,
      "year": 2015,
@@ -130173,7 +132486,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Remarkables Ice/Mixed Festival and Single Cone Climb",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/remarkables-icemixed-festival-and-single-cone-climb/",
+     "about": true,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 3308749998,
@@ -130358,7 +132680,16 @@
      "Headlands Track"
     ]
    },
-   "reports": null
+   "reports": [
+    {
+     "title": "Inland Track (Tōtaranui to Marahau) – Abel Tasman National Park",
+     "date": "2024-07-07",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/inland-track-abel-tasman-national-park/",
+     "about": true,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 4931687902,
@@ -130412,7 +132743,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Aoraki Mount Cook",
+     "date": "2021-06-28",
+     "year": 2021,
+     "url": "https://wtmc.org.nz/trip-report/aoraki-mount-cook/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 6564277413,
@@ -130724,7 +133064,16 @@
     "elevation_source": "LINZ NZ 8m DEM via OpenTopoData"
    },
    "doc": null,
-   "reports": null
+   "reports": [
+    {
+     "title": "Panatewaewae – Tararua Forest Park",
+     "date": "2024-06-25",
+     "year": 2024,
+     "url": "https://wtmc.org.nz/trip-report/panatewaewae-tararua-forest-park/",
+     "about": false,
+     "club": "WTMC"
+    }
+   ]
   },
   {
    "id": 10680003235,
@@ -131109,5 +133458,5 @@
   }
  ],
  "doc_checked": "2026-09-10 16:53",
- "reports_checked": "2026-09-11 17:56"
+ "reports_checked": "2026-09-12 10:24"
 }

@@ -115,8 +115,8 @@ SPLIT = re.compile(r"\s*[,–—]\s*|\s+-\s+")
 # "Mt Richmond FP" is a park, not a destination. Without this, every trip in
 # that forest park looked like a trip up Mount Richmond.
 PARK = re.compile(
-    r"(fp|np|forest\s+park|national\s+park|conservation\s+(park|area)|"
-    r"state\s+forest|reserve)")
+    r"\b(fp|np|forest\s+park|national\s+park|conservation\s+(park|area)|"
+    r"state\s+forest|reserve)\b")
 
 
 def first_chunk(low):
@@ -131,6 +131,34 @@ def only_a_park_name(low, words):
             if not PARK.match(tail.strip()):
                 return False
     return True
+
+
+# A peak's name can be the first half of a completely different place:
+# "Arthur's Pass" is not Mount Arthur, and "Hacket River" is not Hacket Peak.
+# If the matched word is always followed by one of these, it is somewhere else.
+OTHER_FEATURE = re.compile(
+    r"\b(pass|river|stream|creek|valley|bay|sound|road|street|township|"
+    r"village|flat|flats|beach|lagoon|gorge|junction|bridge|township)\b")
+
+
+def names_another_feature(low, words, peak_name):
+    """True when every mention of the peak's word belongs to another feature."""
+    own = set(re.sub(r"[^a-z ]", " ", peak_name.lower()).split())
+    for w in words:
+        for m in re.finditer(re.escape(w) + r"(?:'?s)?", low):
+            tail = low[m.end():m.end() + 20].strip()
+            nxt = OTHER_FEATURE.match(tail)
+            # A trailing word that is part of the peak's own name is fine.
+            if not nxt or nxt.group(1) in own:
+                return False
+    return True
+
+
+def normalise(text):
+    """Curly quotes and dashes defeat plain matching, so flatten them."""
+    for ch in "’‘“”":
+        text = text.replace(ch, "'")
+    return text.replace(chr(0x2013), "-").replace(chr(0x2014), "-")
 
 
 def key_words(name):
@@ -160,12 +188,13 @@ def main():
             continue
         hits = []
         for r in reports:
-            low = r["title"].lower()
+            low = normalise(r["title"].lower())
             if not all(w in low for w in words):
                 continue
             destination = first_chunk(low)
             about = (all(w in destination for w in words)
-                     and not only_a_park_name(low, words))
+                     and not only_a_park_name(low, words)
+                     and not names_another_feature(low, words, p["name"]))
             hits.append(dict(r, about=about))
         if hits:
             hits.sort(key=lambda r: (r["about"], r["year"] or 0), reverse=True)
